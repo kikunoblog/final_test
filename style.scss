@@ -1,0 +1,15 @@
+@import "Layout/_header"; /*Layoutフォルダの中にあるheader.scssのimport*/
+@import "Layout/_footer";/*Layoutフォルダの中にあるfooter.scssのimport*/
+@import "Layout/_main";/*Layoutフォルダの中にあるmain.scssのimport*/
+@import "Layout/_sidebar";/*Layoutフォルダの中にあるsidebar.scssのimport*/
+@import "Foundation/reset";/*Foundationフォルダの中にあるreset.scssのimport*/
+
+
+.container{
+    //background-color: #F2EDE9;
+    width: 100%;
+    height: 2993px;
+    display: flex;
+    flex-wrap:wrap;
+    //justify-content: space-between;
+}

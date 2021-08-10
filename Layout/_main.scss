@@ -8,12 +8,21 @@
 .m-image{
     //margin-top:137px ;
     width: 100%;
-    height: auto;
+    height: 400px;
+    object-fit: cover;
+    display: flex;
+    background-image:url("../images/mainvisual-pc.jpg") ;
     //position: relative;
     //top: 70px;
     //left: 0px;
     //display: block;
     //padding-bottom: 30px;
     //position: fixed;
-
+}
+.m-image-title{
+    align-self: center;
+    //color: #fff;
+    font-family: "M+ 1m";
+    font-size: 40px;
+    margin-left: 46px;
 }

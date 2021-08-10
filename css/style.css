@@ -82,7 +82,17 @@
 
 .m-image {
   width: 100%;
-  height: auto;
+  height: 400px;
+  object-fit: cover;
+  display: flex;
+  background-image: url("../images/mainvisual-pc.jpg");
+}
+
+.m-image-title {
+  align-self: center;
+  font-family: "M+ 1m";
+  font-size: 40px;
+  margin-left: 46px;
 }
 
 /*Layoutフォルダの中にあるmain.scssのimport*/

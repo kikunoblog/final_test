@@ -1,28 +1,123 @@
-.l-main{
-    background-color: #fff;
-    height: auto;
-    width: 100%;
-    
+.l-main {
+  background-color: #fff;
+  height: auto;
+  width: 100%;
+  display: flex;
 }
 
-.m-image{
-    //margin-top:137px ;
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    display: flex;
-    background-image:url("../images/mainvisual-pc.jpg") ;
-    //position: relative;
-    //top: 70px;
-    //left: 0px;
-    //display: block;
-    //padding-bottom: 30px;
-    //position: fixed;
+.m-image {
+  //margin-top:137px ;
+  width: 100%;
+  height: 470px;
+  object-fit: cover;
+  display: flex;
+  background-image: url("../images/mainvisual-pc.jpg");
+  background-size: cover;
+  //position: relative;
+  //top: 70px;
+  //left: 0px;
+  //display: block;
+  //padding-bottom: 30px;
+  //position: fixed;
 }
-.m-image-title{
-    align-self: center;
-    //color: #fff;
-    font-family: "M+ 1m";
-    font-size: 40px;
-    margin-left: 46px;
+.m-image-title {
+  align-self: center;
+  color: #fff;
+  font-family: "M+ 1m";
+  font-size: 40px;
+  margin-left: 46px;
 }
+.wrapper2 {
+  display: flex;
+  justify-content: center;
+  margin: 80px auto;
+  width: 65%;
+  position: relative;
+}
+.w2 {
+  position: relative;
+}
+.w3 {
+  position: relative;
+}
+.main2 {
+  max-width: 400px;
+  height: auto;
+  margin: 0px 40px 0px 0px;
+  //position: relative;
+}
+.main3 {
+  max-width: 400px;
+  height: auto;
+  //margin: 0px 20px 0px 0px;
+  //position: relative;
+}
+.m2-text {
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+}
+.m3-text {
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+}
+.t-box1 {
+    padding: 1em 3em 4em 1em;
+    margin: 2em 0.4em;
+    color: #2c2c2f;
+    background-color: rgba(255, 255, 255, 0.8);/*背景色*/
+    word-wrap: break-word;
+    //overflow: hidden;
+    position: absolute;
+    top: 63.1%;
+}
+.t-box3 {
+    padding: 1em 2.8em 4em 1em;
+    margin: 2em 0.4em 2em 0.4em;
+    color: #2c2c2f;
+    background-color: rgba(255, 255, 255, 0.8);/*背景色*/
+    word-wrap: break-word;
+    //overflow: hidden;
+    position: absolute;
+    top: 63%;
+}
+
+.t-box1 p {
+    margin: 0; 
+    padding: 0;
+}
+
+.title1{
+    font-weight: bold;
+    //text-align: left;
+    //margin-bottom: 10px;
+
+}
+.title2{
+    font-size: small;
+    //text-align: left;
+}
+.t-box2 {
+    padding: 1em 3em 4em 1em;
+    margin: 2em 0.4em;
+    color: #2c2c2f;
+    background-color: rgba(255, 255, 255, 0.8);/*背景色*/
+    position: absolute;
+    top: 79.1%;
+}
+.t-box4 {
+  padding: 1em 2.8em 4em 1em;
+    margin: 2em 0.4em 2em 0.4em;
+    color: #2c2c2f;
+    background-color: rgba(255, 255, 255, 0.8);/*背景色*/
+    position: absolute;
+    top: 79%;
+}
+

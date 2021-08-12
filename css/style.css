@@ -78,21 +78,124 @@
   background-color: #fff;
   height: auto;
   width: 100%;
+  display: flex;
 }
 
 .m-image {
   width: 100%;
-  height: 400px;
+  height: 470px;
   object-fit: cover;
   display: flex;
   background-image: url("../images/mainvisual-pc.jpg");
+  background-size: cover;
 }
 
 .m-image-title {
   align-self: center;
+  color: #fff;
   font-family: "M+ 1m";
   font-size: 40px;
   margin-left: 46px;
+}
+
+.wrapper2 {
+  display: flex;
+  justify-content: center;
+  margin: 80px auto;
+  width: 65%;
+  position: relative;
+}
+
+.w2 {
+  position: relative;
+}
+
+.w3 {
+  position: relative;
+}
+
+.main2 {
+  max-width: 400px;
+  height: auto;
+  margin: 0px 40px 0px 0px;
+}
+
+.main3 {
+  max-width: 400px;
+  height: auto;
+}
+
+.m2-text {
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+}
+
+.m3-text {
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+}
+
+.t-box1 {
+  padding: 1em 3em 4em 1em;
+  margin: 2em 0.4em;
+  color: #2c2c2f;
+  background-color: rgba(255, 255, 255, 0.8);
+  /*背景色*/
+  word-wrap: break-word;
+  position: absolute;
+  top: 63.1%;
+}
+
+.t-box3 {
+  padding: 1em 2.8em 4em 1em;
+  margin: 2em 0.4em 2em 0.4em;
+  color: #2c2c2f;
+  background-color: rgba(255, 255, 255, 0.8);
+  /*背景色*/
+  word-wrap: break-word;
+  position: absolute;
+  top: 63%;
+}
+
+.t-box1 p {
+  margin: 0;
+  padding: 0;
+}
+
+.title1 {
+  font-weight: bold;
+}
+
+.title2 {
+  font-size: small;
+}
+
+.t-box2 {
+  padding: 1em 3em 4em 1em;
+  margin: 2em 0.4em;
+  color: #2c2c2f;
+  background-color: rgba(255, 255, 255, 0.8);
+  /*背景色*/
+  position: absolute;
+  top: 79.1%;
+}
+
+.t-box4 {
+  padding: 1em 2.8em 4em 1em;
+  margin: 2em 0.4em 2em 0.4em;
+  color: #2c2c2f;
+  background-color: rgba(255, 255, 255, 0.8);
+  /*背景色*/
+  position: absolute;
+  top: 79%;
 }
 
 /*Layoutフォルダの中にあるmain.scssのimport*/
@@ -100,6 +203,7 @@
   background-color: #F2EDE9;
   width: 20%;
   height: 2843px;
+  z-index: 100;
 }
 
 .s-top {

@@ -4,6 +4,7 @@
   height: 177px;
   display: flex;
   justify-content:space-between;
+  //flex-wrap: wrap;
   //position: absolute;
   //position: fixed;
 }
@@ -26,9 +27,9 @@ border:solid 1px #999;
 border-radius: 4px;
 background-color: #fff;
 height: 40px;
-margin:60px 130px 0px 0px;
+margin:60px 105px 0px 0px;
 padding-left: 10px;
-width: 340px;
+width: 300px;
 //position: fixed;
 //position: absolute;
 
@@ -42,7 +43,7 @@ background: url(../images/glass.png) no-repeat center center / auto 100%; /* 背
 display: inline-block; /* 高さを持たせるためにインラインブロック要素にする */
 position: absolute;    /* 相対位置に指定 */
 top: 12px;              /* アイコンの位置 */
-left: 10px;             /* アイコンの位置*/
+left: 9px;             /* アイコンの位置*/
 }
 .search-box input {
 padding: 10px 15px 0px; /* アイコンを設置するため左の余白を多めに指定*/
@@ -52,16 +53,16 @@ width: 100%;
 
 
 #h-button{
-width:100px;
+width:90px;
 height:40px;
 position:absolute; 
-left:350px; 
+right:-100px; 
 top:-1px;
 border-radius:4px;
 background: linear-gradient(#f2ede9, #ded8d3);
 border: 1px solid #999;
 color: #707070;
-padding: 10px 35px;
+padding: 10px 32px;
 font-size: 0.8rem;
 //border:none;
 }

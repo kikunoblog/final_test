@@ -31,7 +31,7 @@
   display: flex;
   justify-content: center;
   margin: 80px auto;
-  width: 65%;
+  width: 100%;
   position: relative;
 }
 .w2 {
@@ -43,13 +43,15 @@
 .main2 {
   max-width: 400px;
   height: auto;
-  margin: 0px 40px 0px 0px;
+  margin: 0px 20px 0px 0px;
+  width: 100%;
   //position: relative;
 }
 .main3 {
   max-width: 400px;
   height: auto;
-  //margin: 0px 20px 0px 0px;
+  width: 100%;
+  margin: 0px 0px 0px 20px;
   //position: relative;
 }
 .m2-text {
@@ -77,6 +79,7 @@
     //overflow: hidden;
     position: absolute;
     top: 63.1%;
+    width: 100%;
 }
 .t-box3 {
     padding: 1em 2.8em 4em 1em;
@@ -87,6 +90,7 @@
     //overflow: hidden;
     position: absolute;
     top: 63%;
+    width: 100%;
 }
 
 .t-box1 p {
@@ -111,6 +115,7 @@
     background-color: rgba(255, 255, 255, 0.8);/*背景色*/
     position: absolute;
     top: 79.1%;
+    width: 100%;
 }
 .t-box4 {
   padding: 1em 2.8em 4em 1em;
@@ -119,5 +124,6 @@
     background-color: rgba(255, 255, 255, 0.8);/*背景色*/
     position: absolute;
     top: 79%;
+    width: 100%;
 }
 

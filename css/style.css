@@ -24,9 +24,9 @@
   border-radius: 4px;
   background-color: #fff;
   height: 40px;
-  margin: 60px 130px 0px 0px;
+  margin: 60px 105px 0px 0px;
   padding-left: 10px;
-  width: 340px;
+  width: 300px;
 }
 
 .search-box::before {
@@ -44,7 +44,7 @@
   /* 相対位置に指定 */
   top: 12px;
   /* アイコンの位置 */
-  left: 10px;
+  left: 9px;
   /* アイコンの位置*/
 }
 
@@ -55,22 +55,44 @@
 }
 
 #h-button {
-  width: 100px;
+  width: 90px;
   height: 40px;
   position: absolute;
-  left: 350px;
+  right: -100px;
   top: -1px;
   border-radius: 4px;
   background: linear-gradient(#f2ede9, #ded8d3);
   border: 1px solid #999;
   color: #707070;
-  padding: 10px 35px;
+  padding: 10px 32px;
   font-size: 0.8rem;
 }
 
 /*Layoutフォルダの中にあるheader.scssのimport*/
 .l-footer {
   width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+
+.f-image {
+  width: 100%;
+  height: 150px;
+  background-image: url("../images/footer.png");
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+
+.f-image-title1 {
+  color: #fff;
+  display: block;
+}
+
+.f-image-title2 {
+  color: #fff;
 }
 
 /*Layoutフォルダの中にあるfooter.scssのimport*/
@@ -102,7 +124,7 @@
   display: flex;
   justify-content: center;
   margin: 80px auto;
-  width: 65%;
+  width: 100%;
   position: relative;
 }
 
@@ -117,12 +139,15 @@
 .main2 {
   max-width: 400px;
   height: auto;
-  margin: 0px 40px 0px 0px;
+  margin: 0px 20px 0px 0px;
+  width: 100%;
 }
 
 .main3 {
   max-width: 400px;
   height: auto;
+  width: 100%;
+  margin: 0px 0px 0px 20px;
 }
 
 .m2-text {
@@ -152,6 +177,7 @@
   word-wrap: break-word;
   position: absolute;
   top: 63.1%;
+  width: 100%;
 }
 
 .t-box3 {
@@ -163,6 +189,7 @@
   word-wrap: break-word;
   position: absolute;
   top: 63%;
+  width: 100%;
 }
 
 .t-box1 p {
@@ -186,6 +213,7 @@
   /*背景色*/
   position: absolute;
   top: 79.1%;
+  width: 100%;
 }
 
 .t-box4 {
@@ -196,6 +224,7 @@
   /*背景色*/
   position: absolute;
   top: 79%;
+  width: 100%;
 }
 
 /*Layoutフォルダの中にあるmain.scssのimport*/
@@ -208,12 +237,13 @@
 
 .s-top {
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.5vw;
   color: #707070;
   margin: 70px 0px 10px 30px;
 }
 
 .s-second {
+  font-size: 1.3vw;
   font-weight: bold;
   color: #707070;
   margin: 80px 0px 20px 30px;
@@ -221,6 +251,7 @@
 }
 
 .s-second2 {
+  font-size: 1.3vw;
   font-weight: bold;
   color: #707070;
   margin: 50px 0px 20px 30px;
@@ -228,10 +259,12 @@
 }
 
 .s-menu {
+  font-size: 1.2vw;
   color: #707070;
 }
 
 .s-list {
+  font-size: 1.2vw;
   line-height: 2.5;
   padding-left: 40px;
 }
@@ -698,9 +731,11 @@ template {
   width: 100%;
   height: 2993px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .wrapper {
   width: 80%;
+  height: 2843px;
 }
 /*# sourceMappingURL=style.css.map */

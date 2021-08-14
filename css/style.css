@@ -84,15 +84,22 @@
   display: flex;
   justify-content: center;
   margin-bottom: 34px;
+  position: relative;
 }
 
 .f-image-title1 {
   color: #fff;
   display: block;
+  position: absolute;
+  top: 20%;
+  font-size: 1.3vw;
 }
 
 .f-image-title2 {
   color: #fff;
+  position: absolute;
+  top: 60%;
+  font-size: 0.6vw;
 }
 
 /*Layoutフォルダの中にあるfooter.scssのimport*/
@@ -153,19 +160,39 @@
 .m2-text {
   position: absolute;
   top: 2%;
-  left: 5%;
+  left: 4%;
   color: #fff;
   font-family: "Roboto", sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.m2-subtext {
+  color: #fff;
+  position: absolute;
+  top: 9%;
+  left: 4%;
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
 }
 
 .m3-text {
   position: absolute;
   top: 2%;
-  left: 5%;
+  left: 8%;
   color: #fff;
   font-family: "Roboto", sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.m3-subtext {
+  color: #fff;
+  position: absolute;
+  top: 9%;
+  left: 8%;
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
 }
 
 .t-box1 {
@@ -176,8 +203,10 @@
   /*背景色*/
   word-wrap: break-word;
   position: absolute;
-  top: 63.1%;
+  bottom: 14%;
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .t-box3 {
@@ -212,7 +241,7 @@
   background-color: rgba(255, 255, 255, 0.8);
   /*背景色*/
   position: absolute;
-  top: 79.1%;
+  bottom: -2%;
   width: 100%;
 }
 

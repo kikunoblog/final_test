@@ -30,7 +30,7 @@
 .wrapper2 {
   display: flex;
   justify-content: center;
-  margin: 80px auto;
+  //margin: 80px auto;
   width: 100%;
   position: relative;
 }
@@ -45,7 +45,7 @@
 .main2 {
   max-width: 400px;
   height: auto;
-  margin: 0px 20px 0px 0px;
+  margin: 5vw 20px 0px 0px;
   width: 100%;
   //position: relative;
 }
@@ -53,12 +53,12 @@
   max-width: 400px;
   height: auto;
   width: 100%;
-  margin: 0px 0px 0px 20px;
+  margin: 5vw 0px 0px 20px;
   //position: relative;
 }
 .m2-text {
   position: absolute;
-  top: 2%;
+  top: 9%;
   left: 4%;
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -68,7 +68,7 @@
 .m2-subtext{
   color: #fff;
   position: absolute;
-  top: 9%;
+  top: 15%;
   left: 4%;
   font-family: "Roboto", sans-serif;
   font-size: 3rem;
@@ -76,7 +76,7 @@
 
 .m3-text {
   position: absolute;
-  top: 2%;
+  top: 9%;
   left: 8%;
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -86,69 +86,96 @@
 .m3-subtext{
   color: #fff;
   position: absolute;
-  top: 9%;
+  top: 15%;
   left: 8%;
   font-family: "Roboto", sans-serif;
   font-size: 3rem;
 }
 
+.t-box-a{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom:0.2vw;
+}
+
+.t-box-b{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom:1vw;
+}
+
 
 .t-box1 {
-    padding: 1vw 1vw 6vw 1vw;
-    margin: 0vw 1vw 0vw 1vw;
+  height: 8vw;
+    padding: 0vw 2.7vw 0vw 0.7vw;
+    //margin: 0vw 0vw 1vw 0.8vw;
     color: #2c2c2f;
     background-color: rgba(255, 255, 255, 0.8);/*背景色*/
     word-wrap: break-word;
+  
     //overflow: hidden;
     position: absolute;
-    bottom: 14%;
-    //width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    bottom: 9.5vw;
+    left:0.9vw;
+
+    max-width: auto;
 }
+.t-box2 {
+  height: 8vw;
+    padding: 0vw 2.7vw 0vw 0.7vw;
+    //margin: 0vw 0vw 1vw 0.8vw;
+    color: #2c2c2f;
+    background-color: rgba(255, 255, 255, 0.8);/*背景色*/
+    word-wrap: break-word;
+  
+    //overflow: hidden;
+    position: absolute;
+    bottom: 0.8vw;
+    left:0.9vw;
+
+    max-width: auto;
+}
+
+
 .t-box3 {
-    padding: 1em 2.8em 4em 1em;
-    margin: 2em 0.4em 2em 0.4em;
+    padding: 1em 1em 5em 1em;
+    //margin: 2em 0.4em 2em 0.4em;
     color: #2c2c2f;
     background-color: rgba(255, 255, 255, 0.8);/*背景色*/
     word-wrap: break-word;
     //overflow: hidden;
-    position: absolute;
-    bottom: 14%;
+    //position: absolute;
+    //bottom: 14%;
     //width: 100%;
+    //display: flex;
+    //flex-wrap: wrap;
 }
-
-.t-box1 p {
-    margin: 0; 
-    padding: 0;
+.t-box4 {
+  padding: 1em 1em 5em 1em;
+    //margin: 2em 0.4em 2em 0.4em;
+    color: #2c2c2f;
+    background-color: rgba(255, 255, 255, 0.8);/*背景色*/
+    word-wrap: break-word;
+    
+    //position: absolute;
+    //bottom: -2%;
+    //width: 100%;
+    //display: flex;
+    //flex-wrap: wrap;
 }
-
 .title1{
     font-weight: bold;
+    padding-top: 0.5vw;
     //text-align: left;
     //margin-bottom: 10px;
-
 }
 .title2{
     font-size: small;
+    padding-top: 1vw;
     //text-align: left;
 }
-.t-box2 {
-  padding: 1vw 1vw 6vw 1vw;
-  margin: 0vw 1vw 0vw 1vw;
-    color: #2c2c2f;
-    background-color: rgba(255, 255, 255, 0.8);/*背景色*/
-    position: absolute;
-    bottom:-2%;
-    //width: 100%;
-}
-.t-box4 {
-  padding: 1em 2.8em 4em 1em;
-    margin: 2em 0.4em 2em 0.4em;
-    color: #2c2c2f;
-    background-color: rgba(255, 255, 255, 0.8);/*背景色*/
-    position: absolute;
-    bottom: -2%;
-    //width: 100%;
-}
+
+
 

@@ -36,9 +36,11 @@
 }
 .w2 {
   position: relative;
+  
 }
 .w3 {
   position: relative;
+  
 }
 .main2 {
   max-width: 400px;
@@ -92,15 +94,15 @@
 
 
 .t-box1 {
-    padding: 1vw 5vw 6vw 1vw;
-    margin: 2vw 0.4vw;
+    padding: 1vw 1vw 6vw 1vw;
+    margin: 0vw 1vw 0vw 1vw;
     color: #2c2c2f;
     background-color: rgba(255, 255, 255, 0.8);/*背景色*/
     word-wrap: break-word;
     //overflow: hidden;
     position: absolute;
     bottom: 14%;
-    width: 100%;
+    //width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -112,8 +114,8 @@
     word-wrap: break-word;
     //overflow: hidden;
     position: absolute;
-    top: 63%;
-    width: 100%;
+    bottom: 14%;
+    //width: 100%;
 }
 
 .t-box1 p {
@@ -132,13 +134,13 @@
     //text-align: left;
 }
 .t-box2 {
-  padding: 1vw 3vw 6vw 1vw;
-  margin: 2vw 0.4vw;
+  padding: 1vw 1vw 6vw 1vw;
+  margin: 0vw 1vw 0vw 1vw;
     color: #2c2c2f;
     background-color: rgba(255, 255, 255, 0.8);/*背景色*/
     position: absolute;
     bottom:-2%;
-    width: 100%;
+    //width: 100%;
 }
 .t-box4 {
   padding: 1em 2.8em 4em 1em;
@@ -146,7 +148,7 @@
     color: #2c2c2f;
     background-color: rgba(255, 255, 255, 0.8);/*背景色*/
     position: absolute;
-    top: 79%;
-    width: 100%;
+    bottom: -2%;
+    //width: 100%;
 }
 

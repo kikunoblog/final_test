@@ -95,21 +95,23 @@
 .t-box-a{
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   position: absolute;
-  top:100px;
-  height: 100%;
-  margin: 0 auto;
-  width: 94%;
-  //position: relative;
-  
+  bottom: 212px;
+  margin: -40px 12px;
+  width: 375px;
+  position: relative;
+  overflow: hidden;
 }
 
 .t-box-b{
   display: flex;
   flex-direction: column;
+  position: absolute;
+  bottom: 212px;
+  margin: -40px 12px;
+  width: 375px;
   position: relative;
-  bottom:1vw;
+  overflow: hidden;
 }
 
 
@@ -118,16 +120,17 @@
     //padding: 0vw 2.7vw 0vw 0.7vw;
     //margin: 0vw 0vw 1vw 0.8vw;
     color: #2c2c2f;
-    background-color: rgba(255, 255, 255, 0.8);/*背景色*/
+    background-color: rgba(255, 255, 255, 0.8);
     word-wrap: break-word;
-  
     overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1vw;
     //position: absolute;
     //bottom: 100vw;
     //left:0.9vw;
-    
     //margin: 0 auto;
-    
+  
 }
 .t-box2 {
   //height: 8vw;
@@ -147,12 +150,13 @@
 
 
 .t-box3 {
-    padding: 1em 1em 5em 1em;
-    //margin: 2em 0.4em 2em 0.4em;
-    color: #2c2c2f;
-    background-color: rgba(255, 255, 255, 0.8);/*背景色*/
-    word-wrap: break-word;
-    overflow: hidden;
+  color: #2c2c2f;
+  background-color: rgba(255, 255, 255, 0.8);
+  word-wrap: break-word;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1vw;
     //position: absolute;
     //bottom: 14%;
     //width: 100%;
@@ -160,17 +164,19 @@
     //flex-wrap: wrap;
 }
 .t-box4 {
-  padding: 1em 1em 5em 1em;
-    //margin: 2em 0.4em 2em 0.4em;
+  //height: 8vw;
+    //padding: 0vw 2.7vw 0vw 0.7vw;
+    //margin: 0vw 0vw 1vw 0.8vw;
     color: #2c2c2f;
     background-color: rgba(255, 255, 255, 0.8);/*背景色*/
     word-wrap: break-word;
+  
     overflow: hidden;
     //position: absolute;
-    //bottom: -2%;
-    //width: 100%;
-    //display: flex;
-    //flex-wrap: wrap;
+    //bottom: 0.8vw;
+    //left:0.9vw;
+
+    max-width: auto;
 }
 .title1{
     font-weight: bold;

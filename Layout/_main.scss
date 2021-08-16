@@ -215,22 +215,27 @@
     position: relative;
     display: flex;
     color: #fff;
-    //padding: 2rem;
-    //display: block;
-    //width: 100%;
-    //height: 100%;
-    //left: 0;
-    //padding: 83px 119px;
-    //position: absolute;
-    //top: 0;
-    //z-index: 200;
-    //word-wrap: break-word;
-    //overflow: hidden;
     }
+
+    .map-text {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+      }
+
     .map::before {
     width:100%;
     height:650px;
-    z-index: 400;
+    z-index: 0;
     content: "";
     display: block;
     position: absolute;
@@ -238,6 +243,18 @@
     left: 0;
     background-color: rgba(0,0,0,0.29);
     }
+
+    .map-text::before {
+      width:60%;
+      height:650px;
+      z-index: 0;
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.445);
+      }
   
   
 

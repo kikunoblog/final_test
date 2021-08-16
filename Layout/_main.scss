@@ -33,6 +33,7 @@
   //margin: 80px auto;
   width: 100%;
   position: relative;
+  height: 1446px;
 }
 .w2 {
   position: relative;
@@ -96,11 +97,11 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  bottom: 212px;
-  margin: -4vw 2vw;
-  width: 25vw;
-  //position: relative;
-  overflow: hidden;
+  bottom: 625px;
+  width: 100%;
+  /* margin: -4vw 2vw; */
+  /* width: 25vw; */
+  /* overflow: hidden;*/
 }
 
 .t-box-b{
@@ -116,6 +117,16 @@
 
 
 .t-box1 {
+  color: #2c2c2f;
+    background-color: rgba(255, 255, 255, 0.8);
+    word-wrap: break-word;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1vw;
+    width: 95%;
+    position: absolute;
+    bottom: 8vw;
   //height: 8vw;
     //padding: 0vw 2.7vw 0vw 0.7vw;
     //margin: 0vw 0vw 1vw 0.8vw;
@@ -127,8 +138,8 @@
     flex-wrap: wrap;
     margin-bottom: 1vw;
     width: 100%;
-    //position: absolute;
-    //bottom: 100vw;
+    position: absolute;
+    bottom: 10vw;
     //left:0.9vw;
     //margin: 0 auto;
   
@@ -191,28 +202,43 @@
     padding-top: 1vw;
     //text-align: left;
 }
-.main4{
-  width: 100%;
-  height: auto;
-}
 
 .wrapper3{
   position: relative;
 }
 
 .map{
-  background-color: rgba(0, 0, 0, 0.29);
+    width:100%;
+    height:650px;
+    background:url(../images/map.png);
+    background-size: cover;
+    position: relative;
+    display: flex;
     color: #fff;
-    display: block;
-    width: 100%;
-    height: 100%;
-    left: 0;
+    //padding: 2rem;
+    //display: block;
+    //width: 100%;
+    //height: 100%;
+    //left: 0;
     //padding: 83px 119px;
+    //position: absolute;
+    //top: 0;
+    //z-index: 200;
+    //word-wrap: break-word;
+    //overflow: hidden;
+    }
+    .map::before {
+    width:100%;
+    height:650px;
+    z-index: 400;
+    content: "";
+    display: block;
     position: absolute;
     top: 0;
-    z-index: 200;
-    word-wrap: break-word;
-    overflow: hidden;
-}
+    left: 0;
+    background-color: rgba(0,0,0,0.29);
+    }
+  
+  
 
 

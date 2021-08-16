@@ -197,8 +197,12 @@
 .t-box-a {
   display: flex;
   flex-direction: column;
-  position: relative;
-  bottom: 0.2vw;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 100px;
+  height: 100%;
+  margin: 0 auto;
+  width: 94%;
 }
 
 .t-box-b {
@@ -209,28 +213,19 @@
 }
 
 .t-box1 {
-  height: 8vw;
-  padding: 0vw 2.7vw 0vw 0.7vw;
   color: #2c2c2f;
   background-color: rgba(255, 255, 255, 0.8);
   /*背景色*/
   word-wrap: break-word;
-  position: absolute;
-  bottom: 9.5vw;
-  left: 0.9vw;
-  max-width: auto;
+  overflow: hidden;
 }
 
 .t-box2 {
-  height: 8vw;
-  padding: 0vw 2.7vw 0vw 0.7vw;
   color: #2c2c2f;
   background-color: rgba(255, 255, 255, 0.8);
   /*背景色*/
   word-wrap: break-word;
-  position: absolute;
-  bottom: 0.8vw;
-  left: 0.9vw;
+  overflow: hidden;
   max-width: auto;
 }
 
@@ -240,6 +235,7 @@
   background-color: rgba(255, 255, 255, 0.8);
   /*背景色*/
   word-wrap: break-word;
+  overflow: hidden;
 }
 
 .t-box4 {
@@ -248,6 +244,7 @@
   background-color: rgba(255, 255, 255, 0.8);
   /*背景色*/
   word-wrap: break-word;
+  overflow: hidden;
 }
 
 .title1 {

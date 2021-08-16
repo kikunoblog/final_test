@@ -154,11 +154,13 @@
 .w2 {
   width: 625px;
   height: 1193px;
+  margin: 126.5px 40px 126.5px 111.5px;
 }
 
 .w3 {
   width: 625px;
-  height: 1196px;
+  height: 1193px;
+  margin: 126.5px 111.5px 126.5px 40px;
 }
 
 .main2 {

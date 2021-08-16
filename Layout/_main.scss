@@ -37,6 +37,12 @@
   padding:126.5px 111.5px;
 }
 
+.s-wrapper{
+  height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
 
 .w2 {
   //position: relative;
@@ -68,9 +74,9 @@
   //position: relative;
 }
 .m2-text {
-  position: absolute;
-  top: 9%;
-  left: 4%;
+  //position: absolute;
+  //top: 9%;
+  //left: 4%;
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 3rem;
@@ -78,9 +84,9 @@
 }
 .m2-subtext{
   color: #fff;
-  position: absolute;
-  top: 15%;
-  left: 4%;
+  //position: absolute;
+  //top: 15%;
+  //left: 4%;
   font-family: "Roboto", sans-serif;
   font-size: 3rem;
 }
@@ -104,11 +110,12 @@
 }
 
 .t-box-a{
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  bottom: 625px;
-  width: 100%;
+  width: 90%;
+  //display: flex;
+  //flex-direction: column;
+  //position: absolute;
+  //bottom: 625px;
+  //width: 100%;
   /* margin: -4vw 2vw; */
   /* width: 25vw; */
   /* overflow: hidden;*/
@@ -127,29 +134,16 @@
 
 
 .t-box1 {
-  color: #2c2c2f;
-    background-color: rgba(255, 255, 255, 0.8);
-    word-wrap: break-word;
-    overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 1vw;
-    width: 95%;
-    position: absolute;
-    bottom: 8vw;
-  //height: 8vw;
-    //padding: 0vw 2.7vw 0vw 0.7vw;
-    //margin: 0vw 0vw 1vw 0.8vw;
     color: #2c2c2f;
     background-color: rgba(255, 255, 255, 0.8);
     word-wrap: break-word;
-    overflow: hidden;
-    display: flex;
+    //overflow: hidden;
+    //display: flex;
     flex-wrap: wrap;
-    margin-bottom: 1vw;
-    width: 100%;
-    position: absolute;
-    bottom: 10vw;
+    //margin-bottom: 1vw;
+    //width: 90%;
+    //position: absolute;
+    //bottom: 10vw;
     //left:0.9vw;
     //margin: 0 auto;
   
@@ -161,7 +155,7 @@
     color: #2c2c2f;
     background-color: rgba(255, 255, 255, 0.8);/*背景色*/
     word-wrap: break-word;
-  width: 100%;
+  //swidth: 100%;
     overflow: hidden;
     //position: absolute;
     //bottom: 0.8vw;

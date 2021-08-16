@@ -34,6 +34,7 @@
   width: 100%;
   position: relative;
   height: 1446px;
+  padding:126.5px 111.5px;
 }
 
 
@@ -41,13 +42,15 @@
   //position: relative;
   width: 625px;
   height: 1193px;
-  margin: 126.5px 40px 126.5px 111.5px;
+  //margin: 126.5px 40px 126.5px 111.5px;
+  margin-right: 40px;
 }
 .w3 {
   //position: relative;
   width: 625px;
   height: 1193px;
-  margin: 126.5px 111.5px 126.5px 40px;
+  margin-left: 40px;
+  //margin: 126.5px 111.5px 126.5px 40px;
 }
 
 .main2 {

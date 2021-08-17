@@ -193,7 +193,7 @@
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 3rem;
-  margin-top: -48vw;
+  margin-top: -43vw;
   margin-left: 1vw;
 }
 
@@ -242,6 +242,7 @@
   word-wrap: break-word;
   flex-wrap: wrap;
   margin-bottom: 1vw;
+  padding: 10px 15px 20px;
 }
 
 .t-box2 {
@@ -250,6 +251,7 @@
   /*背景色*/
   word-wrap: break-word;
   overflow: hidden;
+  padding: 10px 15px 20px;
   width: 100%;
 }
 

@@ -152,7 +152,7 @@
   padding: 126.5px 111.5px;
 }
 
-.w2 {
+.w2, .w3 {
   height: 1193px;
   width: 625px;
   display: flex;
@@ -160,9 +160,11 @@
   justify-content: space-between;
 }
 
+.w2 {
+  margin-right: 40px;
+}
+
 .w3 {
-  width: 625px;
-  height: 1193px;
   margin-left: 40px;
 }
 
@@ -236,44 +238,13 @@
   overflow: hidden;
 }
 
-.t-box1 {
+.t-box1, .t-box2, .t-box3, .t-box4 {
   color: #2c2c2f;
   background-color: rgba(255, 255, 255, 0.8);
   word-wrap: break-word;
   flex-wrap: wrap;
   margin-bottom: 1vw;
   padding: 10px 15px 20px;
-}
-
-.t-box2 {
-  color: #2c2c2f;
-  background-color: rgba(255, 255, 255, 0.8);
-  /*背景色*/
-  word-wrap: break-word;
-  overflow: hidden;
-  padding: 10px 15px 20px;
-  width: 100%;
-}
-
-.t-box3 {
-  color: #2c2c2f;
-  background-color: rgba(255, 255, 255, 0.8);
-  word-wrap: break-word;
-  overflow: hidden;
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 1vw;
-  width: 100%;
-}
-
-.t-box4 {
-  color: #2c2c2f;
-  background-color: rgba(255, 255, 255, 0.8);
-  /*背景色*/
-  word-wrap: break-word;
-  width: 100%;
-  overflow: hidden;
-  max-width: auto;
 }
 
 .title1 {

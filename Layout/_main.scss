@@ -39,26 +39,19 @@
 }
 
 
-.w2 {
-  //position: relative;
-  //width: 625px;
-  //height: 1193px;
-  //margin: 126.5px 40px 126.5px 111.5px;
-  //margin-right: 40px;
+.w2 ,.w3{
   height: 1193px;
   width: 625px;
   display: flex;
  flex-direction: column;
  justify-content: space-between;
 }
-.w3 {
-  //position: relative;
-  width: 625px;
-  height: 1193px;
-  margin-left: 40px;
-  //margin: 126.5px 111.5px 126.5px 40px;
+.w2{
+  margin-right: 40px;
 }
-
+.w3{
+  margin-left: 40px;
+}
 .main2 {
   max-width: 400px;
   height: auto;
@@ -139,70 +132,15 @@
 }
 
 
-.t-box1 {
+.t-box1 , .t-box2 , .t-box3 , .t-box4{
     color: #2c2c2f;
     background-color: rgba(255, 255, 255, 0.8);
     word-wrap: break-word;
-    //overflow: hidden;
-    //display: flex;
     flex-wrap: wrap;
     margin-bottom: 1vw;
-    padding:10px 15px 20px;
-    //width: 90%;
-    //position: absolute;
-    //bottom: 10vw;
-    //left:0.9vw;
-    //margin: 0 auto;
-    //width: 625px;
-  
-}
-.t-box2 {
-  //height: 8vw;
-    //padding: 0vw 2.7vw 0vw 0.7vw;
-    //margin: 0vw 0vw 1vw 0.8vw;
-    color: #2c2c2f;
-    background-color: rgba(255, 255, 255, 0.8);/*背景色*/
-    word-wrap: break-word;
-  //swidth: 100%;
-    overflow: hidden;
-    padding:10px 15px 20px;
-    //position: absolute;
-    //bottom: 0.8vw;
-    //left:0.9vw;
-width: 100%;
+    padding:10px 15px 20px;  
 }
 
-
-.t-box3 {
-  color: #2c2c2f;
-    background-color: rgba(255, 255, 255, 0.8);
-    word-wrap: break-word;
-    overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 1vw;
-    width: 100%;
-    //position: absolute;
-    //bottom: 14%;
-    //width: 100%;
-    //display: flex;
-    //flex-wrap: wrap;
-}
-.t-box4 {
-  //height: 8vw;
-    //padding: 0vw 2.7vw 0vw 0.7vw;
-    //margin: 0vw 0vw 1vw 0.8vw;
-    color: #2c2c2f;
-    background-color: rgba(255, 255, 255, 0.8);/*背景色*/
-    word-wrap: break-word;
-  width: 100%;
-    overflow: hidden;
-    //position: absolute;
-    //bottom: 0.8vw;
-    //left:0.9vw;
-
-    max-width: auto;
-}
 .title1{
     font-weight: bold;
     padding-top: 0.5vw;

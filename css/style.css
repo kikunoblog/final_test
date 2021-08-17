@@ -152,7 +152,8 @@
   padding: 126.5px 111.5px;
 }
 
-.w2, .w3 {
+.w2,
+.w3 {
   height: 1193px;
   width: 625px;
   display: flex;
@@ -222,9 +223,6 @@
   width: 100%;
   margin-bottom: 15px;
   padding: 0px 15px;
-  /* margin: -4vw 2vw; */
-  /* width: 25vw; */
-  /* overflow: hidden;*/
 }
 
 .t-box-b {
@@ -238,7 +236,10 @@
   overflow: hidden;
 }
 
-.t-box1, .t-box2, .t-box3, .t-box4 {
+.t-box1,
+.t-box2,
+.t-box3,
+.t-box4 {
   color: #2c2c2f;
   background-color: rgba(255, 255, 255, 0.8);
   word-wrap: break-word;

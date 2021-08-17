@@ -37,19 +37,17 @@
   padding:126.5px 111.5px;
 }
 
-.s-wrapper{
-  height: 100%;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-}
 
 .w2 {
   //position: relative;
   width: 625px;
   height: 1193px;
   //margin: 126.5px 40px 126.5px 111.5px;
-  margin-right: 40px;
+  //margin-right: 40px;
+  height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 }
 .w3 {
   //position: relative;

@@ -68,13 +68,23 @@
   //margin-top: 1vw;
   //margin-left: 1vw;
 }
-.m2-subtext {
+.m2-text::before {
+  background-color: #fff;
+  content: "";
+  height: 4px;
+  //position: absolute;
+  //top: 116.5px;
+  //width: 63px;
+}
+
+
+/*.m2-subtext {
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 3rem;
   //margin-top: -39vw;
   //margin-left: 1vw;
-}
+}*/
 
 .m3-text {
   //position: absolute;

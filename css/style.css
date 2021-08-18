@@ -163,10 +163,12 @@
 
 .w2 {
   margin-right: 40px;
+  padding: 1vw 0.5vw 0vw;
 }
 
 .w3 {
   margin-left: 40px;
+  padding: 1vw 0.5vw 0vw;
 }
 
 .main2 {
@@ -188,22 +190,15 @@
   font-family: "Roboto", sans-serif;
   font-size: 3rem;
   font-weight: bold;
-  margin-top: 1vw;
-  margin-left: 1vw;
 }
 
 .m2-subtext {
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 3rem;
-  margin-top: -39vw;
-  margin-left: 1vw;
 }
 
 .m3-text {
-  position: absolute;
-  top: 9%;
-  left: 8%;
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 3rem;
@@ -212,9 +207,6 @@
 
 .m3-subtext {
   color: #fff;
-  position: absolute;
-  top: 15%;
-  left: 8%;
   font-family: "Roboto", sans-serif;
   font-size: 3rem;
 }

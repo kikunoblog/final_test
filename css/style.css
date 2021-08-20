@@ -169,10 +169,10 @@
 .w-link {
   display: block;
   height: 100%;
+  width: 625px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  position: relative;
 }
 
 .main2 {
@@ -194,9 +194,6 @@
   font-family: "Roboto", sans-serif;
   font-size: 3rem;
   font-weight: bold;
-  position: absolute;
-  top: 5px;
-  left: 5px;
 }
 
 .m2-text::before {

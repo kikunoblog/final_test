@@ -141,6 +141,7 @@
   font-family: "M+ 1m";
   font-size: 40px;
   margin-left: 46px;
+  font-weight: bold;
 }
 
 .wrapper2 {
@@ -198,7 +199,7 @@
 .m2-text {
   color: #fff;
   font-family: "Roboto", sans-serif;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
   position: relative;
 }
@@ -208,7 +209,7 @@
   content: "";
   height: 4px;
   position: absolute;
-  top: 80px;
+  top: 100px;
   left: 3px;
   width: 50px;
 }
@@ -296,6 +297,7 @@
   left: 0;
   z-index: 1;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #fff;
@@ -325,6 +327,21 @@
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.445);
+}
+
+.map-title {
+  position: relative;
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+
+.map-title::before {
+  background-color: #fff;
+  content: "";
+  height: 3px;
+  position: absolute;
+  top: 20px;
+  width: 63px;
 }
 
 /*Layoutフォルダの中にあるmain.scssのimport*/

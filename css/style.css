@@ -171,6 +171,10 @@
   padding: 1vw 0.5vw 0vw;
 }
 
+.w-link {
+  display: block;
+}
+
 .main2 {
   max-width: 400px;
   height: auto;

@@ -200,12 +200,17 @@
   font-family: "Roboto", sans-serif;
   font-size: 3rem;
   font-weight: bold;
+  position: relative;
 }
 
 .m2-text::before {
   background-color: #fff;
   content: "";
   height: 4px;
+  position: absolute;
+  top: 80px;
+  left: 3px;
+  width: 50px;
 }
 
 /*.m2-subtext {

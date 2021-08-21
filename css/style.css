@@ -157,7 +157,9 @@
   height: 1196px;
   width: 625px;
   background-repeat: no-repeat;
+  /* 背景画像を繰り返し表示しません。 */
   border: 5px solid #fff;
+  /* 要素の表示領域を枠として視覚化するための補助線を付けます。 */
 }
 
 .w2 {

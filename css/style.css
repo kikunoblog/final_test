@@ -156,6 +156,8 @@
 .w3 {
   height: 1196px;
   width: 625px;
+  background-repeat: no-repeat;
+  border: 5px solid #fff;
 }
 
 .w2 {

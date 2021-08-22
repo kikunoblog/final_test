@@ -171,9 +171,6 @@
   font-size: 16px;
 }
 
-.wrapper3 {
-  position: relative;
-}
 
 .map {
   width: 100%;
@@ -181,24 +178,44 @@
   background: url(../images/map.png);
   background-size: cover;
   position: relative;
-  display: flex;
-  color: #fff;
 }
-
-.map-text {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
+.map-text{
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+}
+
+.map-title {
+  width: 100%;
+  height: 100%;
+  //position: absolute;
+  //top: 0;
+  //left: 0;
+  z-index: 1;
+  //padding: 2rem;
+  font-size: 1.5vw;
+  font-weight: bold;
   color: #fff;
-  text-align: center;
-  padding: 2rem;
+ 
+}
+.map-title::before{
+  background-color: #fff;
+  content: "";
+  height: 3px;
+  position: absolute;
+  top: 70px;
+  width: 63px;
+  }
+
+.map-subtext{
+  z-index: 1;
+  //position: absolute;
+  //top: 0;
+  //left: 0;
+  color: #fff;
+  width: 40%;
+  line-height: 1.5;
 }
 
 .map::before {
@@ -225,17 +242,3 @@
   background-color: rgba(0, 0, 0, 0.445);
 }
 
-.map-title{
-  position: relative;
-  font-size: 1.5vw;
-  font-weight: bold;
-}
-
-.map-title::before{
-background-color: #fff;
-content: "";
-height: 3px;
-position: absolute;
-top: 70px;
-width: 63px;
-}

@@ -297,10 +297,12 @@
 .map-title {
   width: 100%;
   height: 100%;
+  padding: 5vw 0vw 0vw 6vw;
   z-index: 1;
   font-size: 1.5vw;
   font-weight: bold;
   color: #fff;
+  font-size: 2vw;
 }
 
 .map-title::before {
@@ -308,15 +310,16 @@
   content: "";
   height: 3px;
   position: absolute;
-  top: 70px;
+  top: 180px;
   width: 63px;
 }
 
 .map-subtext {
   z-index: 1;
   color: #fff;
-  width: 40%;
+  width: 45%;
   line-height: 1.5;
+  margin: 0vw -3vw 8vw 6vw;
 }
 
 .map::before {

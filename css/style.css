@@ -156,6 +156,7 @@
   height: 1196px;
   width: 625px;
   margin-right: 40px;
+  background-size: cover;
   background: url(../images/main2.png);
 }
 

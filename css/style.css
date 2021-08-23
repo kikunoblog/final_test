@@ -153,9 +153,10 @@
 }
 
 .w2 {
-  height: 1193px;
+  height: 1196px;
   width: 625px;
   margin-right: 40px;
+  background: url(../images/main2.png);
 }
 
 .w2 a {

@@ -29,6 +29,12 @@
     .wrapper{
         width: 100%;
     }
+    .l-header{
+        display: flex;
+        justify-content:space-around;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 375px) {

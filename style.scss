@@ -17,3 +17,18 @@
     width: 80%;
     height: 2843px;
 }
+
+@media screen and (max-width: 834px) {
+    .l-sidebar {
+        display: none;
+    }
+    .container{
+        display: block;
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+}
+

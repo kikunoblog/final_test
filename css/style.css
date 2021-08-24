@@ -292,7 +292,8 @@
   align-content: center;
   width: 100%;
   height: 649px;
-  padding-left: 140px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .map-title {
@@ -309,14 +310,14 @@
   content: "";
   height: 3px;
   position: absolute;
-  top: 180px;
+  top: 210px;
   width: 63px;
 }
 
 .map-subtext {
   z-index: 1;
   color: #fff;
-  width: 45%;
+  width: 56%;
   line-height: 1.5;
 }
 
@@ -863,6 +864,9 @@ template {
   .container {
     display: block;
     flex-wrap: nowrap;
+  }
+  .wrapper {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

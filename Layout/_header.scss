@@ -66,4 +66,35 @@ padding: 10px 32px;
 font-size: 0.8rem;
 //border:none;
 }
+.r-menu{
+  display: none;
+}
+
+
+@media screen and (max-width: 834px) {
   
+  .container{
+      display: block;
+      flex-wrap: nowrap;
+  }
+  .wrapper{
+      width: 100%;
+  }
+  .l-header{
+      display: flex;
+      justify-content:center;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+  }
+  .l-header-title{
+      margin:0px 0px 0px 30px;
+  }
+  .search-box{
+      margin:10px 55px 0px 40px;
+  }
+  .r-menu{
+    display: block;
+  }
+  
+}

@@ -18,30 +18,7 @@
     height: 2843px;
 }
 
-@media screen and (max-width: 834px) {
-    .l-sidebar {
-        display: none;
-    }
-    .container{
-        display: block;
-        flex-wrap: nowrap;
-    }
-    .wrapper{
-        width: 100%;
-    }
-    .l-header{
-        display: flex;
-        justify-content:center;
-        flex-direction: column;
-        align-items: center;
-    }
-    .l-header-title{
-        margin:0px 0px 0px 30px;
-    }
-    .search-box{
-        margin:10px 55px 0px 40px;
-    }
-}
+
 
 @media screen and (max-width: 375px) {
 

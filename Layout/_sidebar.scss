@@ -36,3 +36,9 @@
     line-height: 2.5;
     padding-left: 40px;
 }
+
+@media screen and (max-width: 834px) {
+    .l-sidebar {
+        display: none;
+    }
+}

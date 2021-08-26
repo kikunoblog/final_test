@@ -1,8 +1,9 @@
+@import "Foundation/reset";/*Foundationフォルダの中にあるreset.scssのimport*/
 @import "Layout/_header"; /*Layoutフォルダの中にあるheader.scssのimport*/
 @import "Layout/_footer";/*Layoutフォルダの中にあるfooter.scssのimport*/
 @import "Layout/_main";/*Layoutフォルダの中にあるmain.scssのimport*/
 @import "Layout/_sidebar";/*Layoutフォルダの中にあるsidebar.scssのimport*/
-@import "Foundation/reset";/*Foundationフォルダの中にあるreset.scssのimport*/
+
 
 
 .container{

@@ -255,3 +255,26 @@
   background-color: rgba(0, 0, 0, 0.445);
 }
 
+@media screen and (max-width: 834px) {
+  
+  .container{
+      display: block;
+      flex-wrap: nowrap;
+  }
+  .wrapper{
+      width: 100%;
+  }
+
+  .map-text::before {
+    width: 100%;
+
+   
+  }
+  .map-subtext{
+    width: 100%;
+    font-size: 0.87rem;
+    font-weight: bold;
+    line-height: 1.9rem;
+    padding-top: 0;
+  }
+}

@@ -1,4 +1,16 @@
 @charset "UTF-8";
+.container {
+  width: 100%;
+  height: 2993px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrapper {
+  width: 80%;
+  height: 2843px;
+}
+
 /*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -546,12 +558,20 @@ template {
   }
   .l-header-title {
     margin: 0px 0px 0px 30px;
+    position: relative;
   }
   .search-box {
     margin: 10px 55px 0px 40px;
   }
   .r-menu {
     display: block;
+    font-size: 25px;
+    color: #707070;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 30px;
   }
 }
 
@@ -569,39 +589,43 @@ template {
   background-image: url("../images/footer.png");
   display: flex;
   justify-content: center;
-  position: relative;
+  align-items: center;
 }
 
 .f-image-title1 {
   color: #fff;
-  display: block;
-  position: absolute;
-  top: 25%;
-  left: 40%;
   font-size: 1.2vw;
+  position: relative;
+  display: inline-block;
 }
 
-.f-image-title2 {
-  color: #fff;
+.f-image-title1::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 20px;
+  background-color: #fff;
   position: absolute;
-  top: 25%;
-  left: 48%;
-  font-size: 1.2vw;
+  top: -1.5px;
+  right: -15px;
 }
 
+/*.f-image-title2{
+    color: #fff;
+    //position: absolute;
+    //top:25%; left:48%;
+    font-size: 1.2vw;
+}
+*/
 .f-image-title3 {
   color: #fff;
-  position: absolute;
-  top: 25%;
-  left: 50%;
   font-size: 1.2vw;
+  padding-left: 30px;
+  padding-top: 3px;
 }
 
 .f-image-title4 {
   color: #fff;
-  position: absolute;
-  top: 65%;
-  left: 45.3%;
   font-size: 0.6vw;
 }
 
@@ -832,6 +856,26 @@ template {
   background-color: rgba(0, 0, 0, 0.445);
 }
 
+@media screen and (max-width: 834px) {
+  .container {
+    display: block;
+    flex-wrap: nowrap;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  .map-text::before {
+    width: 100%;
+  }
+  .map-subtext {
+    width: 100%;
+    font-size: 0.87rem;
+    font-weight: bold;
+    line-height: 1.9rem;
+    padding-top: 0;
+  }
+}
+
 /*Layoutフォルダの中にあるmain.scssのimport*/
 .l-sidebar {
   background-color: #F2EDE9;
@@ -881,15 +925,4 @@ template {
 }
 
 /*Layoutフォルダの中にあるsidebar.scssのimport*/
-.container {
-  width: 100%;
-  height: 2993px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.wrapper {
-  width: 80%;
-  height: 2843px;
-}
 /*# sourceMappingURL=style.css.map */

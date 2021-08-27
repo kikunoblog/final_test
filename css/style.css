@@ -602,12 +602,12 @@ template {
 .f-image-title1::after {
   content: "";
   display: inline-block;
-  width: 1px;
-  height: 20px;
+  width: 0.1vw;
+  height: 1.5vw;
   background-color: #fff;
   position: absolute;
-  top: -1.5px;
-  right: -15px;
+  top: -0.1vw;
+  right: -1.2vw;
 }
 
 /*.f-image-title2{
@@ -622,6 +622,7 @@ template {
   font-size: 1.2vw;
   padding-left: 30px;
   padding-top: 3px;
+  display: flex;
 }
 
 .f-image-title4 {

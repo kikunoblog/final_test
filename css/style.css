@@ -578,7 +578,6 @@ template {
 /*Layoutフォルダの中にあるheader.scssのimport*/
 .l-footer {
   width: 100%;
-  height: 150px;
   background-image: url("../images/footer.png");
 }
 
@@ -624,7 +623,8 @@ template {
 .f-image-title3 {
   color: #fff;
   font-size: 1.2vw;
-  padding-left: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .f-image-title4 {

@@ -884,13 +884,40 @@ template {
     width: 100%;
     height: 285px;
   }
-  .w2 {
-    height: 681px;
-    width: 356px;
+  .wrapper2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 758px;
+    padding: 38.5px 60px;
   }
   .w2 {
     height: 681px;
-    width: 356px;
+    width: 357px;
+  }
+  .w3 {
+    height: 681px;
+    width: 357px;
+  }
+  .map {
+    width: 100%;
+    height: 415px;
+    background-size: cover;
+    position: relative;
+  }
+  .map-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+    height: 415px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .map-title {
+    width: 100%;
+    height: 415px;
   }
 }
 

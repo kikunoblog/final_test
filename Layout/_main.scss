@@ -318,6 +318,9 @@
     padding-left: 50px;
     padding-right: 50px;
   }
+  .map-title {
+  font-size:3vw;
+  }
 }
 @media screen and (max-width: 375px) {
   .container {
@@ -344,15 +347,22 @@ display: block;
     height: 643px;
     width: 375px;
   }
+  .w2 a {
+    padding: 0vw;
+  }
   .w3 {
     height: 643px;
     width: 375px;
   }
+  .w3 a {
+    padding:0vw;
+  }
+
   .w-link {
     display: block;
    
-    //justify-content: space-between;
-    //flex-direction: column;
+    justify-content: space-between;
+    flex-direction: column;
   }
 
   .map {

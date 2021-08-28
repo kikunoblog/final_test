@@ -81,16 +81,18 @@
 @media screen and (max-width: 834px) {
   .f-image-title1 {
     font-size: 2.2vw;
-    position: relative;
+    //position: relative;
     display: inline-block;
   }
-
+.line{
+    margin:0vw 1vw; 
+}
   .line::after {
     width: 0.1vw;
     height: 2.2vw;
-    position: absolute;
-    top: 43%;
-    right: 49.6%;
+    //position: absolute;
+    //top: 43%;
+    //right: 49.6%;
   }
 
   .f-image-title3 {

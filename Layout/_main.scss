@@ -30,7 +30,7 @@
   height: 1446px;
   padding: 125.5px 111.5px;
 }
-.w2{
+.w2 {
   height: 1196px;
   width: 625px;
   margin-right: 40px;
@@ -41,7 +41,7 @@
 }
 
 .w2 a {
-  padding:1vw 0.5vw 0vw 1.5vw;
+  padding: 1vw 0.5vw 0vw 1.5vw;
 }
 
 .w3 {
@@ -55,11 +55,11 @@
   background-image: url(../images/main3.png);
 }
 
-.w3 a{
-  padding:1vw 0.5vw 0vw 1.5vw;
+.w3 a {
+  padding: 1vw 0.5vw 0vw 1.5vw;
 }
 
-.w-link{
+.w-link {
   display: block;
   height: 100%;
   //width: 625px;
@@ -100,14 +100,13 @@
   content: "";
   height: 4px;
   position: absolute;
-  top:100px;
-  left:3px;
+  top: 100px;
+  left: 3px;
   width: 50px;
   //position: absolute;
   //top: 116.5px;
   //width: 63px;
 }
-
 
 /*.m2-subtext {
   color: #fff;
@@ -175,7 +174,6 @@
   font-size: 16px;
 }
 
-
 .map {
   width: 100%;
   height: 649px;
@@ -183,7 +181,7 @@
   background-size: cover;
   position: relative;
 }
-.map-text{
+.map-text {
   //position: relative;
   display: flex;
   flex-direction: column;
@@ -209,18 +207,17 @@
   font-weight: bold;
   color: #fff;
   font-size: 2vw;
- 
 }
-.map-title::before{
+.map-title::before {
   background-color: #fff;
   content: "";
   height: 3px;
   position: absolute;
   top: 8vw;
   width: 63px;
-  }
+}
 
-.map-subtext{
+.map-subtext {
   z-index: 1;
   //position: absolute;
   //top: 0;
@@ -256,21 +253,18 @@
 }
 
 @media screen and (max-width: 834px) {
-  
-  .container{
-      display: block;
-      flex-wrap: nowrap;
+  .container {
+    display: block;
+    flex-wrap: nowrap;
   }
-  .wrapper{
-      width: 100%;
+  .wrapper {
+    width: 100%;
   }
 
   .map-text::before {
     width: 100%;
-
-   
   }
-  .map-subtext{
+  .map-subtext {
     width: 100%;
     font-size: 0.87rem;
     font-weight: bold;
@@ -282,5 +276,12 @@
     width: 100%;
     height: 285px;
   }
-
+  .w2 {
+    height: 681px;
+    width: 356px;
+  }
+  .w2 {
+    height: 681px;
+    width: 356px;
+  }
 }

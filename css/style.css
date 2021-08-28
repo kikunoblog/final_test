@@ -587,6 +587,7 @@ template {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .f-image2 {
@@ -602,15 +603,15 @@ template {
   display: inline-block;
 }
 
-.f-image-title1::after {
+.line::after {
   content: "";
   display: inline-block;
   width: 0.1vw;
   height: 1.5vw;
   background-color: #fff;
   position: absolute;
-  top: -0.1vw;
-  right: -1.2vw;
+  top: 42%;
+  right: 50%;
 }
 
 /*.f-image-title2{
@@ -629,6 +630,8 @@ template {
 
 .f-image-title4 {
   padding-bottom: 3vw;
+  color: #fff;
+  font-size: 0.8vw;
 }
 
 /*Layoutフォルダの中にあるfooter.scssのimport*/
@@ -811,6 +814,7 @@ template {
 
 .map-title {
   width: 100%;
+  position: relative;
   z-index: 1;
   font-size: 1.5vw;
   font-weight: bold;
@@ -823,7 +827,7 @@ template {
   content: "";
   height: 3px;
   position: absolute;
-  top: 208px;
+  top: 8vw;
   width: 63px;
 }
 

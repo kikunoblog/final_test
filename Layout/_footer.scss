@@ -18,7 +18,7 @@
     justify-content: center;
     align-items: center;
     //margin-bottom: 34px;
-   // position: relative;
+   position: relative;
 }
 
 .f-image2{
@@ -37,15 +37,15 @@
    display:inline-block;
 }
 
-.f-image-title1::after{
+.line::after{
     content:"";
     display:inline-block;
     width:0.1vw;
     height:1.5vw;
     background-color:#fff;
     position:absolute;
-    top:-0.1vw;
-    right:-1.2vw;
+    top:42%;
+    right:50%;
  }
 
 /*.f-image-title2{
@@ -76,6 +76,8 @@
     //font-size: 1.6vw;
     //padding:1vw 1vw 1vw 1vw;
     padding-bottom: 3vw;
+    color: #fff;
+    font-size: 0.8vw;
 
 }
 @media screen and (max-width: 834px) {

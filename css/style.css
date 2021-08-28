@@ -866,12 +866,15 @@ template {
   .container {
     display: block;
     flex-wrap: nowrap;
+    height: 1825px;
   }
   .wrapper {
     width: 100%;
+    height: 1825px;
   }
   .map-text::before {
     width: 100%;
+    height: 415px;
   }
   .map-subtext {
     width: 100%;
@@ -905,6 +908,10 @@ template {
     background-size: cover;
     position: relative;
   }
+  .map::before {
+    width: 100%;
+    height: 415px;
+  }
   .map-text {
     display: flex;
     flex-direction: column;
@@ -914,10 +921,6 @@ template {
     height: 415px;
     padding-left: 50px;
     padding-right: 50px;
-  }
-  .map-title {
-    width: 100%;
-    height: 415px;
   }
 }
 

@@ -1,44 +1,44 @@
 .l-sidebar {
-    background-color: #F2EDE9;
-    width:20%;
-    height: 2843px;
-    //float: right;
-   
-    z-index: 1000;
-    //margin-top: 0px;
+  background-color: #f2ede9;
+  width: 20%;
+  height: 2843px;
+  //float: right;
+
+  z-index: 1000;
+  //margin-top: 0px;
 }
-.s-top{
-    font-weight: bold;
-    font-size: 1.5vw;
-    color: #707070;
-    margin:70px 0px 10px 30px;
+.s-top {
+  font-weight: bold;
+  font-size: 1.5vw;
+  color: #707070;
+  margin: 70px 0px 10px 30px;
 }
-.s-second{
-    font-size: 1.3vw;
-    font-weight: bold;
-    color: #707070;
-    margin:80px 0px 20px 30px;
-    list-style: none;
+.s-second {
+  font-size: 1.3vw;
+  font-weight: bold;
+  color: #707070;
+  margin: 80px 0px 20px 30px;
+  list-style: none;
 }
-.s-second2{
-    font-size: 1.3vw;
-    font-weight: bold;
-    color: #707070;
-    margin:50px 0px 20px 30px;
-    list-style: none;
+.s-second2 {
+  font-size: 1.3vw;
+  font-weight: bold;
+  color: #707070;
+  margin: 50px 0px 20px 30px;
+  list-style: none;
 }
-.s-menu{
-    font-size: 1.2vw;
-    color: #707070;
+.s-menu {
+  font-size: 1.2vw;
+  color: #707070;
 }
-.s-list{
-    font-size: 1.2vw;
-    line-height: 2.5;
-    padding-left: 40px;
+.s-list {
+  font-size: 1.2vw;
+  line-height: 2.5;
+  padding-left: 40px;
 }
 
 @media screen and (max-width: 834px) {
-    .l-sidebar {
-        display: none;
-    }
+  .l-sidebar {
+    display: none;
+  }
 }

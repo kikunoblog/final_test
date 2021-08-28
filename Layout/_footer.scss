@@ -82,6 +82,36 @@
 }
 @media screen and (max-width: 834px) {
   
-  
+    .f-image-title1{
+        font-size: 2.2vw;
+        position:relative;
+       display:inline-block;
+    }
+    
+    .line::after{
+        width:0.1vw;
+        height:2.2vw;
+        position:absolute;
+        top:43%;
+        right:49.6%;
+     }
+    
+    .f-image-title3{
+        font-size: 2.2vw;
+        padding-left: 15px;
+        padding-right:15px;
+    }
+    .f-image-title4{
+        padding-bottom: 3vw;
+        color: #fff;
+        font-size: 1.8vw;
+    
+    }
 
   }
+  @media screen and (max-width: 375px) {
+
+
+
+
+}

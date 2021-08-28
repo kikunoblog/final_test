@@ -73,14 +73,6 @@ font-size: 0.8rem;
 
 @media screen and (max-width: 834px) {
   
-  .container{
-      display: block;
-      flex-wrap: nowrap;
-  }
-  .wrapper{
-      width: 100%;
-
-  }
 
   .l-header{
       display: flex;
@@ -93,6 +85,7 @@ font-size: 0.8rem;
       margin:0px 0px 0px 30px;
       position: relative;
   }
+
   .search-box{
       margin:10px 55px 0px 40px;
   }
@@ -108,3 +101,29 @@ font-size: 0.8rem;
   }
   
 }
+
+@media screen and (max-width: 375px) {
+
+  .l-header-title{
+    margin:0px 0px 0px 30px;
+    position: relative;
+    font-size: 35px;
+}
+.search-box{
+    margin:10px 90px 0px -5px;
+    width: 200px;
+}
+.r-menu{
+  display: block;
+  font-size: 22px;
+  color: #707070;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  position: absolute;
+  top :5px;
+  right :5px;
+}
+
+
+}
+

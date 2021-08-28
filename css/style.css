@@ -542,13 +542,6 @@ template {
 }
 
 @media screen and (max-width: 834px) {
-  .container {
-    display: block;
-    flex-wrap: nowrap;
-  }
-  .wrapper {
-    width: 100%;
-  }
   .l-header {
     display: flex;
     justify-content: center;
@@ -572,6 +565,28 @@ template {
     position: absolute;
     top: 10px;
     right: 30px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .l-header-title {
+    margin: 0px 0px 0px 30px;
+    position: relative;
+    font-size: 35px;
+  }
+  .search-box {
+    margin: 10px 90px 0px -5px;
+    width: 200px;
+  }
+  .r-menu {
+    display: block;
+    font-size: 22px;
+    color: #707070;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    right: 5px;
   }
 }
 
@@ -632,6 +647,31 @@ template {
   padding-bottom: 3vw;
   color: #fff;
   font-size: 0.8vw;
+}
+
+@media screen and (max-width: 834px) {
+  .f-image-title1 {
+    font-size: 2.2vw;
+    position: relative;
+    display: inline-block;
+  }
+  .line::after {
+    width: 0.1vw;
+    height: 2.2vw;
+    position: absolute;
+    top: 43%;
+    right: 49.6%;
+  }
+  .f-image-title3 {
+    font-size: 2.2vw;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .f-image-title4 {
+    padding-bottom: 3vw;
+    color: #fff;
+    font-size: 1.8vw;
+  }
 }
 
 /*Layoutフォルダの中にあるfooter.scssのimport*/
@@ -921,6 +961,18 @@ template {
     height: 415px;
     padding-left: 50px;
     padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    display: block;
+    flex-wrap: nowrap;
+    height: 2716px;
+  }
+  .wrapper {
+    width: 100%;
+    height: 2566px;
   }
 }
 

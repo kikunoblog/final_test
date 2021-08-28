@@ -607,10 +607,10 @@ template {
   content: "";
   display: inline-block;
   width: 0.1vw;
-  height: 1.5vw;
+  height: 1.3vw;
   background-color: #fff;
   position: absolute;
-  top: 42%;
+  top: 43%;
   right: 50%;
 }
 
@@ -638,7 +638,7 @@ template {
 .l-main {
   background-color: #fff;
   height: auto;
-  width: 100%;
+  width: auto;
   display: flex;
 }
 

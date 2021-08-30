@@ -335,6 +335,7 @@
   }
   .m-image {
     background-image: url("../images/iphone.png");
+    background-size: cover;
   }
 
   .m-image-title {
@@ -346,20 +347,24 @@
 display: block;
     width: 100%;
     height: 1373px;
-    padding: 43.5px 20px;
+    padding: 23.5px 10px;
   }
   .w2 {
     height: 643px;
-    width: 375px;
+    max-width: 335px;
     background-image: url(../images/i-sub1.png);
+    background-size: cover;
+    margin-bottom: 10px;
   }
   .w2 a {
     padding: 0vw;
   }
   .w3 {
     height: 643px;
-    width: 375px;
+    width: 335px;
     background-image: url(../images/i-sub2.png);
+    background-size: cover;
+    margin: 20px 0px;
   }
   .w3 a {
     padding:0vw;
@@ -382,6 +387,43 @@ display: block;
     left: 5vw;
     width: 50px;
   }
+  
+.t-box-a {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 0px 5px;
+}
+
+.t-box-b {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 212px;
+  margin: -40px 12px;
+  width: 375px;
+  position: relative;
+  overflow: hidden;
+}
+
+.t-box1,
+.t-box2,
+.t-box3,
+.t-box4 {
+  margin-bottom: 1vw;
+  padding: 10px 15px 20px;
+}
+
+.title1 {
+  font-weight: bold;
+  padding-top: 0.5vw;
+  font-size: 24px;
+}
+.title2 {
+  font-size: small;
+  padding-top: 1vw;
+  font-size: 16px;
+}
+
 
 
   .map {
@@ -395,10 +437,34 @@ display: block;
   .map-text {
     width: 100%;
     height: 691px;
+    padding: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
   .map-text::before {
-    width: 100%;
+    width: 60%;
     height: 691px;
   }
- 
+  .map-title {
+    font-size:7vw;
+    padding-bottom: 10vw;
+    position: relative;
+    }
+    .map-title::before {
+      background-color: #fff;
+      content: "";
+      height: 3px;
+      position: absolute;
+      top:15vw;
+      width: 63px;
+    }
+    .map-subtext {
+      width: 100%;
+      font-size: 0.87rem;
+      font-weight: bold;
+      line-height: 1.9rem;
+      padding-top: 0;
+    }
+
 }

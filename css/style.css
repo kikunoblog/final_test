@@ -675,6 +675,44 @@ template {
   }
 }
 
+@media screen and (max-width: 375px) {
+  .f-image2 {
+    height: 0px;
+  }
+  .f-image {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    padding-top: 10vw;
+  }
+  .f-image-title1 {
+    font-size: 5.3vw;
+    display: inline-block;
+  }
+  .line {
+    margin: 0vw 3.2vw;
+  }
+  .line::after {
+    width: 0.6vw;
+    height: 5.4vw;
+    position: absolute;
+    top: 25%;
+  }
+  .f-image-title3 {
+    font-size: 5.3vw;
+    padding-left: 15px;
+    padding-right: 22px;
+  }
+  .f-image-title4 {
+    padding-bottom: 24vw;
+    color: #fff;
+    font-size: 2.8vw;
+  }
+}
+
 /*Layoutフォルダの中にあるfooter.scssのimport*/
 .l-main {
   background-color: #fff;
@@ -1063,6 +1101,8 @@ template {
   .map {
     width: 100%;
     height: 691px;
+    background-image: url(../images/i-map.png);
+    background-size: cover;
   }
   .map::before {
     width: 100%;
@@ -1077,8 +1117,8 @@ template {
     justify-content: space-around;
   }
   .map-text::before {
-    width: 60%;
-    height: 691px;
+    width: 100%;
+    height: 415px;
   }
   .map-title {
     font-size: 7vw;

@@ -98,12 +98,18 @@
 }
 
 @media screen and (max-width: 375px) {
+  .l-header{
+      height: 217px;
+  }
   .l-header-title {
     margin: 0px;
     //position: relative;
     font-size: 35px;
   }
-
+  .m-image{
+    vertical-align: bottom;
+    margin-top:0px;
+}
   .search-box {
     margin: 10px 90px 0px -5px;
     width: 200px;

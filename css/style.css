@@ -569,9 +569,16 @@ template {
 }
 
 @media screen and (max-width: 375px) {
+  .l-header {
+    height: 217px;
+  }
   .l-header-title {
     margin: 0px;
     font-size: 35px;
+  }
+  .m-image {
+    vertical-align: bottom;
+    margin-top: 0px;
   }
   .search-box {
     margin: 10px 90px 0px -5px;
@@ -678,6 +685,7 @@ template {
 @media screen and (max-width: 375px) {
   .f-image2 {
     height: 0px;
+    position: relative;
   }
   .f-image {
     width: 100%;
@@ -707,9 +715,10 @@ template {
     padding-right: 22px;
   }
   .f-image-title4 {
-    padding-bottom: 24vw;
     color: #fff;
     font-size: 2.8vw;
+    position: absolute;
+    bottom: 8vw;
   }
 }
 

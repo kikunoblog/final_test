@@ -278,6 +278,7 @@
   .m-image {
     width: 100%;
     height: 285px;
+    background-image: url("../images/ipad.png");
   }
   .wrapper2 {
     display: flex;
@@ -332,6 +333,10 @@
     width: 100%;
     height: 2566px;
   }
+  .m-image {
+    background-image: url("../images/iphone.png");
+  }
+
   .m-image-title {
     font-size: 35px;
     margin-left: 20px;
@@ -340,12 +345,13 @@
   .wrapper2 {
 display: block;
     width: 100%;
-    height: 1286px;
+    height: 1373px;
     padding: 43.5px 20px;
   }
   .w2 {
     height: 643px;
     width: 375px;
+    background-image: url(../images/i-sub1.png);
   }
   .w2 a {
     padding: 0vw;
@@ -353,17 +359,30 @@ display: block;
   .w3 {
     height: 643px;
     width: 375px;
+    background-image: url(../images/i-sub2.png);
   }
   .w3 a {
     padding:0vw;
   }
 
   .w-link {
-    display: block;
-   
+    display: flex;
     justify-content: space-between;
     flex-direction: column;
   }
+  .m2-text {
+    font-size: 2rem;
+    padding: 5vw 0vw 0vw 5vw;
+    position: relative;
+
+  }
+  .m2-text::before {
+    position: absolute;
+    top: 100px;
+    left: 5vw;
+    width: 50px;
+  }
+
 
   .map {
     width: 100%;
@@ -374,6 +393,10 @@ display: block;
     height: 691px;
   }
   .map-text {
+    width: 100%;
+    height: 691px;
+  }
+  .map-text::before {
     width: 100%;
     height: 691px;
   }

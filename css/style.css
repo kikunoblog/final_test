@@ -1026,7 +1026,7 @@ template {
   }
   .m-image {
     background-image: url("../images/iphone.png");
-    background-size: cover;
+    background-position: bottom center;
   }
   .m-image-title {
     font-size: 35px;

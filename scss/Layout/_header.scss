@@ -50,7 +50,7 @@
   width: 100%;
 }
 
-#h-button {
+#header-button {
   width: 90px;
   height: 40px;
   position: absolute;
@@ -64,11 +64,10 @@
   font-size: 0.8rem;
   //border:none;
 }
-.r-menu {
-  display: none;
-}
 
-@media screen and (max-width: 834px) {
+
+@media only screen and (min-width: 600px) and (max-width: 834px) {
+  //（ここにタブレット用スタイルを記述）
   .l-header {
     display: flex;
     justify-content: center;
@@ -84,7 +83,7 @@
   .search-box {
     margin: 10px 55px 0px 40px;
   }
-  .r-menu {
+  .sidebar-menu {
     display: block;
     font-size: 25px;
     color: #707070;
@@ -106,7 +105,7 @@
     //position: relative;
     font-size: 35px;
   }
-  .m-image{
+  .main-image{
     vertical-align: bottom;
     margin-top:0px;
 }
@@ -114,7 +113,7 @@
     margin: 10px 90px 0px -5px;
     width: 200px;
   }
-  .r-menu {
+  .sidebar-menu {
     display: block;
     font-size: 22px;
     color: #707070;
@@ -125,7 +124,7 @@
     top: 5px;
     right: 5px;
   }
-  #h-button {
+  #header-button {
     font-weight: bold;
   }
 }

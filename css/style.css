@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.container {
+.l-container {
   width: 100%;
   height: 2993px;
   display: flex;
@@ -523,7 +523,7 @@ template {
   width: 100%;
 }
 
-#h-button {
+#header-button {
   width: 90px;
   height: 40px;
   position: absolute;
@@ -537,11 +537,7 @@ template {
   font-size: 0.8rem;
 }
 
-.r-menu {
-  display: none;
-}
-
-@media screen and (max-width: 834px) {
+@media only screen and (min-width: 600px) and (max-width: 834px) {
   .l-header {
     display: flex;
     justify-content: center;
@@ -556,7 +552,7 @@ template {
   .search-box {
     margin: 10px 55px 0px 40px;
   }
-  .r-menu {
+  .sidebar-menu {
     display: block;
     font-size: 25px;
     color: #707070;
@@ -576,7 +572,7 @@ template {
     margin: 0px;
     font-size: 35px;
   }
-  .m-image {
+  .main-image {
     vertical-align: bottom;
     margin-top: 0px;
   }
@@ -584,7 +580,7 @@ template {
     margin: 10px 90px 0px -5px;
     width: 200px;
   }
-  .r-menu {
+  .sidebar-menu {
     display: block;
     font-size: 22px;
     color: #707070;
@@ -594,7 +590,7 @@ template {
     top: 5px;
     right: 5px;
   }
-  #h-button {
+  #header-button {
     font-weight: bold;
   }
 }
@@ -605,7 +601,7 @@ template {
   background-image: url("../images/footer.png");
 }
 
-.f-image {
+.footer-image {
   width: 100%;
   height: 150px;
   display: flex;
@@ -614,20 +610,20 @@ template {
   position: relative;
 }
 
-.f-image2 {
+.footer-image2 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.f-image-title1 {
+.footer-image-text-title1 {
   color: #fff;
   font-size: 1.2vw;
   position: relative;
   display: inline-block;
 }
 
-.line::after {
+.footer-image-line::after {
   content: "";
   display: inline-block;
   width: 0.1vw;
@@ -638,44 +634,44 @@ template {
   right: 50%;
 }
 
-/*.f-image-title2{
+/*.footer-image-text-title2{
     color: #fff;
     //position: absolute;
     //top:25%; left:48%;
     font-size: 1.2vw;
 }
 */
-.f-image-title3 {
+.footer-image-title3 {
   color: #fff;
   font-size: 1.2vw;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.f-image-title4 {
+.footer-image-title4 {
   padding-bottom: 3vw;
   color: #fff;
   font-size: 0.8vw;
 }
 
 @media screen and (max-width: 834px) {
-  .f-image-title1 {
+  .footer-image-text-title1 {
     font-size: 2.2vw;
     display: inline-block;
   }
-  .line {
+  .footer-image-line {
     margin: 0vw 1vw;
   }
-  .line::after {
+  .footer-image-line::after {
     width: 0.1vw;
     height: 2.2vw;
   }
-  .f-image-title3 {
+  .footer-image-title3 {
     font-size: 2.2vw;
     padding-left: 15px;
     padding-right: 15px;
   }
-  .f-image-title4 {
+  .footer-image-title4 {
     padding-bottom: 3vw;
     color: #fff;
     font-size: 1.8vw;
@@ -683,11 +679,11 @@ template {
 }
 
 @media screen and (max-width: 375px) {
-  .f-image2 {
+  .footer-image2 {
     height: 0px;
     position: relative;
   }
-  .f-image {
+  .footer-image {
     width: 100%;
     height: 150px;
     display: flex;
@@ -696,25 +692,25 @@ template {
     position: relative;
     padding-top: 10vw;
   }
-  .f-image-title1 {
+  .footer-image-text-title1 {
     font-size: 5.3vw;
     display: inline-block;
   }
-  .line {
+  .footer-image-line {
     margin: 0vw 3.2vw;
   }
-  .line::after {
+  .footer-image-line::after {
     width: 0.6vw;
     height: 5.4vw;
     position: absolute;
     top: 25%;
   }
-  .f-image-title3 {
+  .footer-image-title3 {
     font-size: 5.3vw;
     padding-left: 15px;
     padding-right: 22px;
   }
-  .f-image-title4 {
+  .footer-image-title4 {
     color: #fff;
     font-size: 2.8vw;
     position: absolute;
@@ -730,7 +726,7 @@ template {
   display: flex;
 }
 
-.m-image {
+.main-image {
   width: 100%;
   height: 530px;
   object-fit: cover;
@@ -739,7 +735,7 @@ template {
   background-size: cover;
 }
 
-.m-image-title {
+.main-image-title {
   align-self: center;
   color: #fff;
   font-family: "M+ 1m";
@@ -748,7 +744,7 @@ template {
   font-weight: bold;
 }
 
-.wrapper2 {
+.two-image-wrapper {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -756,7 +752,7 @@ template {
   padding: 125.5px 111.5px;
 }
 
-.w2 {
+.left-wrapper {
   height: 1196px;
   width: 625px;
   margin-right: 40px;
@@ -764,11 +760,11 @@ template {
   background-image: url(../images/main2.png);
 }
 
-.w2 a {
+.left-wrapper a {
   padding: 1vw 0.5vw 0vw 1.5vw;
 }
 
-.w3 {
+.right-wrapper {
   margin-left: 40px;
   height: 1196px;
   width: 625px;
@@ -776,11 +772,11 @@ template {
   background-image: url(../images/main3.png);
 }
 
-.w3 a {
+.right-wrapper a {
   padding: 1vw 0.5vw 0vw 1.5vw;
 }
 
-.w-link {
+.wrapper-link {
   display: block;
   height: 100%;
   display: flex;
@@ -802,7 +798,7 @@ template {
   margin: 5vw 0px 0px 20px;
 }
 */
-.m2-text {
+.wrapper-text {
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 4rem;
@@ -810,7 +806,7 @@ template {
   position: relative;
 }
 
-.m2-text::before {
+.wrapper-text::before {
   background-color: #fff;
   content: "";
   height: 4px;
@@ -827,40 +823,32 @@ template {
   //margin-top: -39vw;
   //margin-left: 1vw;
 }*/
-.m3-text {
+/*.m3-text {
+  //position: absolute;
+  //top: 9%;
+  //left: 8%;
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 3rem;
   font-weight: bold;
 }
-
 .m3-subtext {
   color: #fff;
+  //position: absolute;
+  //top: 15%;
+  //left: 8%;
   font-family: "Roboto", sans-serif;
   font-size: 3rem;
 }
-
-.t-box-a {
+*/
+.text-box-a {
   width: 97%;
   margin-bottom: 15px;
   padding: 0px 5px;
 }
 
-.t-box-b {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  bottom: 212px;
-  margin: -40px 12px;
-  width: 375px;
-  position: relative;
-  overflow: hidden;
-}
-
-.t-box1,
-.t-box2,
-.t-box3,
-.t-box4 {
+.text-box1,
+.text-box2 {
   color: #2c2c2f;
   background-color: rgba(255, 255, 255, 0.8);
   word-wrap: break-word;
@@ -869,13 +857,13 @@ template {
   padding: 10px 15px 20px;
 }
 
-.title1 {
+.text-title1 {
   font-weight: bold;
   padding-top: 0.5vw;
   font-size: 24px;
 }
 
-.title2 {
+.text-title2 {
   font-size: small;
   padding-top: 1vw;
   font-size: 16px;
@@ -950,8 +938,8 @@ template {
   background-color: rgba(0, 0, 0, 0.445);
 }
 
-@media screen and (max-width: 834px) {
-  .container {
+@media only screen and (min-width: 600px) and (max-width: 834px) {
+  .l-container {
     display: block;
     flex-wrap: nowrap;
     height: 1825px;
@@ -971,7 +959,7 @@ template {
     line-height: 1.9rem;
     padding-top: 0;
   }
-  .m-image {
+  .main-image {
     width: 100%;
     height: 285px;
     background-image: url("../images/ipad.png");
@@ -983,11 +971,11 @@ template {
     height: 758px;
     padding: 38.5px 60px;
   }
-  .w2 {
+  .wrapper {
     height: 681px;
     width: 357px;
   }
-  .w3 {
+  .right-wrapper {
     height: 681px;
     width: 357px;
   }
@@ -1017,70 +1005,70 @@ template {
 }
 
 @media screen and (max-width: 375px) {
-  .container {
+  .l-container {
     height: 2716px;
   }
   .wrapper {
     width: 100%;
     height: 2566px;
   }
-  .m-image {
+  .main-image {
     background-image: url("../images/iphone2.png");
     background-position: bottom center;
   }
-  .m-image-title {
+  .main-image-title {
     font-size: 35px;
     margin-left: 20px;
     font-weight: bold;
   }
-  .wrapper2 {
+  .two-image-wrapper {
     display: block;
     width: 100%;
     height: 1373px;
     padding: 23.5px 10px;
   }
-  .w2 {
+  .left-wrapper {
     height: 643px;
     max-width: 335px;
     background-image: url(../images/i-sub1.png);
     background-size: cover;
     margin-bottom: 10px;
   }
-  .w2 a {
+  .left-wrapper a {
     padding: 0vw;
   }
-  .w3 {
+  .right-wrapper {
     height: 643px;
     width: 335px;
     background-image: url(../images/i-sub2.png);
     background-size: cover;
     margin: 20px 0px;
   }
-  .w3 a {
+  .right-wrapper a {
     padding: 0vw;
   }
-  .w-link {
+  .wrapper-link {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
   }
-  .m2-text {
+  .wrapper-text {
     font-size: 2rem;
     padding: 5vw 0vw 0vw 5vw;
     position: relative;
   }
-  .m2-text::before {
+  .wrapper-text::before {
     position: absolute;
     top: 100px;
     left: 5vw;
     width: 50px;
   }
-  .t-box-a {
+  .text-box-a {
     width: 100%;
     margin-bottom: 15px;
     padding: 0px 5px;
   }
-  .t-box-b {
+  /*.t-box-b {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -1090,19 +1078,18 @@ template {
     position: relative;
     overflow: hidden;
   }
-  .t-box1,
-  .t-box2,
-  .t-box3,
-  .t-box4 {
+*/
+  .text-box1,
+  .text-box2 {
     margin-bottom: 1vw;
     padding: 10px 15px 20px;
   }
-  .title1 {
+  .text-title1 {
     font-weight: bold;
     padding-top: 0.5vw;
     font-size: 24px;
   }
-  .title2 {
+  .text-title2 {
     font-size: small;
     padding-top: 1vw;
     font-size: 16px;
@@ -1159,14 +1146,14 @@ template {
   z-index: 1000;
 }
 
-.s-top {
+.sidebar-top {
   font-weight: bold;
   font-size: 1.5vw;
   color: #707070;
   margin: 70px 0px 10px 30px;
 }
 
-.s-second {
+.sidebar-second {
   font-size: 1.3vw;
   font-weight: bold;
   color: #707070;
@@ -1174,7 +1161,7 @@ template {
   list-style: none;
 }
 
-.s-second2 {
+.sidebar-second2 {
   font-size: 1.3vw;
   font-weight: bold;
   color: #707070;
@@ -1182,18 +1169,18 @@ template {
   list-style: none;
 }
 
-.s-menu {
+.sidebar-menu {
   font-size: 1.2vw;
   color: #707070;
 }
 
-.s-list {
+.sidebar-list {
   font-size: 1.2vw;
   line-height: 2.5;
   padding-left: 40px;
 }
 
-@media screen and (max-width: 834px) {
+@media only screen and (min-width: 600px) and (max-width: 834px) {
   .l-sidebar {
     display: none;
   }

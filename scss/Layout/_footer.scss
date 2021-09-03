@@ -6,7 +6,7 @@
   //justify-content: center;
   //margin-bottom: 34px;
 }
-.f-image {
+.footer-image {
   width: 100%;
   height: 150px;
   //object-fit: cover;
@@ -21,13 +21,13 @@
   position: relative;
 }
 
-.f-image2 {
+.footer-image2 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.f-image-title1 {
+.footer-image-text-title1 {
   color: #fff;
   //display: block;
   //position: absolute;
@@ -37,7 +37,7 @@
   display: inline-block;
 }
 
-.line::after {
+.footer-image-line::after {
   content: "";
   display: inline-block;
   width: 0.1vw;
@@ -48,7 +48,7 @@
   right: 50%;
 }
 
-/*.f-image-title2{
+/*.footer-image-text-title2{
     color: #fff;
     //position: absolute;
     //top:25%; left:48%;
@@ -56,7 +56,7 @@
 }
 */
 
-.f-image-title3 {
+.footer-image-title3 {
   color: #fff;
   //position: absolute;
   //top:-1px;
@@ -67,7 +67,7 @@
   //position: relative;
   //display: flex;
 }
-.f-image-title4 {
+.footer-image-title4 {
   //color: #fff;
   //position: absolute;
   //top:10px;
@@ -79,15 +79,15 @@
   font-size: 0.8vw;
 }
 @media screen and (max-width: 834px) {
-  .f-image-title1 {
+  .footer-image-text-title1 {
     font-size: 2.2vw;
     //position: relative;
     display: inline-block;
   }
-  .line {
+  .footer-image-line {
     margin: 0vw 1vw;
   }
-  .line::after {
+  .footer-image-line::after {
     width: 0.1vw;
     height: 2.2vw;
     //position: absolute;
@@ -95,23 +95,23 @@
     //right: 49.6%;
   }
 
-  .f-image-title3 {
+  .footer-image-title3 {
     font-size: 2.2vw;
     padding-left: 15px;
     padding-right: 15px;
   }
-  .f-image-title4 {
+  .footer-image-title4 {
     padding-bottom: 3vw;
     color: #fff;
     font-size: 1.8vw;
   }
 }
 @media screen and (max-width: 375px) {
-  .f-image2 {
+  .footer-image2 {
     height: 0px;
     position: relative;
   }
-  .f-image {
+  .footer-image {
     width: 100%;
     height: 150px;
     display: flex;
@@ -120,27 +120,27 @@
     position: relative;
     padding-top: 10vw;
   }
-  .f-image-title1 {
+  .footer-image-text-title1 {
     font-size: 5.3vw;
     //position: relative;
     display: inline-block;
   }
-  .line {
+  .footer-image-line {
     margin: 0vw 3.2vw;
   }
-  .line::after {
+  .footer-image-line::after {
     width: 0.6vw;
     height: 5.4vw;
     position: absolute;
     top: 25%;
   }
 
-  .f-image-title3 {
+  .footer-image-title3 {
     font-size: 5.3vw;
     padding-left: 15px;
     padding-right: 22px;
   }
-  .f-image-title4 {
+  .footer-image-title4 {
     //padding-bottom: 2vw;
     color: #fff;
     font-size: 2.8vw;

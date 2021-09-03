@@ -5,7 +5,7 @@
   display: flex;
 }
 
-.m-image {
+.main-image {
   width: 100%;
   height: 530px;
   object-fit: cover;
@@ -13,7 +13,7 @@
   background-image: url("../images/mainvisual-pc.jpg");
   background-size: cover;
 }
-.m-image-title {
+.main-image-title {
   align-self: center;
   color: #fff;
   font-family: "M+ 1m";
@@ -21,7 +21,7 @@
   margin-left: 46px;
   font-weight: bold;
 }
-.wrapper2 {
+.two-image-wrapper {
   display: flex;
   justify-content: center;
   //margin: 80px auto;
@@ -30,7 +30,7 @@
   height: 1446px;
   padding: 125.5px 111.5px;
 }
-.w2 {
+.left-wrapper {
   height: 1196px;
   width: 625px;
   margin-right: 40px;
@@ -40,11 +40,11 @@
   background-image: url(../images/main2.png);
 }
 
-.w2 a {
+.left-wrapper a {
   padding: 1vw 0.5vw 0vw 1.5vw;
 }
 
-.w3 {
+.right-wrapper {
   margin-left: 40px;
   //padding:1vw 0.5vw 0vw;
   height: 1196px;
@@ -55,11 +55,11 @@
   background-image: url(../images/main3.png);
 }
 
-.w3 a {
+.right-wrapper a {
   padding: 1vw 0.5vw 0vw 1.5vw;
 }
 
-.w-link {
+.wrapper-link {
   display: block;
   height: 100%;
   //width: 625px;
@@ -85,7 +85,7 @@
   margin: 5vw 0px 0px 20px;
 }
 */
-.m2-text {
+.wrapper-text {
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 4rem;
@@ -95,7 +95,7 @@
   position: relative;
   //top:5px; left:5px;
 }
-.m2-text::before {
+.wrapper-text::before {
   background-color: #fff;
   content: "";
   height: 4px;
@@ -116,7 +116,7 @@
   //margin-left: 1vw;
 }*/
 
-.m3-text {
+/*.m3-text {
   //position: absolute;
   //top: 9%;
   //left: 8%;
@@ -133,28 +133,17 @@
   font-family: "Roboto", sans-serif;
   font-size: 3rem;
 }
-
-.t-box-a {
+*/
+.text-box-a {
   width: 97%;
   margin-bottom: 15px;
   padding: 0px 5px;
 }
 
-.t-box-b {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  bottom: 212px;
-  margin: -40px 12px;
-  width: 375px;
-  position: relative;
-  overflow: hidden;
-}
 
-.t-box1,
-.t-box2,
-.t-box3,
-.t-box4 {
+.text-box1,
+.text-box2
+{
   color: #2c2c2f;
   background-color: rgba(255, 255, 255, 0.8);
   word-wrap: break-word;
@@ -163,12 +152,12 @@
   padding: 10px 15px 20px;
 }
 
-.title1 {
+.text-title1 {
   font-weight: bold;
   padding-top: 0.5vw;
   font-size: 24px;
 }
-.title2 {
+.text-title2 {
   font-size: small;
   padding-top: 1vw;
   font-size: 16px;
@@ -251,9 +240,9 @@
   left: 0;
   background-color: rgba(0, 0, 0, 0.445);
 }
-
-@media screen and (max-width: 834px) {
-  .container {
+@media only screen and (min-width: 600px) and (max-width: 834px) {
+  //（ここにタブレット用スタイルを記述）
+  .l-container {
     display: block;
     flex-wrap: nowrap;
     height: 1825px;
@@ -275,7 +264,7 @@
     padding-top: 0;
   }
 
-  .m-image {
+  .main-image {
     width: 100%;
     height: 285px;
     background-image: url("../images/ipad.png");
@@ -289,11 +278,11 @@
     height: 758px;
     padding: 38.5px 60px;
   }
-  .w2 {
+  .wrapper {
     height: 681px;
     width: 357px;
   }
-  .w3 {
+  .right-wrapper {
     height: 681px;
     width: 357px;
   }
@@ -324,7 +313,7 @@
   }
 }
 @media screen and (max-width: 375px) {
-  .container {
+  .l-container {
     //display: block;
     //flex-wrap: nowrap;
     height: 2716px;
@@ -333,68 +322,68 @@
     width: 100%;
     height: 2566px;
   }
-  .m-image {
+  .main-image {
     background-image: url("../images/iphone2.png");
     background-position: bottom center; 
 
   }
 
-  .m-image-title {
+  .main-image-title {
     font-size: 35px;
     margin-left: 20px;
     font-weight: bold;
   }
-  .wrapper2 {
+  .two-image-wrapper {
     display: block;
     width: 100%;
     height: 1373px;
     padding: 23.5px 10px;
   }
-  .w2 {
+  .left-wrapper {
     height: 643px;
     max-width: 335px;
     background-image: url(../images/i-sub1.png);
     background-size: cover;
     margin-bottom: 10px;
   }
-  .w2 a {
+  .left-wrapper a {
     padding: 0vw;
   }
-  .w3 {
+  .right-wrapper {
     height: 643px;
     width: 335px;
     background-image: url(../images/i-sub2.png);
     background-size: cover;
     margin: 20px 0px;
   }
-  .w3 a {
+  .right-wrapper a {
     padding: 0vw;
   }
 
-  .w-link {
+  .wrapper-link {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
   }
-  .m2-text {
+  .wrapper-text {
     font-size: 2rem;
     padding: 5vw 0vw 0vw 5vw;
     position: relative;
   }
-  .m2-text::before {
+  .wrapper-text::before {
     position: absolute;
     top: 100px;
     left: 5vw;
     width: 50px;
   }
 
-  .t-box-a {
+  .text-box-a {
     width: 100%;
     margin-bottom: 15px;
     padding: 0px 5px;
   }
 
-  .t-box-b {
+  /*.t-box-b {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -404,21 +393,19 @@
     position: relative;
     overflow: hidden;
   }
-
-  .t-box1,
-  .t-box2,
-  .t-box3,
-  .t-box4 {
+*/
+  .text-box1,
+  .text-box2{
     margin-bottom: 1vw;
     padding: 10px 15px 20px;
   }
 
-  .title1 {
+  .text-title1 {
     font-weight: bold;
     padding-top: 0.5vw;
     font-size: 24px;
   }
-  .title2 {
+  .text-title2 {
     font-size: small;
     padding-top: 1vw;
     font-size: 16px;

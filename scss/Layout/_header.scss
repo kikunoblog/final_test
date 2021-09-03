@@ -1,72 +1,35 @@
 .l-header {
-  background-color: #fff7ef;
-
-  width: 100%;
-  height: 218px;
-  display: flex;
-  justify-content: space-between;
-  //flex-wrap: wrap;
-  //position: absolute;
-  //position: fixed;
+  height: 217px;
 }
-
 .l-header-title {
-  font-size: 40px;
+  margin: 0px;
+  //position: relative;
+  font-size: 35px;
+}
+.main-image {
+  vertical-align: bottom;
+  margin-top: 0px;
+}
+.search-box {
+  margin: 10px 90px 0px -5px;
+  width: 200px;
+}
+.sidebar-menu {
+  display: block;
+  font-size: 22px;
   color: #707070;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
-  margin: 77px 0px 0px 30px;
-  //position: relative;
-  //top:60px;
-  //left:40px;
-  //position: fixed;
-}
-.search-box {
-  display: inline-block; /* なくても大丈夫だけど、念の為 */
-  position: relative; /* 基準値とする */
-  border: solid 1px #999;
-  border-radius: 4px;
-  background-color: #fff;
-  height: 40px;
-  margin: 85px 105px 0px 0px;
-  padding-left: 10px;
-  width: 300px;
-  //position: fixed;
-  //position: absolute;
-}
-.search-box::before {
-  content: ""; /* 疑似要素に必須 */
-  width: 16px; /* アイコンの横幅 */
-  height: 16px; /* アイコンの高さ */
-  background: url(../images/glass.png) no-repeat center center / auto 100%; /* 背景にアイコン画像を配置 */
-  display: inline-block; /* 高さを持たせるためにインラインブロック要素にする */
-  position: absolute; /* 相対位置に指定 */
-  top: 12px; /* アイコンの位置 */
-  left: 9px; /* アイコンの位置*/
-}
-.search-box input {
-  padding: 10px 15px 0px; /* アイコンを設置するため左の余白を多めに指定*/
-  width: 100%;
-}
-
-#header-button {
-  width: 90px;
-  height: 40px;
   position: absolute;
-  right: -100px;
-  top: -1px;
-  border-radius: 4px;
-  background: linear-gradient(#f2ede9, #ded8d3);
-  border: 1px solid #999;
-  color: #707070;
-  padding: 10px 32px;
-  font-size: 0.8rem;
-  //border:none;
+  top: 5px;
+  right: 5px;
+}
+#header-button {
+  font-weight: bold;
 }
 
-
-@media only screen and (min-width: 600px) and (max-width: 834px) {
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
   //（ここにタブレット用スタイルを記述）
   .l-header {
     display: flex;
@@ -95,36 +58,71 @@
     right: 30px;
   }
 }
+@media only screen and (min-width: 1025px) and (max-width: 1920px) {
+  .l-header {
+    background-color: #fff7ef;
 
-@media screen and (max-width: 375px) {
-  .l-header{
-      height: 217px;
+    width: 100%;
+    height: 218px;
+    display: flex;
+    justify-content: space-between;
+    //flex-wrap: wrap;
+    //position: absolute;
+    //position: fixed;
   }
+
   .l-header-title {
-    margin: 0px;
-    //position: relative;
-    font-size: 35px;
-  }
-  .main-image{
-    vertical-align: bottom;
-    margin-top:0px;
-}
-  .search-box {
-    margin: 10px 90px 0px -5px;
-    width: 200px;
-  }
-  .sidebar-menu {
-    display: block;
-    font-size: 22px;
+    font-size: 40px;
     color: #707070;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: bold;
-    position: absolute;
-    top: 5px;
-    right: 5px;
+    margin: 77px 0px 0px 30px;
+    //position: relative;
+    //top:60px;
+    //left:40px;
+    //position: fixed;
   }
+  .search-box {
+    display: inline-block; /* なくても大丈夫だけど、念の為 */
+    position: relative; /* 基準値とする */
+    border: solid 1px #999;
+    border-radius: 4px;
+    background-color: #fff;
+    height: 40px;
+    margin: 85px 105px 0px 0px;
+    padding-left: 10px;
+    width: 300px;
+    //position: fixed;
+    //position: absolute;
+  }
+  .search-box::before {
+    content: ""; /* 疑似要素に必須 */
+    width: 16px; /* アイコンの横幅 */
+    height: 16px; /* アイコンの高さ */
+    background: url(../images/glass.png) no-repeat center center / auto 100%; /* 背景にアイコン画像を配置 */
+    display: inline-block; /* 高さを持たせるためにインラインブロック要素にする */
+    position: absolute; /* 相対位置に指定 */
+    top: 12px; /* アイコンの位置 */
+    left: 9px; /* アイコンの位置*/
+  }
+  .search-box input {
+    padding: 10px 15px 0px; /* アイコンを設置するため左の余白を多めに指定*/
+    width: 100%;
+  }
+
   #header-button {
-    font-weight: bold;
+    width: 90px;
+    height: 40px;
+    position: absolute;
+    right: -100px;
+    top: -1px;
+    border-radius: 4px;
+    background: linear-gradient(#f2ede9, #ded8d3);
+    border: 1px solid #999;
+    color: #707070;
+    padding: 10px 32px;
+    font-size: 0.8rem;
+    //border:none;
   }
 }

@@ -1,45 +1,46 @@
-.l-sidebar {
-  background-color: #f2ede9;
-  width: 20%;
-  height: 2843px;
-  //float: right;
-
-  z-index: 1000;
-  //margin-top: 0px;
-}
-.sidebar-top {
-  font-weight: bold;
-  font-size: 1.5vw;
-  color: #707070;
-  margin: 70px 0px 10px 30px;
-}
-.sidebar-second {
-  font-size: 1.3vw;
-  font-weight: bold;
-  color: #707070;
-  margin: 80px 0px 20px 30px;
-  list-style: none;
-}
-.sidebar-second2 {
-  font-size: 1.3vw;
-  font-weight: bold;
-  color: #707070;
-  margin: 50px 0px 20px 30px;
-  list-style: none;
-}
-.sidebar-menu {
-  font-size: 1.2vw;
-  color: #707070;
-}
-.sidebar-list {
-  font-size: 1.2vw;
-  line-height: 2.5;
-  padding-left: 40px;
-}
-
-@media only screen and (min-width: 600px) and (max-width: 834px) {
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
   //（ここにタブレット用スタイルを記述）
   .l-sidebar {
     display: none;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1920px) {
+  .l-sidebar {
+    background-color: #f2ede9;
+    width: 20%;
+    height: 2843px;
+    //float: right;
+
+    z-index: 1000;
+    //margin-top: 0px;
+  }
+  .sidebar-top {
+    font-weight: bold;
+    font-size: 1.5vw;
+    color: #707070;
+    margin: 70px 0px 10px 30px;
+  }
+  .sidebar-second {
+    font-size: 1.3vw;
+    font-weight: bold;
+    color: #707070;
+    margin: 80px 0px 20px 30px;
+    list-style: none;
+  }
+  .sidebar-second2 {
+    font-size: 1.3vw;
+    font-weight: bold;
+    color: #707070;
+    margin: 50px 0px 20px 30px;
+    list-style: none;
+  }
+  .sidebar-menu {
+    font-size: 1.2vw;
+    color: #707070;
+  }
+  .sidebar-list {
+    font-size: 1.2vw;
+    line-height: 2.5;
+    padding-left: 40px;
   }
 }

@@ -469,75 +469,40 @@ template {
 
 /*Foundationフォルダの中にあるreset.scssのimport*/
 .l-header {
-  background-color: #fff7ef;
-  width: 100%;
-  height: 218px;
-  display: flex;
-  justify-content: space-between;
+  height: 217px;
 }
 
 .l-header-title {
-  font-size: 40px;
-  color: #707070;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: bold;
-  margin: 77px 0px 0px 30px;
+  margin: 0px;
+  font-size: 35px;
+}
+
+.main-image {
+  vertical-align: bottom;
+  margin-top: 0px;
 }
 
 .search-box {
-  display: inline-block;
-  /* なくても大丈夫だけど、念の為 */
-  position: relative;
-  /* 基準値とする */
-  border: solid 1px #999;
-  border-radius: 4px;
-  background-color: #fff;
-  height: 40px;
-  margin: 85px 105px 0px 0px;
-  padding-left: 10px;
-  width: 300px;
+  margin: 10px 90px 0px -5px;
+  width: 200px;
 }
 
-.search-box::before {
-  content: "";
-  /* 疑似要素に必須 */
-  width: 16px;
-  /* アイコンの横幅 */
-  height: 16px;
-  /* アイコンの高さ */
-  background: url(../images/glass.png) no-repeat center center/auto 100%;
-  /* 背景にアイコン画像を配置 */
-  display: inline-block;
-  /* 高さを持たせるためにインラインブロック要素にする */
+.sidebar-menu {
+  display: block;
+  font-size: 22px;
+  color: #707070;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
   position: absolute;
-  /* 相対位置に指定 */
-  top: 12px;
-  /* アイコンの位置 */
-  left: 9px;
-  /* アイコンの位置*/
-}
-
-.search-box input {
-  padding: 10px 15px 0px;
-  /* アイコンを設置するため左の余白を多めに指定*/
-  width: 100%;
+  top: 5px;
+  right: 5px;
 }
 
 #header-button {
-  width: 90px;
-  height: 40px;
-  position: absolute;
-  right: -100px;
-  top: -1px;
-  border-radius: 4px;
-  background: linear-gradient(#f2ede9, #ded8d3);
-  border: 1px solid #999;
-  color: #707070;
-  padding: 10px 32px;
-  font-size: 0.8rem;
+  font-weight: bold;
 }
 
-@media only screen and (min-width: 600px) and (max-width: 834px) {
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
   .l-header {
     display: flex;
     justify-content: center;
@@ -564,41 +529,76 @@ template {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media only screen and (min-width: 1025px) and (max-width: 1920px) {
   .l-header {
-    height: 217px;
+    background-color: #fff7ef;
+    width: 100%;
+    height: 218px;
+    display: flex;
+    justify-content: space-between;
   }
   .l-header-title {
-    margin: 0px;
-    font-size: 35px;
-  }
-  .main-image {
-    vertical-align: bottom;
-    margin-top: 0px;
-  }
-  .search-box {
-    margin: 10px 90px 0px -5px;
-    width: 200px;
-  }
-  .sidebar-menu {
-    display: block;
-    font-size: 22px;
+    font-size: 40px;
     color: #707070;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: bold;
+    margin: 77px 0px 0px 30px;
+  }
+  .search-box {
+    display: inline-block;
+    /* なくても大丈夫だけど、念の為 */
+    position: relative;
+    /* 基準値とする */
+    border: solid 1px #999;
+    border-radius: 4px;
+    background-color: #fff;
+    height: 40px;
+    margin: 85px 105px 0px 0px;
+    padding-left: 10px;
+    width: 300px;
+  }
+  .search-box::before {
+    content: "";
+    /* 疑似要素に必須 */
+    width: 16px;
+    /* アイコンの横幅 */
+    height: 16px;
+    /* アイコンの高さ */
+    background: url(../images/glass.png) no-repeat center center/auto 100%;
+    /* 背景にアイコン画像を配置 */
+    display: inline-block;
+    /* 高さを持たせるためにインラインブロック要素にする */
     position: absolute;
-    top: 5px;
-    right: 5px;
+    /* 相対位置に指定 */
+    top: 12px;
+    /* アイコンの位置 */
+    left: 9px;
+    /* アイコンの位置*/
+  }
+  .search-box input {
+    padding: 10px 15px 0px;
+    /* アイコンを設置するため左の余白を多めに指定*/
+    width: 100%;
   }
   #header-button {
-    font-weight: bold;
+    width: 90px;
+    height: 40px;
+    position: absolute;
+    right: -100px;
+    top: -1px;
+    border-radius: 4px;
+    background: linear-gradient(#f2ede9, #ded8d3);
+    border: 1px solid #999;
+    color: #707070;
+    padding: 10px 32px;
+    font-size: 0.8rem;
   }
 }
 
 /*Layoutフォルダの中にあるheader.scssのimport*/
-.l-footer {
-  width: 100%;
-  background-image: url("../images/footer.png");
+.footer-image2 {
+  height: 0px;
+  position: relative;
 }
 
 .footer-image {
@@ -606,55 +606,41 @@ template {
   height: 150px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
-}
-
-.footer-image2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-top: 10vw;
 }
 
 .footer-image-text-title1 {
-  color: #fff;
-  font-size: 1.2vw;
-  position: relative;
+  font-size: 5.3vw;
   display: inline-block;
+}
+
+.footer-image-line {
+  margin: 0vw 3.2vw;
 }
 
 .footer-image-line::after {
-  content: "";
-  display: inline-block;
-  width: 0.1vw;
-  height: 1.3vw;
-  background-color: #fff;
+  width: 0.6vw;
+  height: 5.4vw;
   position: absolute;
-  top: 43%;
-  right: 50%;
+  top: 25%;
 }
 
-/*.footer-image-text-title2{
-    color: #fff;
-    //position: absolute;
-    //top:25%; left:48%;
-    font-size: 1.2vw;
-}
-*/
 .footer-image-title3 {
-  color: #fff;
-  font-size: 1.2vw;
+  font-size: 5.3vw;
   padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 22px;
 }
 
 .footer-image-title4 {
-  padding-bottom: 3vw;
   color: #fff;
-  font-size: 0.8vw;
+  font-size: 2.8vw;
+  position: absolute;
+  bottom: 8vw;
 }
 
-@media screen and (max-width: 834px) {
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
   .footer-image-text-title1 {
     font-size: 2.2vw;
     display: inline-block;
@@ -678,181 +664,150 @@ template {
   }
 }
 
-@media screen and (max-width: 375px) {
-  .footer-image2 {
-    height: 0px;
-    position: relative;
+@media only screen and (min-width: 1025px) and (max-width: 1920px) {
+  .l-footer {
+    width: 100%;
+    background-image: url("../images/footer.png");
   }
   .footer-image {
     width: 100%;
     height: 150px;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     position: relative;
-    padding-top: 10vw;
+  }
+  .footer-image2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .footer-image-text-title1 {
-    font-size: 5.3vw;
+    color: #fff;
+    font-size: 1.2vw;
+    position: relative;
     display: inline-block;
   }
-  .footer-image-line {
-    margin: 0vw 3.2vw;
-  }
   .footer-image-line::after {
-    width: 0.6vw;
-    height: 5.4vw;
+    content: "";
+    display: inline-block;
+    width: 0.1vw;
+    height: 1.3vw;
+    background-color: #fff;
     position: absolute;
-    top: 25%;
+    top: 43%;
+    right: 50%;
   }
+  /*.footer-image-text-title2{
+      color: #fff;
+      //position: absolute;
+      //top:25%; left:48%;
+      font-size: 1.2vw;
+  }
+  */
   .footer-image-title3 {
-    font-size: 5.3vw;
+    color: #fff;
+    font-size: 1.2vw;
     padding-left: 15px;
-    padding-right: 22px;
+    padding-right: 15px;
   }
   .footer-image-title4 {
+    padding-bottom: 3vw;
     color: #fff;
-    font-size: 2.8vw;
-    position: absolute;
-    bottom: 8vw;
+    font-size: 0.8vw;
   }
 }
 
 /*Layoutフォルダの中にあるfooter.scssのimport*/
-.l-main {
-  background-color: #fff;
-  height: auto;
-  width: auto;
-  display: flex;
+.l-container {
+  height: 2716px;
+}
+
+.wrapper {
+  width: 100%;
+  height: 2566px;
 }
 
 .main-image {
-  width: 100%;
-  height: 530px;
-  object-fit: cover;
-  display: flex;
-  background-image: url("../images/mainvisual-pc.jpg");
-  background-size: cover;
+  background-image: url("../images/iphone2.png");
+  background-position: bottom center;
 }
 
 .main-image-title {
-  align-self: center;
-  color: #fff;
-  font-family: "M+ 1m";
-  font-size: 40px;
-  margin-left: 46px;
+  font-size: 35px;
+  margin-left: 20px;
   font-weight: bold;
 }
 
 .two-image-wrapper {
-  display: flex;
-  justify-content: center;
+  display: block;
   width: 100%;
-  height: 1446px;
-  padding: 125.5px 111.5px;
+  height: 1373px;
+  padding: 23.5px 10px;
 }
 
 .left-wrapper {
-  height: 1196px;
-  width: 625px;
-  margin-right: 40px;
+  height: 643px;
+  max-width: 335px;
+  background-image: url(../images/i-sub1.png);
   background-size: cover;
-  background-image: url(../images/main2.png);
+  margin-bottom: 10px;
 }
 
 .left-wrapper a {
-  padding: 1vw 0.5vw 0vw 1.5vw;
+  padding: 0vw;
 }
 
 .right-wrapper {
-  margin-left: 40px;
-  height: 1196px;
-  width: 625px;
+  height: 643px;
+  width: 335px;
+  background-image: url(../images/i-sub2.png);
   background-size: cover;
-  background-image: url(../images/main3.png);
+  margin: 20px 0px;
 }
 
 .right-wrapper a {
-  padding: 1vw 0.5vw 0vw 1.5vw;
+  padding: 0vw;
 }
 
 .wrapper-link {
-  display: block;
-  height: 100%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
 
-/*.main2 {
-  max-width: 400px;
-  height: auto;
-  margin: 5vw 20px 0px 0px;
-  width: 100%;
-  
-}
-.main3 {
-  max-width: 400px;
-  height: auto;
-  width: 100%;
-  margin: 5vw 0px 0px 20px;
-}
-*/
 .wrapper-text {
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-  font-size: 4rem;
-  font-weight: bold;
+  font-size: 2rem;
+  padding: 5vw 0vw 0vw 5vw;
   position: relative;
 }
 
 .wrapper-text::before {
-  background-color: #fff;
-  content: "";
-  height: 4px;
   position: absolute;
   top: 100px;
-  left: 3px;
+  left: 5vw;
   width: 50px;
 }
 
-/*.m2-subtext {
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-  font-size: 3rem;
-  //margin-top: -39vw;
-  //margin-left: 1vw;
-}*/
-/*.m3-text {
-  //position: absolute;
-  //top: 9%;
-  //left: 8%;
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-  font-size: 3rem;
-  font-weight: bold;
-}
-.m3-subtext {
-  color: #fff;
-  //position: absolute;
-  //top: 15%;
-  //left: 8%;
-  font-family: "Roboto", sans-serif;
-  font-size: 3rem;
-}
-*/
 .text-box-a {
-  width: 97%;
+  width: 100%;
   margin-bottom: 15px;
   padding: 0px 5px;
 }
 
+/*.t-box-b {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 212px;
+    margin: -40px 12px;
+    width: 375px;
+    position: relative;
+    overflow: hidden;
+  }
+*/
 .text-box1,
 .text-box2 {
-  color: #2c2c2f;
-  background-color: rgba(255, 255, 255, 0.8);
-  word-wrap: break-word;
-  flex-wrap: wrap;
   margin-bottom: 1vw;
   padding: 10px 15px 20px;
 }
@@ -871,31 +826,34 @@ template {
 
 .map {
   width: 100%;
-  height: 649px;
-  background-image: url(../images/map.png);
+  height: 691px;
+  background-image: url(../images/i-map.png);
   background-size: cover;
-  position: relative;
+}
+
+.map::before {
+  width: 100%;
+  height: 691px;
 }
 
 .map-text {
+  width: 100%;
+  height: 691px;
+  padding: 10vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-content: center;
+}
+
+.map-text::before {
   width: 100%;
-  height: 649px;
-  padding-left: 50px;
-  padding-right: 50px;
+  height: 415px;
 }
 
 .map-title {
-  width: 100%;
+  font-size: 7vw;
+  padding-bottom: 10vw;
   position: relative;
-  z-index: 1;
-  font-size: 1.5vw;
-  font-weight: bold;
-  color: #fff;
-  font-size: 2vw;
 }
 
 .map-title::before {
@@ -903,42 +861,19 @@ template {
   content: "";
   height: 3px;
   position: absolute;
-  top: 8vw;
+  top: 15vw;
   width: 63px;
 }
 
 .map-subtext {
-  z-index: 1;
-  color: #fff;
-  width: 56%;
-  line-height: 1.5;
-}
-
-.map::before {
   width: 100%;
-  height: 649px;
-  z-index: 0;
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.29);
+  font-size: 0.87rem;
+  font-weight: bold;
+  line-height: 1.9rem;
+  padding-top: 0;
 }
 
-.map-text::before {
-  width: 60%;
-  height: 649px;
-  z-index: 0;
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.445);
-}
-
-@media only screen and (min-width: 600px) and (max-width: 834px) {
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
   .l-container {
     display: block;
     flex-wrap: nowrap;
@@ -1004,83 +939,129 @@ template {
   }
 }
 
-@media screen and (max-width: 375px) {
-  .l-container {
-    height: 2716px;
-  }
-  .wrapper {
-    width: 100%;
-    height: 2566px;
+@media only screen and (min-width: 1025px) and (max-width: 1920px) {
+  .l-main {
+    background-color: #fff;
+    height: auto;
+    width: auto;
+    display: flex;
   }
   .main-image {
-    background-image: url("../images/iphone2.png");
-    background-position: bottom center;
+    width: 100%;
+    height: 530px;
+    object-fit: cover;
+    display: flex;
+    background-image: url("../images/mainvisual-pc.jpg");
+    background-size: cover;
   }
   .main-image-title {
-    font-size: 35px;
-    margin-left: 20px;
+    align-self: center;
+    color: #fff;
+    font-family: "M+ 1m";
+    font-size: 40px;
+    margin-left: 46px;
     font-weight: bold;
   }
   .two-image-wrapper {
-    display: block;
+    display: flex;
+    justify-content: center;
     width: 100%;
-    height: 1373px;
-    padding: 23.5px 10px;
+    height: 1446px;
+    padding: 125.5px 111.5px;
   }
   .left-wrapper {
-    height: 643px;
-    max-width: 335px;
-    background-image: url(../images/i-sub1.png);
+    height: 1196px;
+    width: 625px;
+    margin-right: 40px;
     background-size: cover;
-    margin-bottom: 10px;
+    background-image: url(../images/main2.png);
   }
   .left-wrapper a {
-    padding: 0vw;
+    padding: 1vw 0.5vw 0vw 1.5vw;
   }
   .right-wrapper {
-    height: 643px;
-    width: 335px;
-    background-image: url(../images/i-sub2.png);
+    margin-left: 40px;
+    height: 1196px;
+    width: 625px;
     background-size: cover;
-    margin: 20px 0px;
+    background-image: url(../images/main3.png);
   }
   .right-wrapper a {
-    padding: 0vw;
+    padding: 1vw 0.5vw 0vw 1.5vw;
   }
   .wrapper-link {
+    display: block;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
   }
+  /*.main2 {
+    max-width: 400px;
+    height: auto;
+    margin: 5vw 20px 0px 0px;
+    width: 100%;
+    
+  }
+  .main3 {
+    max-width: 400px;
+    height: auto;
+    width: 100%;
+    margin: 5vw 0px 0px 20px;
+  }
+  */
   .wrapper-text {
-    font-size: 2rem;
-    padding: 5vw 0vw 0vw 5vw;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
     position: relative;
   }
   .wrapper-text::before {
+    background-color: #fff;
+    content: "";
+    height: 4px;
     position: absolute;
     top: 100px;
-    left: 5vw;
+    left: 3px;
     width: 50px;
   }
+  /*.m2-subtext {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 3rem;
+    //margin-top: -39vw;
+    //margin-left: 1vw;
+  }*/
+  /*.m3-text {
+    //position: absolute;
+    //top: 9%;
+    //left: 8%;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .m3-subtext {
+    color: #fff;
+    //position: absolute;
+    //top: 15%;
+    //left: 8%;
+    font-family: "Roboto", sans-serif;
+    font-size: 3rem;
+  }
+  */
   .text-box-a {
-    width: 100%;
+    width: 97%;
     margin-bottom: 15px;
     padding: 0px 5px;
   }
-  /*.t-box-b {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    bottom: 212px;
-    margin: -40px 12px;
-    width: 375px;
-    position: relative;
-    overflow: hidden;
-  }
-*/
   .text-box1,
   .text-box2 {
+    color: #2c2c2f;
+    background-color: rgba(255, 255, 255, 0.8);
+    word-wrap: break-word;
+    flex-wrap: wrap;
     margin-bottom: 1vw;
     padding: 10px 15px 20px;
   }
@@ -1096,93 +1077,110 @@ template {
   }
   .map {
     width: 100%;
-    height: 691px;
-    background-image: url(../images/i-map.png);
+    height: 649px;
+    background-image: url(../images/map.png);
     background-size: cover;
-  }
-  .map::before {
-    width: 100%;
-    height: 691px;
+    position: relative;
   }
   .map-text {
-    width: 100%;
-    height: 691px;
-    padding: 10vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-  }
-  .map-text::before {
+    align-content: center;
     width: 100%;
-    height: 415px;
+    height: 649px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
   .map-title {
-    font-size: 7vw;
-    padding-bottom: 10vw;
+    width: 100%;
     position: relative;
+    z-index: 1;
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: #fff;
+    font-size: 2vw;
   }
   .map-title::before {
     background-color: #fff;
     content: "";
     height: 3px;
     position: absolute;
-    top: 15vw;
+    top: 8vw;
     width: 63px;
   }
   .map-subtext {
+    z-index: 1;
+    color: #fff;
+    width: 56%;
+    line-height: 1.5;
+  }
+  .map::before {
     width: 100%;
-    font-size: 0.87rem;
-    font-weight: bold;
-    line-height: 1.9rem;
-    padding-top: 0;
+    height: 649px;
+    z-index: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.29);
+  }
+  .map-text::before {
+    width: 60%;
+    height: 649px;
+    z-index: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.445);
   }
 }
 
 /*Layoutフォルダの中にあるmain.scssのimport*/
-.l-sidebar {
-  background-color: #f2ede9;
-  width: 20%;
-  height: 2843px;
-  z-index: 1000;
-}
-
-.sidebar-top {
-  font-weight: bold;
-  font-size: 1.5vw;
-  color: #707070;
-  margin: 70px 0px 10px 30px;
-}
-
-.sidebar-second {
-  font-size: 1.3vw;
-  font-weight: bold;
-  color: #707070;
-  margin: 80px 0px 20px 30px;
-  list-style: none;
-}
-
-.sidebar-second2 {
-  font-size: 1.3vw;
-  font-weight: bold;
-  color: #707070;
-  margin: 50px 0px 20px 30px;
-  list-style: none;
-}
-
-.sidebar-menu {
-  font-size: 1.2vw;
-  color: #707070;
-}
-
-.sidebar-list {
-  font-size: 1.2vw;
-  line-height: 2.5;
-  padding-left: 40px;
-}
-
-@media only screen and (min-width: 600px) and (max-width: 834px) {
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
   .l-sidebar {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1920px) {
+  .l-sidebar {
+    background-color: #f2ede9;
+    width: 20%;
+    height: 2843px;
+    z-index: 1000;
+  }
+  .sidebar-top {
+    font-weight: bold;
+    font-size: 1.5vw;
+    color: #707070;
+    margin: 70px 0px 10px 30px;
+  }
+  .sidebar-second {
+    font-size: 1.3vw;
+    font-weight: bold;
+    color: #707070;
+    margin: 80px 0px 20px 30px;
+    list-style: none;
+  }
+  .sidebar-second2 {
+    font-size: 1.3vw;
+    font-weight: bold;
+    color: #707070;
+    margin: 50px 0px 20px 30px;
+    list-style: none;
+  }
+  .sidebar-menu {
+    font-size: 1.2vw;
+    color: #707070;
+  }
+  .sidebar-list {
+    font-size: 1.2vw;
+    line-height: 2.5;
+    padding-left: 40px;
   }
 }
 

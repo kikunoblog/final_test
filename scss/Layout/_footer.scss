@@ -1,84 +1,45 @@
-.l-footer {
-  width: 100%;
-  //height: 150px;
-  //display: flex;
-  background-image: url("../images/footer.png");
-  //justify-content: center;
-  //margin-bottom: 34px;
+.footer-image2 {
+  height: 0px;
+  position: relative;
 }
 .footer-image {
   width: 100%;
   height: 150px;
-  //object-fit: cover;
-  //display: flex;
-
-  //background-size: cover;
   display: flex;
-  //flex-direction: column;
   justify-content: center;
-  align-items: center;
-  //margin-bottom: 34px;
+  align-items: flex-start;
   position: relative;
+  padding-top: 10vw;
 }
-
-.footer-image2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .footer-image-text-title1 {
-  color: #fff;
-  //display: block;
-  //position: absolute;
-  //top:25%; left:40%;
-  font-size: 1.2vw;
-  position: relative;
+  font-size: 5.3vw;
+  //position: relative;
   display: inline-block;
 }
-
+.footer-image-line {
+  margin: 0vw 3.2vw;
+}
 .footer-image-line::after {
-  content: "";
-  display: inline-block;
-  width: 0.1vw;
-  height: 1.3vw;
-  background-color: #fff;
+  width: 0.6vw;
+  height: 5.4vw;
   position: absolute;
-  top: 43%;
-  right: 50%;
+  top: 25%;
 }
-
-/*.footer-image-text-title2{
-    color: #fff;
-    //position: absolute;
-    //top:25%; left:48%;
-    font-size: 1.2vw;
-}
-*/
 
 .footer-image-title3 {
-  color: #fff;
-  //position: absolute;
-  //top:-1px;
-  //right:-15px;
-  font-size: 1.2vw;
+  font-size: 5.3vw;
   padding-left: 15px;
-  padding-right: 15px;
-  //position: relative;
-  //display: flex;
+  padding-right: 22px;
 }
 .footer-image-title4 {
-  //color: #fff;
-  //position: absolute;
-  //top:10px;
-  //left:10px;
-  //font-size: 1.6vw;
-  //padding:1vw 1vw 1vw 1vw;
-  padding-bottom: 3vw;
+  //padding-bottom: 2vw;
   color: #fff;
-  font-size: 0.8vw;
+  font-size: 2.8vw;
+  position: absolute;
+  bottom: 8vw;
 }
-@media screen and (max-width: 834px) {
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
   .footer-image-text-title1 {
     font-size: 2.2vw;
     //position: relative;
@@ -106,45 +67,86 @@
     font-size: 1.8vw;
   }
 }
-@media screen and (max-width: 375px) {
-  .footer-image2 {
-    height: 0px;
-    position: relative;
+
+@media only screen and (min-width: 1025px) and (max-width: 1920px) {
+  .l-footer {
+    width: 100%;
+    //height: 150px;
+    //display: flex;
+    background-image: url("../images/footer.png");
+    //justify-content: center;
+    //margin-bottom: 34px;
   }
   .footer-image {
     width: 100%;
     height: 150px;
+    //object-fit: cover;
+    //display: flex;
+
+    //background-size: cover;
     display: flex;
+    //flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    //margin-bottom: 34px;
     position: relative;
-    padding-top: 10vw;
-  }
-  .footer-image-text-title1 {
-    font-size: 5.3vw;
-    //position: relative;
-    display: inline-block;
-  }
-  .footer-image-line {
-    margin: 0vw 3.2vw;
-  }
-  .footer-image-line::after {
-    width: 0.6vw;
-    height: 5.4vw;
-    position: absolute;
-    top: 25%;
   }
 
+  .footer-image2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-image-text-title1 {
+    color: #fff;
+    //display: block;
+    //position: absolute;
+    //top:25%; left:40%;
+    font-size: 1.2vw;
+    position: relative;
+    display: inline-block;
+  }
+
+  .footer-image-line::after {
+    content: "";
+    display: inline-block;
+    width: 0.1vw;
+    height: 1.3vw;
+    background-color: #fff;
+    position: absolute;
+    top: 43%;
+    right: 50%;
+  }
+
+  /*.footer-image-text-title2{
+      color: #fff;
+      //position: absolute;
+      //top:25%; left:48%;
+      font-size: 1.2vw;
+  }
+  */
+
   .footer-image-title3 {
-    font-size: 5.3vw;
+    color: #fff;
+    //position: absolute;
+    //top:-1px;
+    //right:-15px;
+    font-size: 1.2vw;
     padding-left: 15px;
-    padding-right: 22px;
+    padding-right: 15px;
+    //position: relative;
+    //display: flex;
   }
   .footer-image-title4 {
-    //padding-bottom: 2vw;
+    //color: #fff;
+    //position: absolute;
+    //top:10px;
+    //left:10px;
+    //font-size: 1.6vw;
+    //padding:1vw 1vw 1vw 1vw;
+    padding-bottom: 3vw;
     color: #fff;
-    font-size: 2.8vw;
-    position: absolute;
-    bottom:8vw;
+    font-size: 0.8vw;
   }
 }

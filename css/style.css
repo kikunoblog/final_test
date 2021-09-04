@@ -1,17 +1,4 @@
 @charset "UTF-8";
-@media only screen and (min-width: 1025px) and (max-width: 1920px) {
-  .l-container {
-    width: 100%;
-    height: 2993px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .wrapper {
-    width: 80%;
-    height: 2843px;
-  }
-}
-
 /*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -720,31 +707,141 @@ template {
 }
 
 /*Layoutフォルダの中にあるfooter.scssのimport*/
+body {
+  min-width: 320px;
+}
+
 .l-container {
   height: 2716px;
 }
 
-.wrapper {
+@media only screen and (min-width: 600px) {
+  .l-container {
+    display: block;
+    flex-wrap: nowrap;
+    height: 1825px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .l-container {
+    width: 100%;
+    height: 2993px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.l-wrapper {
   width: 100%;
   height: 2566px;
 }
 
+@media only screen and (min-width: 600px) {
+  .l-wrapper {
+    width: 100%;
+    height: 1675px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .l-wrapper {
+    width: 80%;
+    height: 2843px;
+  }
+}
+
+.l-main {
+  background-color: #fff;
+  height: auto;
+  width: auto;
+  display: flex;
+}
+
+@media only screen and (min-width: 1025px) {
+  .l-main {
+    background-color: #fff;
+    height: auto;
+    width: auto;
+    display: flex;
+  }
+}
+
 .main-image {
+  width: 100%;
+  height: 530px;
+  object-fit: cover;
+  display: flex;
   background-image: url("../images/iphone2.png");
   background-position: bottom center;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 600px) {
+  .main-image {
+    width: 100%;
+    height: 285px;
+    background-image: url("../images/ipad.png");
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .main-image {
+    width: 100%;
+    height: 530px;
+    object-fit: cover;
+    display: flex;
+    background-image: url("../images/mainvisual-pc.jpg");
+    background-size: cover;
+  }
 }
 
 .main-image-title {
+  align-self: center;
+  color: #fff;
+  font-family: "M+ 1m";
   font-size: 35px;
   margin-left: 20px;
   font-weight: bold;
 }
 
+@media only screen and (min-width: 1025px) {
+  .main-image-title {
+    align-self: center;
+    color: #fff;
+    font-family: "M+ 1m";
+    font-size: 40px;
+    margin-left: 46px;
+    font-weight: bold;
+  }
+}
+
 .two-image-wrapper {
   display: block;
+  justify-content: center;
   width: 100%;
   height: 1373px;
   padding: 23.5px 10px;
+}
+
+@media only screen and (min-width: 600px) {
+  .two-image-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 758px;
+    padding: 38.5px 60px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .two-image-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 1446px;
+    padding: 125.5px 111.5px;
+  }
 }
 
 .left-wrapper {
@@ -753,10 +850,35 @@ template {
   background-image: url(../images/i-sub1.png);
   background-size: cover;
   margin-bottom: 10px;
+  width: 625px;
+  margin-right: 40px;
+}
+
+@media only screen and (min-width: 600px) {
+  .left-wrapper {
+    height: 681px;
+    width: 357px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .left-wrapper {
+    height: 1196px;
+    width: 625px;
+    margin-right: 40px;
+    background-size: cover;
+    background-image: url(../images/main2.png);
+  }
 }
 
 .left-wrapper a {
   padding: 0vw;
+}
+
+@media only screen and (min-width: 1025px) {
+  .left-wrapper a {
+    padding: 1vw 0.5vw 0vw 1.5vw;
+  }
 }
 
 .right-wrapper {
@@ -767,20 +889,47 @@ template {
   margin: 20px 0px;
 }
 
+@media only screen and (min-width: 600px) {
+  .right-wrapper {
+    height: 681px;
+    width: 357px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .right-wrapper {
+    margin-left: 40px;
+    height: 1196px;
+    width: 625px;
+    background-size: cover;
+    background-image: url(../images/main3.png);
+  }
+}
+
 .right-wrapper a {
   padding: 0vw;
+}
+
+@media only screen and (min-width: 1025px) {
+  .right-wrapper a {
+    padding: 1vw 0.5vw 0vw 1.5vw;
+  }
 }
 
 .wrapper-link {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  height: 100%;
 }
 
 .wrapper-text {
   font-size: 2rem;
   padding: 5vw 0vw 0vw 5vw;
   position: relative;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
 }
 
 .wrapper-text::before {
@@ -788,6 +937,9 @@ template {
   top: 100px;
   left: 5vw;
   width: 50px;
+  background-color: #fff;
+  content: "";
+  height: 4px;
 }
 
 .text-box-a {
@@ -796,19 +948,12 @@ template {
   padding: 0px 5px;
 }
 
-/*.t-box-b {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    bottom: 212px;
-    margin: -40px 12px;
-    width: 375px;
-    position: relative;
-    overflow: hidden;
-  }
-*/
 .text-box1,
 .text-box2 {
+  color: #2c2c2f;
+  background-color: rgba(255, 255, 255, 0.8);
+  word-wrap: break-word;
+  flex-wrap: wrap;
   margin-bottom: 1vw;
   padding: 10px 15px 20px;
 }
@@ -830,11 +975,38 @@ template {
   height: 691px;
   background-image: url(../images/i-map.png);
   background-size: cover;
+  position: relative;
+}
+
+@media only screen and (min-width: 600px) {
+  .map {
+    width: 100%;
+    height: 415px;
+    background-size: cover;
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .map {
+    width: 100%;
+    height: 649px;
+    background-image: url(../images/map.png);
+    background-size: cover;
+    position: relative;
+  }
 }
 
 .map::before {
   width: 100%;
   height: 691px;
+  z-index: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.29);
 }
 
 .map-text {
@@ -844,17 +1016,29 @@ template {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-content: center;
 }
 
 .map-text::before {
   width: 100%;
   height: 415px;
+  z-index: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.445);
 }
 
 .map-title {
   font-size: 7vw;
   padding-bottom: 10vw;
   position: relative;
+  width: 100%;
+  z-index: 1;
+  font-weight: bold;
+  color: #fff;
 }
 
 .map-title::before {
@@ -874,16 +1058,7 @@ template {
   padding-top: 0;
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
-  .l-container {
-    display: block;
-    flex-wrap: nowrap;
-    height: 1825px;
-  }
-  .wrapper {
-    width: 100%;
-    height: 1675px;
-  }
+@media only screen and (min-width: 600px) {
   .map-text::before {
     width: 100%;
     height: 415px;
@@ -894,32 +1069,6 @@ template {
     font-weight: bold;
     line-height: 1.9rem;
     padding-top: 0;
-  }
-  .main-image {
-    width: 100%;
-    height: 285px;
-    background-image: url("../images/ipad.png");
-  }
-  .wrapper2 {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 758px;
-    padding: 38.5px 60px;
-  }
-  .wrapper {
-    height: 681px;
-    width: 357px;
-  }
-  .right-wrapper {
-    height: 681px;
-    width: 357px;
-  }
-  .map {
-    width: 100%;
-    height: 415px;
-    background-size: cover;
-    position: relative;
   }
   .map::before {
     width: 100%;
@@ -941,55 +1090,6 @@ template {
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1920px) {
-  .l-main {
-    background-color: #fff;
-    height: auto;
-    width: auto;
-    display: flex;
-  }
-  .main-image {
-    width: 100%;
-    height: 530px;
-    object-fit: cover;
-    display: flex;
-    background-image: url("../images/mainvisual-pc.jpg");
-    background-size: cover;
-  }
-  .main-image-title {
-    align-self: center;
-    color: #fff;
-    font-family: "M+ 1m";
-    font-size: 40px;
-    margin-left: 46px;
-    font-weight: bold;
-  }
-  .two-image-wrapper {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 1446px;
-    padding: 125.5px 111.5px;
-  }
-  .left-wrapper {
-    height: 1196px;
-    width: 625px;
-    margin-right: 40px;
-    background-size: cover;
-    background-image: url(../images/main2.png);
-  }
-  .left-wrapper a {
-    padding: 1vw 0.5vw 0vw 1.5vw;
-  }
-  .right-wrapper {
-    margin-left: 40px;
-    height: 1196px;
-    width: 625px;
-    background-size: cover;
-    background-image: url(../images/main3.png);
-  }
-  .right-wrapper a {
-    padding: 1vw 0.5vw 0vw 1.5vw;
-  }
   .wrapper-link {
     display: block;
     height: 100%;
@@ -997,20 +1097,6 @@ template {
     justify-content: space-between;
     flex-direction: column;
   }
-  /*.main2 {
-    max-width: 400px;
-    height: auto;
-    margin: 5vw 20px 0px 0px;
-    width: 100%;
-    
-  }
-  .main3 {
-    max-width: 400px;
-    height: auto;
-    width: 100%;
-    margin: 5vw 0px 0px 20px;
-  }
-  */
   .wrapper-text {
     color: #fff;
     font-family: "Roboto", sans-serif;
@@ -1027,31 +1113,6 @@ template {
     left: 3px;
     width: 50px;
   }
-  /*.m2-subtext {
-    color: #fff;
-    font-family: "Roboto", sans-serif;
-    font-size: 3rem;
-    //margin-top: -39vw;
-    //margin-left: 1vw;
-  }*/
-  /*.m3-text {
-    //position: absolute;
-    //top: 9%;
-    //left: 8%;
-    color: #fff;
-    font-family: "Roboto", sans-serif;
-    font-size: 3rem;
-    font-weight: bold;
-  }
-  .m3-subtext {
-    color: #fff;
-    //position: absolute;
-    //top: 15%;
-    //left: 8%;
-    font-family: "Roboto", sans-serif;
-    font-size: 3rem;
-  }
-  */
   .text-box-a {
     width: 97%;
     margin-bottom: 15px;
@@ -1075,13 +1136,6 @@ template {
     font-size: small;
     padding-top: 1vw;
     font-size: 16px;
-  }
-  .map {
-    width: 100%;
-    height: 649px;
-    background-image: url(../images/map.png);
-    background-size: cover;
-    position: relative;
   }
   .map-text {
     display: flex;

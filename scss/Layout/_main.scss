@@ -1,6 +1,17 @@
+/* 
+body
+スマホサイズを320を最小値にするため設定
+*/
 body {
   min-width: 320px;
 }
+/* 
+l-container
+全体をレイアウトしているクラス。
+スマホ：高さ2716px
+タブレット：hegiht1825pxにする。折り返しはしないようにする。
+PC：幅と高さを設定。flexとwrapで横並びになるようにする。
+*/
 
 .l-container {
   height: 2716px;
@@ -18,7 +29,13 @@ body {
     flex-wrap: wrap;
   }
 }
-
+/* 
+l-wrapper
+フッター以外をレイアウトしているクラス。
+スマホ：高さ2566px
+タブレット：hegiht1675px
+PC：サイドバーを入れるので幅を80％に。高さは2843px
+*/
 .l-wrapper {
   width: 100%;
   height: 2566px;
@@ -33,12 +50,12 @@ body {
     height: 2843px;
   }
 }
-
+/* 
+l-main
+「ダミーサイト」の画像・その下２つの並ぶ画像をまとめた部分
+*/
 .l-main {
-  background-color: #fff;
-  height: auto;
-  width: auto;
-  display: flex;
+
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
   }
@@ -49,14 +66,12 @@ body {
     display: flex;
   }
 }
-
+/* 
+.main-image
+「ダミーサイト」の画像
+*/
 .main-image {
-  width: 100%;
-  height: 530px;
-  object-fit: cover;
-  display: flex;
   background-image: url("../images/iphone2.png");
-  background-position: bottom center;
   background-size: cover;
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
@@ -73,11 +88,11 @@ body {
     background-size: cover;
   }
 }
-
+/* 
+main-image-title
+「ダミーサイト」の画像に記載の文字「ダミーサイト」の装飾
+*/
 .main-image-title {
-  align-self: center;
-  color: #fff;
-  font-family: "M+ 1m";
   font-size: 35px;
   margin-left: 20px;
   font-weight: bold;
@@ -93,10 +108,12 @@ body {
     font-weight: bold;
   }
 }
-
+/* 
+two-image-wrapper
+「ダミーサイト」の画像の下２つの並ぶ画像をまとめた部分
+*/
 .two-image-wrapper {
   display: block;
-  justify-content: center;
   width: 100%;
   height: 1373px;
   padding: 23.5px 10px;
@@ -116,15 +133,16 @@ body {
     padding: 125.5px 111.5px;
   }
 }
-
+/* 
+left-wrapper
+「ダミーサイト」の画像の下２つの並ぶ画像の左の画像
+*/
 .left-wrapper {
   height: 643px;
   max-width: 335px;
   background-image: url(../images/i-sub1.png);
   background-size: cover;
   margin-bottom: 10px;
-  width: 625px;
-  margin-right: 40px;
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
     height: 681px;
@@ -138,17 +156,10 @@ body {
     background-image: url(../images/main2.png);
   }
 }
-
-.left-wrapper a {
-  padding: 0vw;
-  @media only screen and (min-width: 600px) {
-    //（ここにタブレット用スタイルを記述）
-  }
-  @media only screen and (min-width: 1025px) {
-    padding: 1vw 0.5vw 0vw 1.5vw;
-  }
-}
-
+/* 
+right-wrapper 
+「ダミーサイト」の画像の下２つの並ぶ画像の右の画像
+*/
 .right-wrapper {
   height: 643px;
   width: 335px;
@@ -169,23 +180,21 @@ body {
     background-image: url(../images/main3.png);
   }
 }
-
-.right-wrapper a {
+/* 
+.left-wrapper-link,
+.right-wrapper-link
+「ダミーサイト」の画像の下２つの並ぶ画像の左と右の画像
+その全体にリンクを設定するための装飾
+*/
+.left-wrapper-link,
+.right-wrapper-link {
   padding: 0vw;
-  @media only screen and (min-width: 1025px) {
-    padding: 1vw 0.5vw 0vw 1.5vw;
-  }
-}
-
-.wrapper-link {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  height: 100%;
+  
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
   }
   @media only screen and (min-width: 1025px) {
+    padding: 1vw 0.5vw 0vw 1.5vw;
     display: block;
     height: 100%;
     display: flex;
@@ -193,14 +202,15 @@ body {
     flex-direction: column;
   }
 }
-
+/* 
+wrapper-text 
+「ダミーサイト」の画像の下２つの並ぶ画像の左と右の画像に
+書いてあるTake out Eat INの文字の装飾
+*/
 .wrapper-text {
   font-size: 2rem;
   padding: 5vw 0vw 0vw 5vw;
   position: relative;
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
   }
@@ -213,15 +223,17 @@ body {
     position: relative;
   }
 }
-
+/* 
+wrapper-text ::before
+「ダミーサイト」の画像の下２つの並ぶ画像の左と右の画像に
+書いてあるTake out Eat INの文字の下に記載されている横棒の作成・装飾
+*/
 .wrapper-text::before {
   position: absolute;
   top: 100px;
   left: 5vw;
   width: 50px;
-  background-color: #fff;
-  content: "";
-  height: 4px;
+
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
   }
@@ -235,7 +247,11 @@ body {
     width: 50px;
   }
 }
-
+/* 
+text-box-a
+「ダミーサイト」の画像の下２つの並ぶ画像の左と右の画像の下部に
+書いてあるテキストボックス２つをまとめた
+*/
 .text-box-a {
   width: 100%;
   margin-bottom: 15px;
@@ -250,13 +266,13 @@ body {
     padding: 0px 5px;
   }
 }
-
+/* 
+text-box-1.2
+「ダミーサイト」の画像の下２つの並ぶ画像の左と右の画像の下部に
+書いてあるテキストボックス
+*/
 .text-box1,
 .text-box2 {
-  color: #2c2c2f;
-  background-color: rgba(255, 255, 255, 0.8);
-  word-wrap: break-word;
-  flex-wrap: wrap;
   margin-bottom: 1vw;
   padding: 10px 15px 20px;
   @media only screen and (min-width: 600px) {
@@ -272,7 +288,11 @@ body {
     padding: 10px 15px 20px;
   }
 }
-
+/* 
+.text-title1
+「ダミーサイト」の画像の下２つの並ぶ画像の左と右の画像の下部に
+書いてあるテキストボックスに記載の文字の装飾
+*/
 .text-title1 {
   font-weight: bold;
   padding-top: 0.5vw;
@@ -287,7 +307,11 @@ body {
     font-size: 24px;
   }
 }
-
+/* 
+.text-title2
+「ダミーサイト」の画像の下２つの並ぶ画像の左と右の画像の下部に
+書いてあるテキストボックスに記載の文字の装飾
+*/
 .text-title2 {
   font-size: small;
   padding-top: 1vw;
@@ -302,13 +326,15 @@ body {
     font-size: 16px;
   }
 }
-
+/* 
+.map
+地図部分の装飾
+*/
 .map {
   width: 100%;
   height: 691px;
   background-image: url(../images/i-map.png);
   background-size: cover;
-  position: relative;
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
     width: 100%;
@@ -324,17 +350,14 @@ body {
     position: relative;
   }
 }
-
+/* 
+.map
+地図部分にかぶせているレイヤーの作成と装飾
+*/
 .map::before {
   width: 100%;
   height: 691px;
-  z-index: 0;
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.29);
+  
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
     width: 100%;
@@ -353,7 +376,10 @@ body {
     background-color: rgba(0, 0, 0, 0.29);
   }
 }
-
+/* 
+.map
+地図部分記載の文字の装飾
+*/
 .map-text {
   width: 100%;
   height: 691px;
@@ -361,7 +387,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-content: center;
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
     display: flex;
@@ -386,17 +411,14 @@ body {
     padding-right: 50px;
   }
 }
-
+/* 
+.map
+地図部分記載の文字の下部の横棒の装飾
+*/
 .map-text::before {
   width: 100%;
   height: 415px;
-  z-index: 0;
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.445);
+  
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
     width: 100%;
@@ -414,14 +436,15 @@ body {
     background-color: rgba(0, 0, 0, 0.445);
   }
 }
+/* 
+.map
+地図部分記載の文字の装飾
+*/
 .map-title {
   font-size: 7vw;
   padding-bottom: 10vw;
   position: relative;
-  width: 100%;
-  z-index: 1;
-  font-weight: bold;
-  color: #fff;
+ 
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
     font-size: 3vw;
@@ -435,7 +458,10 @@ body {
     color: #fff;
     font-size: 2vw;
   }
-}
+}/* 
+.map
+地図部分記載の文字の下部の横棒の装飾
+*/
 .map-title::before {
   background-color: #fff;
   content: "";
@@ -455,6 +481,10 @@ body {
     width: 63px;
   }
 }
+/* 
+.map
+地図部分記載の文字の装飾
+*/
 .map-subtext {
   width: 100%;
   font-size: 0.87rem;

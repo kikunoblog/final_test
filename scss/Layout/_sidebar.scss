@@ -1,19 +1,19 @@
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
+.l-sidebar {
+@media only screen and (min-width: 600px)  {
   //（ここにタブレット用スタイルを記述）
-  .l-sidebar {
     display: none;
   }
+  @media only screen and (min-width: 1025px)  {
+      background-color: #f2ede9;
+      width: 20%;
+      height: 2843px;
+      z-index: 1000;
 }
-@media only screen and (min-width: 1025px) and (max-width: 1920px) {
-  .l-sidebar {
-    background-color: #f2ede9;
-    width: 20%;
-    height: 2843px;
-    //float: right;
+}
 
-    z-index: 1000;
-    //margin-top: 0px;
-  }
+
+@media only screen and (min-width: 1025px)  {
+
   .sidebar-top {
     font-weight: bold;
     font-size: 1.5vw;

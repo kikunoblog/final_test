@@ -460,9 +460,46 @@ template {
   height: 217px;
 }
 
+@media only screen and (min-width: 600px) {
+  .l-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .l-header {
+    background-color: #fff7ef;
+    width: 100%;
+    height: 218px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .l-header-title {
   margin: 0px;
   font-size: 35px;
+}
+
+@media only screen and (min-width: 600px) {
+  .l-header-title {
+    margin: 0px 0px 0px 30px;
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .l-header-title {
+    font-size: 40px;
+    color: #707070;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    margin: 77px 0px 0px 30px;
+  }
 }
 
 .main-image {
@@ -475,63 +512,13 @@ template {
   width: 200px;
 }
 
-.sidebar-menu {
-  display: block;
-  font-size: 22px;
-  color: #707070;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: bold;
-  position: absolute;
-  top: 5px;
-  right: 5px;
-}
-
-#header-button {
-  font-weight: bold;
-}
-
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
-  .l-header {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  .l-header-title {
-    margin: 0px 0px 0px 30px;
-    position: relative;
-  }
+@media only screen and (min-width: 600px) {
   .search-box {
     margin: 10px 55px 0px 40px;
   }
-  .sidebar-menu {
-    display: block;
-    font-size: 25px;
-    color: #707070;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-weight: bold;
-    position: absolute;
-    top: 10px;
-    right: 30px;
-  }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1920px) {
-  .l-header {
-    background-color: #fff7ef;
-    width: 100%;
-    height: 218px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .l-header-title {
-    font-size: 40px;
-    color: #707070;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-weight: bold;
-    margin: 77px 0px 0px 30px;
-  }
+@media only screen and (min-width: 1025px) {
   .search-box {
     display: inline-block;
     /* なくても大丈夫だけど、念の為 */
@@ -545,6 +532,9 @@ template {
     padding-left: 10px;
     width: 300px;
   }
+}
+
+@media only screen and (min-width: 1025px) {
   .search-box::before {
     content: "";
     /* 疑似要素に必須 */
@@ -563,11 +553,45 @@ template {
     left: 9px;
     /* アイコンの位置*/
   }
+}
+
+@media only screen and (min-width: 1025px) {
   .search-box input {
     padding: 10px 15px 0px;
     /* アイコンを設置するため左の余白を多めに指定*/
     width: 100%;
   }
+}
+
+.sidebar-menu {
+  display: block;
+  font-size: 22px;
+  color: #707070;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+@media only screen and (min-width: 600px) {
+  .sidebar-menu {
+    display: block;
+    font-size: 25px;
+    color: #707070;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+  }
+}
+
+#header-button {
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 1025px) {
   #header-button {
     width: 90px;
     height: 40px;
@@ -686,13 +710,6 @@ template {
     top: 43%;
     right: 50%;
   }
-  /*.footer-image-text-title2{
-      color: #fff;
-      //position: absolute;
-      //top:25%; left:48%;
-      font-size: 1.2vw;
-  }
-  */
   .footer-image-title3 {
     color: #fff;
     font-size: 1.2vw;
@@ -923,6 +940,16 @@ body {
   height: 100%;
 }
 
+@media only screen and (min-width: 1025px) {
+  .wrapper-link {
+    display: block;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+
 .wrapper-text {
   font-size: 2rem;
   padding: 5vw 0vw 0vw 5vw;
@@ -930,6 +957,16 @@ body {
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
+}
+
+@media only screen and (min-width: 1025px) {
+  .wrapper-text {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    position: relative;
+  }
 }
 
 .wrapper-text::before {
@@ -942,10 +979,30 @@ body {
   height: 4px;
 }
 
+@media only screen and (min-width: 1025px) {
+  .wrapper-text::before {
+    background-color: #fff;
+    content: "";
+    height: 4px;
+    position: absolute;
+    top: 100px;
+    left: 3px;
+    width: 50px;
+  }
+}
+
 .text-box-a {
   width: 100%;
   margin-bottom: 15px;
   padding: 0px 5px;
+}
+
+@media only screen and (min-width: 1025px) {
+  .text-box-a {
+    width: 97%;
+    margin-bottom: 15px;
+    padding: 0px 5px;
+  }
 }
 
 .text-box1,
@@ -958,16 +1015,44 @@ body {
   padding: 10px 15px 20px;
 }
 
+@media only screen and (min-width: 1025px) {
+  .text-box1,
+  .text-box2 {
+    color: #2c2c2f;
+    background-color: rgba(255, 255, 255, 0.8);
+    word-wrap: break-word;
+    flex-wrap: wrap;
+    margin-bottom: 1vw;
+    padding: 10px 15px 20px;
+  }
+}
+
 .text-title1 {
   font-weight: bold;
   padding-top: 0.5vw;
   font-size: 24px;
 }
 
+@media only screen and (min-width: 1025px) {
+  .text-title1 {
+    font-weight: bold;
+    padding-top: 0.5vw;
+    font-size: 24px;
+  }
+}
+
 .text-title2 {
   font-size: small;
   padding-top: 1vw;
   font-size: 16px;
+}
+
+@media only screen and (min-width: 1025px) {
+  .text-title2 {
+    font-size: small;
+    padding-top: 1vw;
+    font-size: 16px;
+  }
 }
 
 .map {
@@ -1009,6 +1094,27 @@ body {
   background-color: rgba(0, 0, 0, 0.29);
 }
 
+@media only screen and (min-width: 600px) {
+  .map::before {
+    width: 100%;
+    height: 415px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .map::before {
+    width: 100%;
+    height: 649px;
+    z-index: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.29);
+  }
+}
+
 .map-text {
   width: 100%;
   height: 691px;
@@ -1017,6 +1123,32 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-content: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .map-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+    height: 415px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .map-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+    height: 649px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 .map-text::before {
@@ -1031,156 +1163,14 @@ body {
   background-color: rgba(0, 0, 0, 0.445);
 }
 
-.map-title {
-  font-size: 7vw;
-  padding-bottom: 10vw;
-  position: relative;
-  width: 100%;
-  z-index: 1;
-  font-weight: bold;
-  color: #fff;
-}
-
-.map-title::before {
-  background-color: #fff;
-  content: "";
-  height: 3px;
-  position: absolute;
-  top: 15vw;
-  width: 63px;
-}
-
-.map-subtext {
-  width: 100%;
-  font-size: 0.87rem;
-  font-weight: bold;
-  line-height: 1.9rem;
-  padding-top: 0;
-}
-
 @media only screen and (min-width: 600px) {
   .map-text::before {
     width: 100%;
     height: 415px;
   }
-  .map-subtext {
-    width: 100%;
-    font-size: 0.87rem;
-    font-weight: bold;
-    line-height: 1.9rem;
-    padding-top: 0;
-  }
-  .map::before {
-    width: 100%;
-    height: 415px;
-  }
-  .map-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: center;
-    width: 100%;
-    height: 415px;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-  .map-title {
-    font-size: 3vw;
-  }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1920px) {
-  .wrapper-link {
-    display: block;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-  .wrapper-text {
-    color: #fff;
-    font-family: "Roboto", sans-serif;
-    font-size: 4rem;
-    font-weight: bold;
-    position: relative;
-  }
-  .wrapper-text::before {
-    background-color: #fff;
-    content: "";
-    height: 4px;
-    position: absolute;
-    top: 100px;
-    left: 3px;
-    width: 50px;
-  }
-  .text-box-a {
-    width: 97%;
-    margin-bottom: 15px;
-    padding: 0px 5px;
-  }
-  .text-box1,
-  .text-box2 {
-    color: #2c2c2f;
-    background-color: rgba(255, 255, 255, 0.8);
-    word-wrap: break-word;
-    flex-wrap: wrap;
-    margin-bottom: 1vw;
-    padding: 10px 15px 20px;
-  }
-  .text-title1 {
-    font-weight: bold;
-    padding-top: 0.5vw;
-    font-size: 24px;
-  }
-  .text-title2 {
-    font-size: small;
-    padding-top: 1vw;
-    font-size: 16px;
-  }
-  .map-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: center;
-    width: 100%;
-    height: 649px;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-  .map-title {
-    width: 100%;
-    position: relative;
-    z-index: 1;
-    font-size: 1.5vw;
-    font-weight: bold;
-    color: #fff;
-    font-size: 2vw;
-  }
-  .map-title::before {
-    background-color: #fff;
-    content: "";
-    height: 3px;
-    position: absolute;
-    top: 8vw;
-    width: 63px;
-  }
-  .map-subtext {
-    z-index: 1;
-    color: #fff;
-    width: 56%;
-    line-height: 1.5;
-  }
-  .map::before {
-    width: 100%;
-    height: 649px;
-    z-index: 0;
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.29);
-  }
+@media only screen and (min-width: 1025px) {
   .map-text::before {
     width: 60%;
     height: 649px;
@@ -1194,20 +1184,98 @@ body {
   }
 }
 
+.map-title {
+  font-size: 7vw;
+  padding-bottom: 10vw;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  font-weight: bold;
+  color: #fff;
+}
+
+@media only screen and (min-width: 600px) {
+  .map-title {
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .map-title {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: #fff;
+    font-size: 2vw;
+  }
+}
+
+.map-title::before {
+  background-color: #fff;
+  content: "";
+  height: 3px;
+  position: absolute;
+  top: 15vw;
+  width: 63px;
+}
+
+@media only screen and (min-width: 1025px) {
+  .map-title::before {
+    background-color: #fff;
+    content: "";
+    height: 3px;
+    position: absolute;
+    top: 8vw;
+    width: 63px;
+  }
+}
+
+.map-subtext {
+  width: 100%;
+  font-size: 0.87rem;
+  font-weight: bold;
+  line-height: 1.9rem;
+  padding-top: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .map-subtext {
+    width: 100%;
+    font-size: 0.87rem;
+    font-weight: bold;
+    line-height: 1.9rem;
+    padding-top: 0;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .map-subtext {
+    z-index: 1;
+    color: #fff;
+    width: 56%;
+    line-height: 1.5;
+  }
+}
+
 /*Layoutフォルダの中にあるmain.scssのimport*/
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
+@media only screen and (min-width: 600px) {
   .l-sidebar {
     display: none;
   }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1920px) {
+@media only screen and (min-width: 1025px) {
   .l-sidebar {
     background-color: #f2ede9;
     width: 20%;
     height: 2843px;
     z-index: 1000;
   }
+}
+
+@media only screen and (min-width: 1025px) {
   .sidebar-top {
     font-weight: bold;
     font-size: 1.5vw;

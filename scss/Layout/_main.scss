@@ -50,254 +50,300 @@ body {
   }
 }
 
-  .main-image {
+.main-image {
+  width: 100%;
+  height: 530px;
+  object-fit: cover;
+  display: flex;
+  background-image: url("../images/iphone2.png");
+  background-position: bottom center;
+  background-size: cover;
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+    width: 100%;
+    height: 285px;
+    background-image: url("../images/ipad.png");
+  }
+  @media only screen and (min-width: 1025px) {
     width: 100%;
     height: 530px;
     object-fit: cover;
     display: flex;
-    background-image: url("../images/iphone2.png");
-    background-position: bottom center;
+    background-image: url("../images/mainvisual-pc.jpg");
     background-size: cover;
-    @media only screen and (min-width: 600px) {
-      //（ここにタブレット用スタイルを記述）
-      width: 100%;
-      height: 285px;
-      background-image: url("../images/ipad.png");
-    }
-    @media only screen and (min-width: 1025px) {
-      width: 100%;
-      height: 530px;
-      object-fit: cover;
-      display: flex;
-      background-image: url("../images/mainvisual-pc.jpg");
-      background-size: cover;
-    }
   }
+}
 
-  .main-image-title {
+.main-image-title {
+  align-self: center;
+  color: #fff;
+  font-family: "M+ 1m";
+  font-size: 35px;
+  margin-left: 20px;
+  font-weight: bold;
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+  }
+  @media only screen and (min-width: 1025px) {
     align-self: center;
     color: #fff;
     font-family: "M+ 1m";
-    font-size: 35px;
-    margin-left: 20px;
+    font-size: 40px;
+    margin-left: 46px;
     font-weight: bold;
-    @media only screen and (min-width: 600px) {
-      //（ここにタブレット用スタイルを記述）
-    }
-    @media only screen and (min-width: 1025px) {
-      align-self: center;
-      color: #fff;
-      font-family: "M+ 1m";
-      font-size: 40px;
-      margin-left: 46px;
-      font-weight: bold;
-    }
   }
+}
 
-  .two-image-wrapper {
-    display: block;
+.two-image-wrapper {
+  display: block;
+  justify-content: center;
+  width: 100%;
+  height: 1373px;
+  padding: 23.5px 10px;
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+    display: flex;
     justify-content: center;
     width: 100%;
-    height: 1373px;
-    padding: 23.5px 10px;
-    @media only screen and (min-width: 600px) {
-      //（ここにタブレット用スタイルを記述）
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      height: 758px;
-      padding: 38.5px 60px;
-    }
-    @media only screen and (min-width: 1025px) {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      height: 1446px;
-      padding: 125.5px 111.5px;
-    }
+    height: 758px;
+    padding: 38.5px 60px;
   }
+  @media only screen and (min-width: 1025px) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 1446px;
+    padding: 125.5px 111.5px;
+  }
+}
 
-  .left-wrapper {
-    height: 643px;
-    max-width: 335px;
-    background-image: url(../images/i-sub1.png);
-    background-size: cover;
-    margin-bottom: 10px;
+.left-wrapper {
+  height: 643px;
+  max-width: 335px;
+  background-image: url(../images/i-sub1.png);
+  background-size: cover;
+  margin-bottom: 10px;
+  width: 625px;
+  margin-right: 40px;
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+    height: 681px;
+    width: 357px;
+  }
+  @media only screen and (min-width: 1025px) {
+    height: 1196px;
     width: 625px;
     margin-right: 40px;
-    @media only screen and (min-width: 600px) {
-      //（ここにタブレット用スタイルを記述）
-      height: 681px;
-      width: 357px;
-    }
-    @media only screen and (min-width: 1025px) {
-      height: 1196px;
-      width: 625px;
-      margin-right: 40px;
-      background-size: cover;
-      background-image: url(../images/main2.png);
-    }
-  }
-
-  .left-wrapper a {
-    padding: 0vw;
-    @media only screen and (min-width: 600px) {
-      //（ここにタブレット用スタイルを記述）
-    }
-    @media only screen and (min-width: 1025px) {
-      padding: 1vw 0.5vw 0vw 1.5vw;
-    }
-  }
-
-  .right-wrapper {
-    height: 643px;
-    width: 335px;
-    background-image: url(../images/i-sub2.png);
     background-size: cover;
-    margin: 20px 0px;
-    @media only screen and (min-width: 600px) {
-      //（ここにタブレット用スタイルを記述）
-      height: 681px;
-      width: 357px;
-    }
+    background-image: url(../images/main2.png);
+  }
+}
 
-    @media only screen and (min-width: 1025px) {
-      margin-left: 40px;
-      height: 1196px;
-      width: 625px;
-      background-size: cover;
-      background-image: url(../images/main3.png);
-    }
+.left-wrapper a {
+  padding: 0vw;
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+  }
+  @media only screen and (min-width: 1025px) {
+    padding: 1vw 0.5vw 0vw 1.5vw;
+  }
+}
+
+.right-wrapper {
+  height: 643px;
+  width: 335px;
+  background-image: url(../images/i-sub2.png);
+  background-size: cover;
+  margin: 20px 0px;
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+    height: 681px;
+    width: 357px;
   }
 
-  .right-wrapper a {
-    padding: 0vw;
-    @media only screen and (min-width: 1025px) {
-      padding: 1vw 0.5vw 0vw 1.5vw;
-    }
+  @media only screen and (min-width: 1025px) {
+    margin-left: 40px;
+    height: 1196px;
+    width: 625px;
+    background-size: cover;
+    background-image: url(../images/main3.png);
   }
+}
 
-  .wrapper-link {
+.right-wrapper a {
+  padding: 0vw;
+  @media only screen and (min-width: 1025px) {
+    padding: 1vw 0.5vw 0vw 1.5vw;
+  }
+}
+
+.wrapper-link {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+  }
+  @media only screen and (min-width: 1025px) {
+    display: block;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    height: 100%;
-    @media only screen and (min-width: 600px) {
-      //（ここにタブレット用スタイルを記述）
-    }
-    @media only screen and (min-width: 1025px) {
   }
 }
 
-  .wrapper-text {
-    font-size: 2rem;
-    padding: 5vw 0vw 0vw 5vw;
-    position: relative;
+.wrapper-text {
+  font-size: 2rem;
+  padding: 5vw 0vw 0vw 5vw;
+  position: relative;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+  }
+
+  @media only screen and (min-width: 1025px) {
     color: #fff;
     font-family: "Roboto", sans-serif;
+    font-size: 4rem;
     font-weight: bold;
-    @media only screen and (min-width: 600px) {
-      //（ここにタブレット用スタイルを記述）
-    }
-
-    @media only screen and (min-width: 1025px) {
+    position: relative;
   }
 }
 
-  .wrapper-text::before {
-    position: absolute;
-    top: 100px;
-    left: 5vw;
-    width: 50px;
+.wrapper-text::before {
+  position: absolute;
+  top: 100px;
+  left: 5vw;
+  width: 50px;
+  background-color: #fff;
+  content: "";
+  height: 4px;
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+  }
+  @media only screen and (min-width: 1025px) {
     background-color: #fff;
     content: "";
     height: 4px;
-    @media only screen and (min-width: 600px) {
-      //（ここにタブレット用スタイルを記述）
-    }
-    @media only screen and (min-width: 1025px) {
+    position: absolute;
+    top: 100px;
+    left: 3px;
+    width: 50px;
   }
 }
 
-  .text-box-a {
-    width: 100%;
+.text-box-a {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 0px 5px;
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+  }
+
+  @media only screen and (min-width: 1025px) {
+    width: 97%;
     margin-bottom: 15px;
     padding: 0px 5px;
-    @media only screen and (min-width: 600px) {
-      //（ここにタブレット用スタイルを記述）
-    }
-
-    @media only screen and (min-width: 1025px) {
   }
+}
+
+.text-box1,
+.text-box2 {
+  color: #2c2c2f;
+  background-color: rgba(255, 255, 255, 0.8);
+  word-wrap: break-word;
+  flex-wrap: wrap;
+  margin-bottom: 1vw;
+  padding: 10px 15px 20px;
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
   }
 
-  .text-box1,
-  .text-box2 {
+  @media only screen and (min-width: 1025px) {
     color: #2c2c2f;
     background-color: rgba(255, 255, 255, 0.8);
     word-wrap: break-word;
     flex-wrap: wrap;
     margin-bottom: 1vw;
     padding: 10px 15px 20px;
-    @media only screen and (min-width: 600px) {
-      //（ここにタブレット用スタイルを記述）
-    }
-
-    @media only screen and (min-width: 1025px) {
-  }
-  }
-
-
-  .text-title1 {
-    font-weight: bold;
-    padding-top: 0.5vw;
-    font-size: 24px;
-    @media only screen and (min-width: 600px) {
-      //（ここにタブレット用スタイルを記述）
-    }
-
-    @media only screen and (min-width: 1025px) {
   }
 }
 
-  .text-title2 {
+.text-title1 {
+  font-weight: bold;
+  padding-top: 0.5vw;
+  font-size: 24px;
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+  }
+
+  @media only screen and (min-width: 1025px) {
+    font-weight: bold;
+    padding-top: 0.5vw;
+    font-size: 24px;
+  }
+}
+
+.text-title2 {
+  font-size: small;
+  padding-top: 1vw;
+  font-size: 16px;
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+  }
+
+  @media only screen and (min-width: 1025px) {
     font-size: small;
     padding-top: 1vw;
     font-size: 16px;
-    @media only screen and (min-width: 600px) {
-      //（ここにタブレット用スタイルを記述）
-    }
-
-    @media only screen and (min-width: 1025px) {
   }
-  }
+}
 
-  .map {
+.map {
+  width: 100%;
+  height: 691px;
+  background-image: url(../images/i-map.png);
+  background-size: cover;
+  position: relative;
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
     width: 100%;
-    height: 691px;
-    background-image: url(../images/i-map.png);
+    height: 415px;
     background-size: cover;
     position: relative;
-    @media only screen and (min-width: 600px) {
-      //（ここにタブレット用スタイルを記述）
-        width: 100%;
-        height: 415px;
-        background-size: cover;
-        position: relative;
-      }
-    @media only screen and (min-width: 1025px) {
-        width: 100%;
-        height: 649px;
-        background-image: url(../images/map.png);
-        background-size: cover;
-        position: relative;
-      }
+  }
+  @media only screen and (min-width: 1025px) {
+    width: 100%;
+    height: 649px;
+    background-image: url(../images/map.png);
+    background-size: cover;
+    position: relative;
+  }
+}
+
+.map::before {
+  width: 100%;
+  height: 691px;
+  z-index: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.29);
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+    width: 100%;
+    height: 415px;
   }
 
-
-  .map::before {
+  @media only screen and (min-width: 1025px) {
     width: 100%;
-    height: 691px;
+    height: 649px;
     z-index: 0;
     content: "";
     display: block;
@@ -305,33 +351,60 @@ body {
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.29);
-    @media only screen and (min-width: 600px) {
-      //（ここにタブレット用スタイルを記述）
-    }
-
-    @media only screen and (min-width: 1025px) {
   }
 }
 
-  .map-text {
-    width: 100%;
-    height: 691px;
-    padding: 10vw;
+.map-text {
+  width: 100%;
+  height: 691px;
+  padding: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-content: center;
-    @media only screen and (min-width: 600px) {
-      //（ここにタブレット用スタイルを記述）
-    }
+    width: 100%;
+    height: 415px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 
-    @media only screen and (min-width: 1025px) {
+  @media only screen and (min-width: 1025px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+    height: 649px;
+    //display: block;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
-  .map-text::before {
+.map-text::before {
+  width: 100%;
+  height: 415px;
+  z-index: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.445);
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
     width: 100%;
     height: 415px;
+  }
+  @media only screen and (min-width: 1025px) {
+    width: 60%;
+    height: 649px;
     z-index: 0;
     content: "";
     display: block;
@@ -339,230 +412,67 @@ body {
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.445);
-    @media only screen and (min-width: 600px) {
-      //（ここにタブレット用スタイルを記述）
-    }
-
-    @media only screen and (min-width: 1025px) {
   }
 }
-
-  .map-title {
-    font-size: 7vw;
-    padding-bottom: 10vw;
-    position: relative;
+.map-title {
+  font-size: 7vw;
+  padding-bottom: 10vw;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  font-weight: bold;
+  color: #fff;
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+    font-size: 3vw;
+  }
+  @media only screen and (min-width: 1025px) {
     width: 100%;
+    position: relative;
     z-index: 1;
+    font-size: 1.5vw;
     font-weight: bold;
     color: #fff;
-    @media only screen and (min-width: 600px) {
-      //（ここにタブレット用スタイルを記述）
-    }
-
-    @media only screen and (min-width: 1025px) {
+    font-size: 2vw;
   }
 }
-
-  .map-title::before {
+.map-title::before {
+  background-color: #fff;
+  content: "";
+  height: 3px;
+  position: absolute;
+  top: 15vw;
+  width: 63px;
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+  }
+  @media only screen and (min-width: 1025px) {
     background-color: #fff;
     content: "";
     height: 3px;
     position: absolute;
-    top: 15vw;
+    top: 8vw;
     width: 63px;
-    @media only screen and (min-width: 600px) {
-      //（ここにタブレット用スタイルを記述）
-    }
-
-    @media only screen and (min-width: 1025px) {
   }
 }
-
-  .map-subtext {
+.map-subtext {
+  width: 100%;
+  font-size: 0.87rem;
+  font-weight: bold;
+  line-height: 1.9rem;
+  padding-top: 0;
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
     width: 100%;
     font-size: 0.87rem;
     font-weight: bold;
     line-height: 1.9rem;
     padding-top: 0;
-    @media only screen and (min-width: 600px) {
-      //（ここにタブレット用スタイルを記述）
-    }
-
-    @media only screen and (min-width: 1025px) {
   }
+  @media only screen and (min-width: 1025px) {
+    z-index: 1;
+    color: #fff;
+    width: 56%;
+    line-height: 1.5;
   }
-  
-  @media only screen and (min-width: 600px) {
-    //（ここにタブレット用スタイルを記述）
-
-    .map-text::before {
-      width: 100%;
-      height: 415px;
-    }
-    .map-subtext {
-      width: 100%;
-      font-size: 0.87rem;
-      font-weight: bold;
-      line-height: 1.9rem;
-      padding-top: 0;
-    }
-
-
-    .map::before {
-      width: 100%;
-      height: 415px;
-    }
-    .map-text {
-      //position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-content: center;
-      width: 100%;
-      height: 415px;
-      //display: block;
-      padding-left: 50px;
-      padding-right: 50px;
-    }
-    .map-title {
-      font-size: 3vw;
-    }
-  }
-
-  @media only screen and (min-width: 1025px) and (max-width: 1920px) {
-    //（ここにパソコン用スタイルを記述）
-
-    .wrapper-link {
-      display: block;
-      height: 100%;
-      //width: 625px;
-      display: flex;
-      justify-content: space-between;
-      flex-direction: column;
-      //position: relative;
-      //position: absolute;
-      //top:5px; left:5px;
-    }
-
-    .wrapper-text {
-      color: #fff;
-      font-family: "Roboto", sans-serif;
-      font-size: 4rem;
-      font-weight: bold;
-      //margin-top: 1vw;
-      //margin-left: 1vw;
-      position: relative;
-      //top:5px; left:5px;
-    }
-    .wrapper-text::before {
-      background-color: #fff;
-      content: "";
-      height: 4px;
-      position: absolute;
-      top: 100px;
-      left: 3px;
-      width: 50px;
-      //position: absolute;
-      //top: 116.5px;
-      //width: 63px;
-    }
-
-    .text-box-a {
-      width: 97%;
-      margin-bottom: 15px;
-      padding: 0px 5px;
-    }
-
-    .text-box1,
-    .text-box2 {
-      color: #2c2c2f;
-      background-color: rgba(255, 255, 255, 0.8);
-      word-wrap: break-word;
-      flex-wrap: wrap;
-      margin-bottom: 1vw;
-      padding: 10px 15px 20px;
-    }
-
-    .text-title1 {
-      font-weight: bold;
-      padding-top: 0.5vw;
-      font-size: 24px;
-    }
-    .text-title2 {
-      font-size: small;
-      padding-top: 1vw;
-      font-size: 16px;
-    }
-
-
-    .map-text {
-      //position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-content: center;
-      width: 100%;
-      height: 649px;
-      //display: block;
-      padding-left: 50px;
-      padding-right: 50px;
-    }
-
-    .map-title {
-      width: 100%;
-      //height: 100%;
-      //padding: 5vw 0vw 0vw 6vw;
-      position: relative;
-      //top: 0;
-      //left: 0;
-      z-index: 1;
-      //padding: 2rem;
-      font-size: 1.5vw;
-      font-weight: bold;
-      color: #fff;
-      font-size: 2vw;
-    }
-    .map-title::before {
-      background-color: #fff;
-      content: "";
-      height: 3px;
-      position: absolute;
-      top: 8vw;
-      width: 63px;
-    }
-
-    .map-subtext {
-      z-index: 1;
-      //position: absolute;
-      //top: 0;
-      //left: 0;
-      color: #fff;
-      width: 56%;
-      line-height: 1.5;
-      //margin: 0vw -3vw 8vw 6vw;
-    }
-
-    .map::before {
-      width: 100%;
-      height: 649px;
-      z-index: 0;
-      content: "";
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: rgba(0, 0, 0, 0.29);
-    }
-
-    .map-text::before {
-      width: 60%;
-      height: 649px;
-      z-index: 0;
-      content: "";
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: rgba(0, 0, 0, 0.445);
-    }
-  }
+}

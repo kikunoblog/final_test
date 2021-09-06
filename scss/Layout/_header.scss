@@ -1,12 +1,15 @@
 .l-header {
   height: 217px;
-  @media only screen and (min-width: 600px) {
-    //（ここにタブレット用スタイルを記述）
+      background-color: #fff7ef;
       display: flex;
       justify-content: center;
       flex-direction: column;
       align-items: center;
       width: 100%;
+    
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+   
   }
   @media only screen and (min-width: 1025px) {
       background-color: #fff7ef;
@@ -20,6 +23,11 @@
 .l-header-title {
   margin: 0px;
   font-size: 35px;
+  color: #707070;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
       margin: 0px 0px 0px 30px;
@@ -35,22 +43,22 @@
 }
 }
 
-.main-image {
-  vertical-align: bottom;
-  margin-top: 0px;
-  @media only screen and (min-width: 600px) {
-    //（ここにタブレット用スタイルを記述）
-  }
-  @media only screen and (min-width: 1025px) {
-}
-}
-
 .search-box {
-  margin: 10px 90px 0px -5px;
-  width: 200px;
+  margin: 10px 115px 0px 0px;
+  width: 190px;
+  display: inline-block; /* なくても大丈夫だけど、念の為 */
+  position: relative; /* 基準値とする */
+  border: solid 1px #999;
+  border-radius: 4px;
+  background-color: #fff;
+  height: 40px;
+
+  padding-left: 10px;
+ 
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
     margin: 10px 55px 0px 40px;
+    width: 300px;
   }
   @media only screen and (min-width: 1025px) {
     display: inline-block; /* なくても大丈夫だけど、念の為 */
@@ -66,7 +74,14 @@
 }
 
 .search-box::before{
-
+  content: ""; /* 疑似要素に必須 */
+  width: 16px; /* アイコンの横幅 */
+  height: 16px; /* アイコンの高さ */
+  background: url(../images/glass.png) no-repeat center center / auto 100%; /* 背景にアイコン画像を配置 */
+  display: inline-block; /* 高さを持たせるためにインラインブロック要素にする */
+  position: absolute; /* 相対位置に指定 */
+  top: 12px; /* アイコンの位置 */
+  left: 9px; /* アイコンの位置*/
 @media only screen and (min-width: 600px) {
   //（ここにタブレット用スタイルを記述）
 }
@@ -84,8 +99,12 @@
 }
 
 .search-box input{
+  padding: 10px 15px 0px; /* アイコンを設置するため左の余白を多めに指定*/
+  width: 100%;
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
+    padding: 10px 15px 0px; /* アイコンを設置するため左の余白を多めに指定*/
+    width: 100%;
   }
   
   @media only screen and (min-width: 1025px) {
@@ -94,7 +113,7 @@
   }
   }
 
-.sidebar-menu {
+.header-menu {
   display: block;
   font-size: 22px;
   color: #707070;
@@ -122,8 +141,30 @@
 
 #header-button {
   font-weight: bold;
+  width: 90px;
+  height: 40px;
+  position: absolute;
+  right: -100px;
+  top: -1px;
+  border-radius: 4px;
+  background: linear-gradient(#f2ede9, #ded8d3);
+  border: 1px solid #999;
+  color: #707070;
+  padding: 10px 32px;
+  font-size: 0.8rem;
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
+    width: 90px;
+    height: 40px;
+    position: absolute;
+    right: -100px;
+    top: -1px;
+    border-radius: 4px;
+    background: linear-gradient(#f2ede9, #ded8d3);
+    border: 1px solid #999;
+    color: #707070;
+    padding: 10px 32px;
+    font-size: 0.8rem;
   }
   @media only screen and (min-width: 1025px) {
       width: 90px;

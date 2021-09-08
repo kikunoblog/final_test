@@ -563,6 +563,12 @@ template {
   }
 }
 
+@media only screen and (min-width: 1025px) {
+  .header-menu {
+    display: none;
+  }
+}
+
 #header-button {
   font-weight: bold;
   width: 90px;
@@ -603,7 +609,7 @@ template {
 
 @media only screen and (min-width: 1025px) {
   .footer-image {
-    padding: 3vw 0vw 0vw 0vw;
+    padding: 2vw 0vw 0vw 0vw;
   }
 }
 
@@ -715,7 +721,7 @@ template {
 
 @media only screen and (min-width: 1025px) {
   .footer-image-title4 {
-    padding-bottom: 3vw;
+    padding-bottom: 2vw;
     color: #fff;
     font-size: 0.8vw;
     padding-left: 2vw;
@@ -1094,7 +1100,7 @@ text-box-1.2
     height: 649px;
     background-image: url(../images/map.png);
     background-size: cover;
-    max-width: auto;
+    max-width: 100%;
   }
 }
 
@@ -1202,7 +1208,7 @@ text-box-1.2
 
 @media only screen and (min-width: 1025px) {
   .map-title {
-    font-size: 1.5vw;
+    font-size: 2.5vw;
   }
 }
 
@@ -1269,6 +1275,7 @@ text-box-1.2
     width: 20%;
     height: 2843px;
     z-index: 1000;
+    display: block;
   }
 }
 

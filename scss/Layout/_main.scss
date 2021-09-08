@@ -129,7 +129,7 @@ two-image-wrapper
   @media only screen and (min-width: 1025px) {
     width: 100%;
     height: 1446px;
-    padding: 125.5px 111.5px;
+    padding: 4vw 4vw 0vw 4vw;
   }
 }
 /* 
@@ -176,7 +176,7 @@ right-wrapper
   }
   @media only screen and (min-width: 1025px) {
     height: 1196px;
-    width: auto;
+    max-width: auto;
   }
 }
 /* 
@@ -198,7 +198,7 @@ right-wrapper
     padding: 1vw 0.5vw 0vw 1.5vw;
   }
   @media only screen and (min-width: 1025px) {
-    display: block;
+   
   }
 }
 /* 
@@ -219,6 +219,7 @@ wrapper-text
   }
 
   @media only screen and (min-width: 1025px) {
+    font-size: 4vw;
   }
 }
 /* 
@@ -332,12 +333,13 @@ text-box-1.2
     //（ここにタブレット用スタイルを記述）
     max-width: 1024px;
     height: 415px;
-    background-size: cover;
-    position: relative;
+ 
   }
   @media only screen and (min-width: 1025px) {
     height: 649px;
     background-image: url(../images/map.png);
+    background-size: cover;
+    max-width: auto;
   }
 }
 /* 

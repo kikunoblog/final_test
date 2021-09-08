@@ -229,5 +229,49 @@
         </div>
       </footer>
     </div>
+
+
+    <script>
+      $(function () {
+        $("#drawer_toggle").click(function () {
+          $(this).toggleClass("open");
+          $("#global_nav").slideToggle(230);
+        });
+      });
+
+      $(function () {
+        $(".h-r-list").resize(function () {
+          $(this).toggleClass("close");
+          $("#global_nav").slideToggle(230);
+        });
+      });
+
+      $(function () {
+        $(".h-r-list").hover(function () {
+          $(this).children(".r-sub-menu").stop().slideToggle(140);
+        });
+      });
+
+      $(".h-r-list").hover(
+        function () {
+          $(this).removeClass("close");
+        },
+        function () {
+          $(this).addClass("close");
+        }
+      );
+      $(window).resize(function () {
+        // ウィンドウがリサイズされたら
+        var $window = $(this).width();
+        var bp = 1200;
+        if ($window > bp) {
+          $("#global_nav").show();
+          $("#drawer_toggle").removeClass("open"); // ×印をハンバーガーに戻す
+        } else {
+          $("#global_nav").hide();
+          $("#drawer_toggle").removeClass("open"); // ×印をハンバーガーに戻す
+        }
+      });
+    </script>
   </body>
 </html>

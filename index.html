@@ -41,7 +41,9 @@
             <input id="searchform" type="text" name="s" value="" />
             <input id="header-button" type="submit" value="検索" />
           </form>
-          <div class="header-menu">Menu</div>
+          
+            <div class="header-menu">Menu</div>
+        
         </header>
 
         <main class="l-main">
@@ -151,69 +153,70 @@
 
       <aside class="l-sidebar">
         <div class="sidebar-top">Menu</div>
+        <nav id="global_nav">
+          <li class="sidebar-second">バーガー</li>
+          <ul class="sidebar-menu">
+            <li class="sidebar-list">
+              <a class="sidebar-text" href="#">ハンバーガー</a>
+            </li>
+            <li class="sidebar-list">
+              <a class="sidebar-text" href="#">チーズバーガー</a>
+            </li>
+            <li class="sidebar-list">
+              <a class="sidebar-text" href="#">テリヤキバーガー</a>
+            </li>
+            <li class="sidebar-list">
+              <a class="sidebar-text" href="#">アボカドバーガー</a>
+            </li>
+            <li class="sidebar-list">
+              <a class="sidebar-text" href="#">フィッシュバーガー</a>
+            </li>
+            <li class="sidebar-list">
+              <a class="sidebar-text" href="#">ベーコンバーガー</a>
+            </li>
+            <li class="sidebar-list">
+              <a class="sidebar-text" href="#">チキンバーガー</a>
+            </li>
+          </ul>
 
-        <li class="sidebar-second">バーガー</li>
-        <ul class="sidebar-menu">
-          <li class="sidebar-list">
-            <a class="sidebar-text" href="#">ハンバーガー</a>
-          </li>
-          <li class="sidebar-list">
-            <a class="sidebar-text" href="#">チーズバーガー</a>
-          </li>
-          <li class="sidebar-list">
-            <a class="sidebar-text" href="#">テリヤキバーガー</a>
-          </li>
-          <li class="sidebar-list">
-            <a class="sidebar-text" href="#">アボカドバーガー</a>
-          </li>
-          <li class="sidebar-list">
-            <a class="sidebar-text" href="#">フィッシュバーガー</a>
-          </li>
-          <li class="sidebar-list">
-            <a class="sidebar-text" href="#">ベーコンバーガー</a>
-          </li>
-          <li class="sidebar-list">
-            <a class="sidebar-text" href="#">チキンバーガー</a>
-          </li>
-        </ul>
+          <li class="sidebar-second2">サイド</li>
+          <ul class="sidebar-menu">
+            <li class="sidebar-list">
+              <a class="sidebar-text" href="#">ポテト</a>
+            </li>
+            <li class="sidebar-list">
+              <a class="sidebar-text" href="#">サラダ</a>
+            </li>
+            <li class="sidebar-list">
+              <a class="sidebar-text" href="#">ナゲット</a>
+            </li>
+            <li class="sidebar-list">
+              <a class="sidebar-text" href="#">コーン</a>
+            </li>
+          </ul>
 
-        <li class="sidebar-second2">サイド</li>
-        <ul class="sidebar-menu">
-          <li class="sidebar-list">
-            <a class="sidebar-text" href="#">ポテト</a>
-          </li>
-          <li class="sidebar-list">
-            <a class="sidebar-text" href="#">サラダ</a>
-          </li>
-          <li class="sidebar-list">
-            <a class="sidebar-text" href="#">ナゲット</a>
-          </li>
-          <li class="sidebar-list">
-            <a class="sidebar-text" href="#">コーン</a>
-          </li>
-        </ul>
-
-        <li class="sidebar-second2">ドリンク</li>
-        <ul class="sidebar-menu">
-          <li class="sidebar-list">
-            <a class="sidebar-text" href="#">コーラ</a>
-          </li>
-          <li class="sidebar-list">
-            <a class="sidebar-text" href="#">ファンタ</a>
-          </li>
-          <li class="sidebar-list">
-            <a class="sidebar-text" href="#">オレンジ</a>
-          </li>
-          <li class="sidebar-list">
-            <a class="sidebar-text" href="#">アップル</a>
-          </li>
-          <li class="sidebar-list">
-            <a class="sidebar-text" href="#">紅茶（Ice/Hot）</a>
-          </li>
-          <li class="sidebar-list">
-            <a class="sidebar-text" href="#">コーヒー（Ice/Hot）</a>
-          </li>
-        </ul>
+          <li class="sidebar-second2">ドリンク</li>
+          <ul class="sidebar-menu">
+            <li class="sidebar-list">
+              <a class="sidebar-text" href="#">コーラ</a>
+            </li>
+            <li class="sidebar-list">
+              <a class="sidebar-text" href="#">ファンタ</a>
+            </li>
+            <li class="sidebar-list">
+              <a class="sidebar-text" href="#">オレンジ</a>
+            </li>
+            <li class="sidebar-list">
+              <a class="sidebar-text" href="#">アップル</a>
+            </li>
+            <li class="sidebar-list">
+              <a class="sidebar-text" href="#">紅茶（Ice/Hot）</a>
+            </li>
+            <li class="sidebar-list">
+              <a class="sidebar-text" href="#">コーヒー（Ice/Hot）</a>
+            </li>
+          </ul>
+      </nav>
       </aside>
 
       <footer class="l-footer">
@@ -230,25 +233,30 @@
       </footer>
     </div>
 
-
     <script>
+      /* 
+#drawer_toggleをクリックしたらボタン自体にopenというクラスが付いて、
+global_navがスライドして表示される
+
+*/
+
       $(function () {
-        $("#drawer_toggle").click(function () {
+        $(".header-menu").click(function () {
           $(this).toggleClass("open");
-          $("#global_nav").slideToggle(230);
+          $("#global_nav").fadeToggle();
         });
       });
 
       $(function () {
         $(".h-r-list").resize(function () {
           $(this).toggleClass("close");
-          $("#global_nav").slideToggle(230);
+          $("#global_nav").fadeToggle();
         });
       });
 
       $(function () {
         $(".h-r-list").hover(function () {
-          $(this).children(".r-sub-menu").stop().slideToggle(140);
+          $(this).children(".r-sub-menu").stop().fadeToggle();
         });
       });
 
@@ -266,10 +274,10 @@
         var bp = 1200;
         if ($window > bp) {
           $("#global_nav").show();
-          $("#drawer_toggle").removeClass("open"); // ×印をハンバーガーに戻す
+          $(".header-menu").removeClass("open"); // ×印をハンバーガーに戻す
         } else {
           $("#global_nav").hide();
-          $("#drawer_toggle").removeClass("open"); // ×印をハンバーガーに戻す
+          $(".header-menu").removeClass("open"); // ×印をハンバーガーに戻す
         }
       });
     </script>

@@ -235,11 +235,10 @@
 
     <script>
       /* 
-#drawer_toggleをクリックしたらボタン自体にopenというクラスが付いて、
+.header-menuをクリックしたらボタン自体にopenというクラスが付いて、
 global_navがスライドして表示される
 
 */
-
       $(function () {
         $(".header-menu").click(function () {
           $(this).toggleClass("open");
@@ -271,7 +270,7 @@ global_navがスライドして表示される
       $(window).resize(function () {
         // ウィンドウがリサイズされたら
         var $window = $(this).width();
-        var bp = 1200;
+        var bp = 1024;
         if ($window > bp) {
           $("#global_nav").show();
           $(".header-menu").removeClass("open"); // ×印をハンバーガーに戻す

@@ -1266,7 +1266,58 @@ text-box-1.2
 
 /*Layoutフォルダの中にあるmain.scssのimport*/
 .l-sidebar {
-  display: none;
+  background-color: #f2ede9;
+  width: 20%;
+  height: 2843px;
+  z-index: 1000;
+  display: block;
+}
+
+@media only screen and (min-width: 600px) {
+  .l-sidebar {
+    background-color: #f2ede9;
+    width: 44%;
+    height: 2843px;
+    z-index: 1000;
+    display: block;
+    position: absolute;
+    top: 0vw;
+    right: 0vw;
+  }
+}
+
+.l-sidebar .sidebar-top {
+  font-weight: bold;
+  font-size: 1.5vw;
+  color: #707070;
+  margin: 70px 0px 10px 30px;
+}
+
+.l-sidebar .sidebar-second {
+  font-size: 1.3vw;
+  font-weight: bold;
+  color: #707070;
+  margin: 80px 0px 20px 30px;
+  list-style: none;
+}
+
+.l-sidebar .sidebar-second2 {
+  font-size: 1.3vw;
+  font-weight: bold;
+  color: #707070;
+  margin: 50px 0px 20px 30px;
+  list-style: none;
+}
+
+.l-sidebar .sidebar-menu {
+  font-size: 1.2vw;
+  color: #707070;
+}
+
+.l-sidebar .sidebar-list {
+  font-size: 1.2vw;
+  line-height: 2.5;
+  padding-left: 40px;
 }
 
 @media only screen and (min-width: 1025px) {
@@ -1277,6 +1328,40 @@ text-box-1.2
     z-index: 1000;
     display: block;
   }
+}
+
+.l-sidebar .sidebar-top {
+  font-weight: bold;
+  font-size: 1.5vw;
+  color: #707070;
+  margin: 70px 0px 10px 30px;
+}
+
+.l-sidebar .sidebar-second {
+  font-size: 1.3vw;
+  font-weight: bold;
+  color: #707070;
+  margin: 80px 0px 20px 30px;
+  list-style: none;
+}
+
+.l-sidebar .sidebar-second2 {
+  font-size: 1.3vw;
+  font-weight: bold;
+  color: #707070;
+  margin: 50px 0px 20px 30px;
+  list-style: none;
+}
+
+.l-sidebar .sidebar-menu {
+  font-size: 1.2vw;
+  color: #707070;
+}
+
+.l-sidebar .sidebar-list {
+  font-size: 1.2vw;
+  line-height: 2.5;
+  padding-left: 40px;
 }
 
 @media only screen and (min-width: 1025px) {

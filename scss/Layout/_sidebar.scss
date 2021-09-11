@@ -1,16 +1,99 @@
 .l-sidebar {
-  display: none;
+  background-color: #f2ede9;
+  width: 20%;
+  height: 2843px;
+  z-index: 1000;
+  display: block;
+
 @media only screen and (min-width: 600px)  {
   //（ここにタブレット用スタイルを記述）
+
+  background-color: #f2ede9;
+  width: 44%;
+  height: 2843px;
+  z-index: 1000;
+  display: block;
+  position: absolute;
+  top:0vw;
+  right: 0vw;
+}
+  
+  .sidebar-top {
+    font-weight: bold;
+    font-size: 1.5vw;
+    color: #707070;
+    margin: 70px 0px 10px 30px;
+
   }
+  .sidebar-second {
+    font-size: 1.3vw;
+    font-weight: bold;
+    color: #707070;
+    margin: 80px 0px 20px 30px;
+    list-style: none;
+  }
+  .sidebar-second2 {
+    font-size: 1.3vw;
+    font-weight: bold;
+    color: #707070;
+    margin: 50px 0px 20px 30px;
+    list-style: none;
+  }
+  .sidebar-menu {
+    font-size: 1.2vw;
+    color: #707070;
+  }
+  .sidebar-list {
+    font-size: 1.2vw;
+    line-height: 2.5;
+    padding-left: 40px;
+  }
+
+  
+
+
   @media only screen and (min-width: 1025px)  {
       background-color: #f2ede9;
       width: 20%;
       height: 2843px;
       z-index: 1000;
-      display: block;;
+      display: block;
+  }
+
+
+.sidebar-top {
+    font-weight: bold;
+    font-size: 1.5vw;
+    color: #707070;
+    margin: 70px 0px 10px 30px;
+
+  }
+  .sidebar-second {
+    font-size: 1.3vw;
+    font-weight: bold;
+    color: #707070;
+    margin: 80px 0px 20px 30px;
+    list-style: none;
+  }
+  .sidebar-second2 {
+    font-size: 1.3vw;
+    font-weight: bold;
+    color: #707070;
+    margin: 50px 0px 20px 30px;
+    list-style: none;
+  }
+  .sidebar-menu {
+    font-size: 1.2vw;
+    color: #707070;
+  }
+  .sidebar-list {
+    font-size: 1.2vw;
+    line-height: 2.5;
+    padding-left: 40px;
+  }
+
 }
-}
+
 
 
 @media only screen and (min-width: 1025px)  {

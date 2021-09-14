@@ -32,6 +32,37 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
     flex-wrap: wrap;
   }
 }
+
+.l-container::before{
+  width: 12.5%;
+  height: 2843px;
+  z-index: 2000;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.445);
+  @media only screen and (min-width: 600px) {
+  width: 56%;
+    height: 1825px;
+    z-index: 2000;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.445);
+  
+  }
+  @media only screen and (min-width: 1025px) {
+    //（ここにパソコン用スタイルを記述）
+    display: none;
+
+  }
+}
+
+
 /* 
 l-wrapper
 フッター以外をレイアウトしているクラス。

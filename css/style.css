@@ -1299,6 +1299,20 @@ text-box-1.2
   }
 }
 
+@media only screen and (min-width: 600px) {
+  .l-sidebar::before {
+    width: 128%;
+    height: 1825px;
+    z-index: 2000;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -55vw;
+    background-color: rgba(0, 0, 0, 0.445);
+  }
+}
+
 .menu-trigger {
   color: #707070;
   cursor: pointer;

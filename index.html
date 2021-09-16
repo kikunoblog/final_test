@@ -234,52 +234,21 @@
       </footer>
     </div>
 
-    <script>
-      /* 
-.header-menuをクリックしたらボタン自体にopenというクラスが付いて、
-global_navがスライドして表示される
+   
+      
+<!-- .header-menuをクリックしたらボタン自体にopenというクラスが付いて、
+global_navがスライドして表示される */ -->
 
 
-      $(function () {
-        $(".header-menu").click(function () {
-          $(this).toggleClass("open");
-          $("#global_nav").fadeToggle();
-        });
-      });
-
-      $(function () {
-        $(".h-r-list").resize(function () {
-          $(this).toggleClass("close");
-          $("#global_nav").fadeToggle();
-        });
-      });
-
-      $(function () {
-        $(".h-r-list").hover(function () {
-          $(this).children(".r-sub-menu").stop().fadeToggle();
-        });
-      });
-
-      $(".h-r-list").hover(
-        function () {
-          $(this).removeClass("close");
-        },
-        function () {
-          $(this).addClass("close");
-        }
-      );
-      $(window).resize(function () {
-        // ウィンドウがリサイズされたら
-        var $window = $(this).width();
-        var bp = 1024;
-        if ($window > bp) {
-          $("#global_nav").show();
-          $(".header-menu").removeClass("open"); // ×印をハンバーガーに戻す
-        } else {
-          $("#global_nav").hide();
-          $(".header-menu").removeClass("open"); // ×印をハンバーガーに戻す
-        }
-*/
-    </script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+  $(function(){
+    // 横からスライド
+    $(".menu-trigger").click(function(){
+      $(this).toggleClass("open");
+      $("#responsive-menu").toggleClass("sp_open");
+    });
+  });
+</script>
   </body>
-</html>
+</html> 

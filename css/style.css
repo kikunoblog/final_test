@@ -1318,6 +1318,9 @@ text-box-1.2
     position: absolute;
     top: 0vw;
     right: 0vw;
+    display: block;
+    right: -100%;
+    transition: right .5s;
   }
 }
 

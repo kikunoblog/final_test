@@ -18,6 +18,9 @@
     position: absolute;
     top: 0vw;
     right: 0vw;
+    display: block;
+    right: -100%;
+    transition: right .5s;
   }
   @media only screen and (min-width: 1025px) {
     background-color: #f2ede9;

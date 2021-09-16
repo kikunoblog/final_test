@@ -475,7 +475,7 @@ template {
   }
 }
 
-.l-header-title {
+.l-header__title {
   margin: 0px;
   font-size: 35px;
   color: #707070;
@@ -484,7 +484,7 @@ template {
 }
 
 @media only screen and (min-width: 600px) {
-  .l-header-title {
+  .l-header__title {
     margin: 0px 0px 0px 20px;
     position: relative;
     font-size: 40px;
@@ -613,15 +613,7 @@ template {
   }
 }
 
-.footer-image2 {
-  height: 0px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.footer-image-text-title1 {
+.footer-image__text-title1 {
   font-size: 4.3vw;
   color: #fff;
   display: inline-block;
@@ -630,35 +622,35 @@ template {
 }
 
 @media only screen and (min-width: 600px) {
-  .footer-image-text-title1 {
+  .footer-image__text-title1 {
     font-size: 2.2vw;
     padding: 0vw;
   }
 }
 
 @media only screen and (min-width: 1025px) {
-  .footer-image-text-title1 {
+  .footer-image__text-title1 {
     font-size: 1.6vw;
   }
 }
 
-.footer-image-line {
+.footer-image__line {
   margin: 0.8vw 3.2vw 0vw 4vw;
 }
 
 @media only screen and (min-width: 600px) {
-  .footer-image-line {
+  .footer-image__line {
     margin: 0.3vw 2vw;
   }
 }
 
 @media only screen and (min-width: 1025px) {
-  .footer-image-line {
+  .footer-image__line {
     margin: 0.1vw 2vw;
   }
 }
 
-.footer-image-line::after {
+.footer-image__line::after {
   width: 0.39vw;
   height: 4.8vw;
   content: "";
@@ -667,14 +659,14 @@ template {
 }
 
 @media only screen and (min-width: 600px) {
-  .footer-image-line::after {
+  .footer-image__line::after {
     width: 0.1vw;
     height: 2.2vw;
   }
 }
 
 @media only screen and (min-width: 1025px) {
-  .footer-image-line::after {
+  .footer-image__line::after {
     content: "";
     display: inline-block;
     width: 0.1vw;
@@ -683,27 +675,27 @@ template {
   }
 }
 
-.footer-image-title3 {
+.footer-image__title3 {
   color: #fff;
   font-size: 4.3vw;
   padding: 0.8vw 2vw 0vw 2vw;
 }
 
 @media only screen and (min-width: 600px) {
-  .footer-image-title3 {
+  .footer-image__title3 {
     font-size: 2.2vw;
     padding: 0.1vw 0vw 0vw 0vw;
   }
 }
 
 @media only screen and (min-width: 1025px) {
-  .footer-image-title3 {
+  .footer-image__title3 {
     font-size: 1.6vw;
     padding: 0.1vw 0vw 0vw 0vw;
   }
 }
 
-.footer-image-title4 {
+.footer-image__title4 {
   color: #fff;
   font-size: 2.8vw;
   padding-bottom: 5vw;
@@ -711,7 +703,7 @@ template {
 }
 
 @media only screen and (min-width: 600px) {
-  .footer-image-title4 {
+  .footer-image__title4 {
     color: #fff;
     font-size: 1.8vw;
     padding-bottom: 4vw;
@@ -720,12 +712,20 @@ template {
 }
 
 @media only screen and (min-width: 1025px) {
-  .footer-image-title4 {
+  .footer-image__title4 {
     padding-bottom: 2vw;
     color: #fff;
     font-size: 0.8vw;
     padding-left: 2vw;
   }
+}
+
+.footer-image2 {
+  height: 0px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 /*Layoutフォルダの中にあるfooter.scssのimport*/
@@ -864,10 +864,10 @@ l-main
 }
 
 /* 
-main-image-title
+main-image__title
 「ダミーサイト」の画像に記載の文字「ダミーサイト」の装飾
 */
-.main-image-title {
+.main-image__title {
   font-size: 35px;
   margin-left: 20px;
   font-weight: bold;
@@ -877,7 +877,7 @@ main-image-title
 }
 
 @media only screen and (min-width: 600px) {
-  .main-image-title {
+  .main-image__title {
     font-size: 40px;
     margin-left: 46px;
   }
@@ -969,13 +969,13 @@ right-wrapper
 }
 
 /* 
-.left-wrapper-link,
-.right-wrapper-link
+.left-wrapper__link,
+.right-wrapper__link
 「ダミーサイト」の画像の下２つの並ぶ画像の左と右の画像
 その全体にリンクを設定するための装飾
 */
-.left-wrapper-link,
-.right-wrapper-link {
+.left-wrapper__link,
+.right-wrapper__link {
   padding: 0vw;
   height: 100%;
   display: flex;
@@ -984,8 +984,8 @@ right-wrapper
 }
 
 @media only screen and (min-width: 600px) {
-  .left-wrapper-link,
-  .right-wrapper-link {
+  .left-wrapper__link,
+  .right-wrapper__link {
     padding: 1vw 0.5vw 0vw 1.5vw;
   }
 }

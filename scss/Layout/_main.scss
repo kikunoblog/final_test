@@ -122,10 +122,10 @@ l-main
   }
 }
 /* 
-main-image-title
+main-image__title
 「ダミーサイト」の画像に記載の文字「ダミーサイト」の装飾
 */
-.main-image-title {
+.main-image__title {
   font-size: 35px;
   margin-left: 20px;
   font-weight: bold;
@@ -211,13 +211,13 @@ right-wrapper
   }
 }
 /* 
-.left-wrapper-link,
-.right-wrapper-link
+.left-wrapper__link,
+.right-wrapper__link
 「ダミーサイト」の画像の下２つの並ぶ画像の左と右の画像
 その全体にリンクを設定するための装飾
 */
-.left-wrapper-link,
-.right-wrapper-link {
+.left-wrapper__link,
+.right-wrapper__link {
   padding: 0vw;
   //display: block;
   height: 100%;

@@ -1,9 +1,7 @@
 .l-footer {
   width: 100%;
   background-image: url("../images/footer.png");
-  
 }
-
 
 .footer-image {
   width: 100%;
@@ -15,43 +13,30 @@
   padding-top: 8vw;
   padding-right: 2vw;
   @media only screen and (min-width: 600px) {
-    padding:5vw 0vw 0vw 0vw;
+    padding: 5vw 0vw 0vw 0vw;
   }
   @media only screen and (min-width: 1025px) {
-    padding:2vw 0vw 0vw 0vw;
-   
+    padding: 2vw 0vw 0vw 0vw;
   }
+
 }
 
-.footer-image2 {
-  height: 0px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  @media only screen and (min-width: 1025px) {
-
-  }
-}
-
-.footer-image-text-title1 {
+.footer-image__text-title1 {
   font-size: 4.3vw;
   color: #fff;
   display: inline-block;
   position: relative;
-  padding:0.8vw 2vw 0vw 2vw;
+  padding: 0.8vw 2vw 0vw 2vw;
   @media only screen and (min-width: 600px) {
     font-size: 2.2vw;
-    padding:0vw;
-
+    padding: 0vw;
   }
   @media only screen and (min-width: 1025px) {
     font-size: 1.6vw;
-
   }
 }
 
-.footer-image-line {
+.footer-image__line {
   margin: 0.8vw 3.2vw 0vw 4vw;
   @media only screen and (min-width: 600px) {
     margin: 0.3vw 2vw;
@@ -61,7 +46,7 @@
   }
 }
 
-.footer-image-line::after {
+.footer-image__line::after {
   width: 0.39vw;
   height: 4.8vw;
   //position: absolute;
@@ -87,23 +72,22 @@
   }
 }
 
-.footer-image-title3 {
+.footer-image__title3 {
   color: #fff;
   font-size: 4.3vw;
-  padding:0.8vw 2vw 0vw 2vw;
+  padding: 0.8vw 2vw 0vw 2vw;
   @media only screen and (min-width: 600px) {
     font-size: 2.2vw;
-    padding:0.1vw 0vw 0vw 0vw;
-
+    padding: 0.1vw 0vw 0vw 0vw;
   }
   @media only screen and (min-width: 1025px) {
     //color: #fff;
     font-size: 1.6vw;
-    padding:0.1vw 0vw 0vw 0vw;
+    padding: 0.1vw 0vw 0vw 0vw;
   }
 }
 
-.footer-image-title4 {
+.footer-image__title4 {
   color: #fff;
   font-size: 2.8vw;
   //position: absolute;
@@ -111,11 +95,10 @@
   padding-bottom: 5vw;
   padding-left: 2vw;
   @media only screen and (min-width: 600px) {
-   
     color: #fff;
     font-size: 1.8vw;
     padding-bottom: 4vw;
-  padding-left: 0vw;
+    padding-left: 0vw;
   }
   @media only screen and (min-width: 1025px) {
     padding-bottom: 2vw;
@@ -125,3 +108,12 @@
   }
 }
 
+.footer-image2 {
+  height: 0px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  @media only screen and (min-width: 1025px) {
+  }
+}

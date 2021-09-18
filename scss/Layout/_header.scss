@@ -17,9 +17,7 @@
     align-items: center;
     flex-direction: row;
   }
-}
-
-.l-header__title {
+&__title {
   margin: 0px;
   font-size: 35px;
   color: #707070;
@@ -37,6 +35,9 @@
     //margin: 7vw 0px 0px 2vw;
   }
 }
+
+}
+
 
 .search-box {
   margin: 10px 115px 0px 0px;
@@ -58,34 +59,35 @@
   @media only screen and (min-width: 1025px) {
     margin: 10px 115px 0px 0px;
   }
+  &::before{
+    
+      content: ""; /* 疑似要素に必須 */
+      width: 16px; /* アイコンの横幅 */
+      height: 16px; /* アイコンの高さ */
+      background: url(../images/glass.png) no-repeat center center / auto 100%; /* 背景にアイコン画像を配置 */
+      display: inline-block; /* 高さを持たせるためにインラインブロック要素にする */
+      position: absolute; /* 相対位置に指定 */
+      top: 12px; /* アイコンの位置 */
+      left: 9px; /* アイコンの位置*/
+      @media only screen and (min-width: 600px) {
+        //（ここにタブレット用スタイルを記述）
+      }
+      @media only screen and (min-width: 1025px) {
+      }
+    }
+    & input {
+      padding: 10px 15px 0px; /* アイコンを設置するため左の余白を多めに指定*/
+      width: 100%;
+      @media only screen and (min-width: 600px) {
+        //（ここにタブレット用スタイルを記述）
+      }
+    
+      @media only screen and (min-width: 1025px) {
+      }
+    }
+    
 }
 
-.search-box::before {
-  content: ""; /* 疑似要素に必須 */
-  width: 16px; /* アイコンの横幅 */
-  height: 16px; /* アイコンの高さ */
-  background: url(../images/glass.png) no-repeat center center / auto 100%; /* 背景にアイコン画像を配置 */
-  display: inline-block; /* 高さを持たせるためにインラインブロック要素にする */
-  position: absolute; /* 相対位置に指定 */
-  top: 12px; /* アイコンの位置 */
-  left: 9px; /* アイコンの位置*/
-  @media only screen and (min-width: 600px) {
-    //（ここにタブレット用スタイルを記述）
-  }
-  @media only screen and (min-width: 1025px) {
-  }
-}
-
-.search-box input {
-  padding: 10px 15px 0px; /* アイコンを設置するため左の余白を多めに指定*/
-  width: 100%;
-  @media only screen and (min-width: 600px) {
-    //（ここにタブレット用スタイルを記述）
-  }
-
-  @media only screen and (min-width: 1025px) {
-  }
-}
 
 .header-menu {
   display: block;

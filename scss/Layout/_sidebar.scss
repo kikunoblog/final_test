@@ -64,14 +64,12 @@
   @media only screen and (min-width: 1025px) {
     display: none;
   }
-}
-
-  .menu-trigger::after{
+  &::after{
     content: "×";
     font-size: 3rem;
     margin-top: -20px;
   }
-
+}
 
 
 

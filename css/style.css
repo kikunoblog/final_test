@@ -1348,7 +1348,7 @@ text-box-1.2
     background-color: #f2ede9;
     width: 20%;
     height: 2843px;
-    z-index: 1000;
+    z-index: 2000;
     display: block;
   }
 }

@@ -94,50 +94,6 @@
             </a>
           </div>
         </section>
-        <!--
-      <section class="wrapper2">
-      <div class="wrapper">
-      <a href="#"><img src="images/main2.png" class="main2" alt="メイン画像2枚目"/>
-      <p class="wrapper-text">Take Out</p>
-      <p class="m2-subtext">ー</p>
-      
-      <div class="text-box-a">
-      <div class="text-box1">
-        <p class="text-title1">Take OUT</p>
-        <p class="text-title2">当店のテイクアウトで利用できる商品を掲載しています。当店のテイクアウトで利用できる商品を掲載しています。
-          当店のテイクアウトで利用できる商品を掲載しています。当店のテイクアウトで利用できる商品を掲載しています。当店のテイクアウトで利用できる商品を掲載しています。
-        </p>
-      </div>
-      <div class="text-box2">
-        <p class="text-title1">Take OUT</p>
-        <p class="text-title2">当店のテイクアウトで利用できる商品を掲載しています。当店のテイクアウトで利用できる商品を掲載しています。
-          当店のテイクアウトで利用できる商品を掲載しています。当店のテイクアウトで利用できる商品を掲載しています。当店のテイクアウトで利用できる商品を掲載しています。</p>
-        </div>
-        </div>
-      </a>
-    
-      </div>
-      <div class="right-wrapper">
-      <a href="#"><img src="images/main3.png" class="main3" alt="メイン画像3枚目" />
-      <p class="m3-text">Eat In</p>
-      <p class="m3-subtext">ー</p>
-
-      <div class="t-box-b">
-      <div class="t-box3">
-        <p class="text-title1">Take OUT</p>
-        <p class="text-title2">当店のテイクアウトで利用できる商品を掲載しています。当店のテイクアウトで利用できる商品を掲載しています。
-          当店のテイクアウトで利用できる商品を掲載しています。当店のテイクアウトで利用できる商品を掲載しています。当店のテイクアウトで利用できる商品を掲載しています。</p>
-      </div>
-      <div class="t-box4">
-        <p class="text-title1">Take OUT</p>
-        <p class="text-title2">当店のテイクアウトで利用できる商品を掲載しています。当店のテイクアウトで利用できる商品を掲載しています。
-          当店のテイクアウトで利用できる商品を掲載しています。当店のテイクアウトで利用できる商品を掲載しています。当店のテイクアウトで利用できる商品を掲載しています。</p>
-      </div>
-      </div>
-    </a>
-      </div>
-    </section>
-  -->
 
         <section class="map-wrapper">
           <div class="map">
@@ -236,19 +192,20 @@
 
    
       
-<!-- .header-menuをクリックしたらボタン自体にopenというクラスが付いて、
+<!-- .p-header__menuをクリックしたらボタン自体にopenというクラスが付いて、
 responsive-menuがスライドして表示される */ -->
-
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script>
   $(function(){
     // 横からスライド
-    $(".header-menu").click(function(){
+    if (window.matchMedia('(max-width: 1024px) and (min-width:320px)').matches) {
+		/* ウィンドウサイズ669以上、767以下の処理を記述 */
+    $(".p-header__menu").click(function(){
       $(this).toggleClass("open");
       $("#responsive-menu").toggleClass("sp_open");
     });
-  });
+  }});
 </script>
   </body>
 </html> 

@@ -475,7 +475,145 @@ template {
   }
 }
 
-.l-header__title {
+/*Layoutフォルダの中にあるheader.scssのimport*/
+.l-footer {
+  width: 100%;
+  background-image: url("../images/footer.png");
+}
+
+/*Layoutフォルダの中にあるfooter.scssのimport*/
+/* 
+body
+スマホサイズを320を最小値にするため設定
+*/
+body {
+  min-width: 320px;
+}
+
+/* 
+l-container
+全体をレイアウトしているクラス。
+スマホ：高さ2716px
+タブレット：hegiht1825pxにする。折り返しはしないようにする。
+PC：幅と高さを設定。flexとwrapで横並びになるようにする。
+*/
+.l-container {
+  height: 2716px;
+  display: block;
+  flex-wrap: nowrap;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+@media only screen and (min-width: 600px) {
+  .l-container {
+    display: block;
+    flex-wrap: nowrap;
+    height: 1825px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .l-container {
+    width: 100%;
+    height: 2993px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.l-container::before {
+  width: 100%;
+  height: 2843px;
+  z-index: 1000;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.445);
+}
+
+@media only screen and (min-width: 600px) {
+  .l-container::before {
+    width: 56%;
+    height: 1825px;
+    z-index: 2000;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.445);
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .l-container::before {
+    display: none;
+  }
+}
+
+/*Layoutフォルダの中にあるmain.scssのimport*/
+.l-sidebar {
+  background-color: #f2ede9;
+  width: 87.5%;
+  height: 2843px;
+  z-index: 1000;
+  display: block;
+  position: absolute;
+  top: 0vw;
+  right: 0vw;
+}
+
+@media only screen and (min-width: 600px) {
+  .l-sidebar {
+    background-color: #f2ede9;
+    width: 44%;
+    height: 1825px;
+    z-index: 1000;
+    display: block;
+    position: absolute;
+    top: 0vw;
+    right: 0vw;
+    display: block;
+    right: -100%;
+    transition: right 0.5s;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .l-sidebar {
+    background-color: #f2ede9;
+    width: 20%;
+    height: 2843px;
+    z-index: 1000;
+    display: block;
+  }
+}
+
+/*Layoutフォルダの中にあるsidebar.scssのimport*/
+.p-header {
+  height: 217px;
+  background-color: #fff7ef;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .p-header {
+    height: 218px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+.p-header__title {
   margin: 0px;
   font-size: 35px;
   color: #707070;
@@ -484,10 +622,35 @@ template {
 }
 
 @media only screen and (min-width: 600px) {
-  .l-header__title {
+  .p-header__title {
     margin: 0px 0px 0px 20px;
     position: relative;
     font-size: 40px;
+  }
+}
+
+.p-header__menu {
+  display: block;
+  font-size: 22px;
+  color: #707070;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+@media only screen and (min-width: 600px) {
+  .p-header__menu {
+    font-size: 25px;
+    top: 10px;
+    right: 30px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .p-header__menu {
+    display: none;
   }
 }
 
@@ -544,52 +707,7 @@ template {
   width: 100%;
 }
 
-.header-menu {
-  display: block;
-  font-size: 22px;
-  color: #707070;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: bold;
-  position: absolute;
-  top: 5px;
-  right: 5px;
-}
-
-@media only screen and (min-width: 600px) {
-  .header-menu {
-    font-size: 25px;
-    top: 10px;
-    right: 30px;
-  }
-}
-
-@media only screen and (min-width: 1025px) {
-  .header-menu {
-    display: none;
-  }
-}
-
-#header-button {
-  font-weight: bold;
-  width: 90px;
-  height: 40px;
-  position: absolute;
-  right: -100px;
-  top: -1px;
-  border-radius: 4px;
-  background: linear-gradient(#f2ede9, #ded8d3);
-  border: 1px solid #999;
-  color: #707070;
-  padding: 10px 32px;
-  font-size: 0.8rem;
-}
-
-/*Layoutフォルダの中にあるheader.scssのimport*/
-.l-footer {
-  width: 100%;
-  background-image: url("../images/footer.png");
-}
-
+/*Objectフォルダの中のProjectフォルダの中にあるheader.scssのimport*/
 .footer-image {
   width: 100%;
   height: 150px;
@@ -728,106 +846,7 @@ template {
   align-items: flex-end;
 }
 
-/*Layoutフォルダの中にあるfooter.scssのimport*/
-/* 
-body
-スマホサイズを320を最小値にするため設定
-*/
-body {
-  min-width: 320px;
-}
-
-/* 
-l-container
-全体をレイアウトしているクラス。
-スマホ：高さ2716px
-タブレット：hegiht1825pxにする。折り返しはしないようにする。
-PC：幅と高さを設定。flexとwrapで横並びになるようにする。
-*/
-.l-container {
-  height: 2716px;
-  display: block;
-  flex-wrap: nowrap;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-@media only screen and (min-width: 600px) {
-  .l-container {
-    display: block;
-    flex-wrap: nowrap;
-    height: 1825px;
-  }
-}
-
-@media only screen and (min-width: 1025px) {
-  .l-container {
-    width: 100%;
-    height: 2993px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-.l-container::before {
-  width: 100%;
-  height: 2843px;
-  z-index: 1000;
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.445);
-}
-
-@media only screen and (min-width: 600px) {
-  .l-container::before {
-    width: 56%;
-    height: 1825px;
-    z-index: 2000;
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.445);
-  }
-}
-
-@media only screen and (min-width: 1025px) {
-  .l-container::before {
-    display: none;
-  }
-}
-
-/* 
-l-wrapper
-フッター以外をレイアウトしているクラス。
-スマホ：高さ2566px
-タブレット：hegiht1675px
-PC：サイドバーを入れるので幅を80％に。高さは2843px
-*/
-.l-wrapper {
-  width: 100%;
-  height: 2566px;
-}
-
-@media only screen and (min-width: 600px) {
-  .l-wrapper {
-    width: 100%;
-    height: 1675px;
-  }
-}
-
-@media only screen and (min-width: 1025px) {
-  .l-wrapper {
-    width: 80%;
-    height: 2843px;
-  }
-}
-
+/*Objectフォルダの中のProjectフォルダの中にあるfooter.scssのimport*/
 /* 
 l-main
 「ダミーサイト」の画像・その下２つの並ぶ画像をまとめた部分
@@ -1296,45 +1315,7 @@ text-box-1.2
   }
 }
 
-/*Layoutフォルダの中にあるmain.scssのimport*/
-.l-sidebar {
-  background-color: #f2ede9;
-  width: 87.5%;
-  height: 2843px;
-  z-index: 1000;
-  display: block;
-  position: absolute;
-  top: 0vw;
-  right: 0vw;
-}
-
-@media only screen and (min-width: 600px) {
-  .l-sidebar {
-    background-color: #f2ede9;
-    width: 44%;
-    height: 1825px;
-    z-index: 1000;
-    display: block;
-    position: absolute;
-    top: 0vw;
-    right: 0vw;
-    display: block;
-    right: -100%;
-    transition: right 0.5s;
-  }
-}
-
-@media only screen and (min-width: 1025px) {
-  .l-sidebar {
-    background-color: #f2ede9;
-    width: 20%;
-    height: 2843px;
-    z-index: 1000;
-    display: block;
-  }
-}
-
-/*Layoutフォルダの中にあるsidebar.scssのimport*/
+/*Objectフォルダの中のProjectフォルダの中にあるmain.scssのimport*/
 .p-sidebar {
   background-color: #f2ede9;
   width: 87.5%;
@@ -1525,4 +1506,230 @@ text-box-1.2
 }
 
 /*Objectフォルダの中のProjectフォルダの中にあるsidebar.scssのimport*/
+/*Objectフォルダの中のComponentフォルダの中にあるheader.scssのimport*/
+.l-footer {
+  width: 100%;
+  background-image: url("../images/footer.png");
+}
+
+.footer-image {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  padding-top: 8vw;
+  padding-right: 2vw;
+}
+
+@media only screen and (min-width: 600px) {
+  .footer-image {
+    padding: 5vw 0vw 0vw 0vw;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .footer-image {
+    padding: 2vw 0vw 0vw 0vw;
+  }
+}
+
+.footer-image__text-title1 {
+  font-size: 4.3vw;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  padding: 0.8vw 2vw 0vw 2vw;
+}
+
+@media only screen and (min-width: 600px) {
+  .footer-image__text-title1 {
+    font-size: 2.2vw;
+    padding: 0vw;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .footer-image__text-title1 {
+    font-size: 1.6vw;
+  }
+}
+
+.footer-image__line {
+  margin: 0.8vw 3.2vw 0vw 4vw;
+}
+
+@media only screen and (min-width: 600px) {
+  .footer-image__line {
+    margin: 0.3vw 2vw;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .footer-image__line {
+    margin: 0.1vw 2vw;
+  }
+}
+
+.footer-image__line::after {
+  width: 0.39vw;
+  height: 4.8vw;
+  content: "";
+  display: inline-block;
+  background-color: #fff;
+}
+
+@media only screen and (min-width: 600px) {
+  .footer-image__line::after {
+    width: 0.1vw;
+    height: 2.2vw;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .footer-image__line::after {
+    content: "";
+    display: inline-block;
+    width: 0.1vw;
+    height: 1.5vw;
+    background-color: #fff;
+  }
+}
+
+.footer-image__title3 {
+  color: #fff;
+  font-size: 4.3vw;
+  padding: 0.8vw 2vw 0vw 2vw;
+}
+
+@media only screen and (min-width: 600px) {
+  .footer-image__title3 {
+    font-size: 2.2vw;
+    padding: 0.1vw 0vw 0vw 0vw;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .footer-image__title3 {
+    font-size: 1.6vw;
+    padding: 0.1vw 0vw 0vw 0vw;
+  }
+}
+
+.footer-image__title4 {
+  color: #fff;
+  font-size: 2.8vw;
+  padding-bottom: 5vw;
+  padding-left: 2vw;
+}
+
+@media only screen and (min-width: 600px) {
+  .footer-image__title4 {
+    color: #fff;
+    font-size: 1.8vw;
+    padding-bottom: 4vw;
+    padding-left: 0vw;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .footer-image__title4 {
+    padding-bottom: 2vw;
+    color: #fff;
+    font-size: 0.8vw;
+    padding-left: 2vw;
+  }
+}
+
+.footer-image2 {
+  height: 0px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/*Objectフォルダの中のComponentフォルダの中にあるfooter.scssのimport*/
+/* 
+c-wrapper
+フッター以外をレイアウトしているクラス。
+スマホ：高さ2566px
+タブレット：hegiht1675px
+PC：サイドバーを入れるので幅を80％に。高さは2843px
+*/
+.c-wrapper {
+  width: 100%;
+  height: 2566px;
+}
+
+@media only screen and (min-width: 600px) {
+  .c-wrapper {
+    width: 100%;
+    height: 1675px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .c-wrapper {
+    width: 80%;
+    height: 2843px;
+  }
+}
+
+/*Objectフォルダの中のComponentフォルダの中にあるmain.scssのimpoer*/
+.l-sidebar {
+  background-color: #f2ede9;
+  width: 87.5%;
+  height: 2843px;
+  z-index: 1000;
+  display: block;
+  position: absolute;
+  top: 0vw;
+  right: 0vw;
+}
+
+@media only screen and (min-width: 600px) {
+  .l-sidebar {
+    background-color: #f2ede9;
+    width: 44%;
+    height: 1825px;
+    z-index: 1000;
+    display: block;
+    position: absolute;
+    top: 0vw;
+    right: 0vw;
+    display: block;
+    right: -100%;
+    transition: right 0.5s;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .l-sidebar {
+    background-color: #f2ede9;
+    width: 20%;
+    height: 2843px;
+    z-index: 1000;
+    display: block;
+  }
+}
+
+/*Objectフォルダの中のComponentフォルダの中にあるsidebar.scssのimport*/
+#header-button {
+  font-weight: bold;
+  width: 90px;
+  height: 40px;
+  position: absolute;
+  right: -100px;
+  top: -1px;
+  border-radius: 4px;
+  background: linear-gradient(#f2ede9, #ded8d3);
+  border: 1px solid #999;
+  color: #707070;
+  padding: 10px 32px;
+  font-size: 0.8rem;
+}
+
+/*Objectフォルダの中のComponentフォルダの中にあるbutton.scssのimport*/
 /*# sourceMappingURL=style.css.map */

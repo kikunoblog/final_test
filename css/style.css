@@ -749,6 +749,8 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
   display: block;
   flex-wrap: nowrap;
   width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
 @media only screen and (min-width: 600px) {
@@ -769,9 +771,9 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
 }
 
 .l-container::before {
-  width: 12.5%;
+  width: 100%;
   height: 2843px;
-  z-index: 2000;
+  z-index: 1000;
   content: "";
   display: block;
   position: absolute;
@@ -1332,7 +1334,45 @@ text-box-1.2
   }
 }
 
-.l-sidebar__top {
+/*Layoutフォルダの中にあるsidebar.scssのimport*/
+.p-sidebar {
+  background-color: #f2ede9;
+  width: 87.5%;
+  height: 2843px;
+  z-index: 1000;
+  display: block;
+  position: absolute;
+  top: 0vw;
+  right: 0vw;
+}
+
+@media only screen and (min-width: 600px) {
+  .p-sidebar {
+    background-color: #f2ede9;
+    width: 44%;
+    height: 1825px;
+    z-index: 1000;
+    display: block;
+    position: absolute;
+    top: 0vw;
+    right: 0vw;
+    display: block;
+    right: -100%;
+    transition: right 0.5s;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .p-sidebar {
+    background-color: #f2ede9;
+    width: 20%;
+    height: 2843px;
+    z-index: 1000;
+    display: block;
+  }
+}
+
+.p-sidebar__top {
   font-weight: bold;
   font-size: 1.5vw;
   color: #707070;
@@ -1341,7 +1381,7 @@ text-box-1.2
 }
 
 @media only screen and (min-width: 600px) {
-  .l-sidebar__top {
+  .p-sidebar__top {
     font-weight: bold;
     font-size: 1.5vw;
     color: #707070;
@@ -1351,7 +1391,7 @@ text-box-1.2
 }
 
 @media only screen and (min-width: 1025px) {
-  .l-sidebar__top {
+  .p-sidebar__top {
     font-weight: bold;
     font-size: 1.5vw;
     color: #707070;
@@ -1360,7 +1400,7 @@ text-box-1.2
   }
 }
 
-.l-sidebar__second {
+.p-sidebar__second {
   font-size: 6vw;
   font-weight: bold;
   color: #707070;
@@ -1369,7 +1409,7 @@ text-box-1.2
 }
 
 @media only screen and (min-width: 600px) {
-  .l-sidebar__second {
+  .p-sidebar__second {
     font-size: 2.5vw;
     font-weight: bold;
     color: #707070;
@@ -1379,7 +1419,7 @@ text-box-1.2
 }
 
 @media only screen and (min-width: 1025px) {
-  .l-sidebar__second {
+  .p-sidebar__second {
     font-size: 1.3vw;
     font-weight: bold;
     color: #707070;
@@ -1388,7 +1428,7 @@ text-box-1.2
   }
 }
 
-.l-sidebar__second2 {
+.p-sidebar__second2 {
   font-size: 6vw;
   font-weight: bold;
   color: #707070;
@@ -1397,7 +1437,7 @@ text-box-1.2
 }
 
 @media only screen and (min-width: 600px) {
-  .l-sidebar__second2 {
+  .p-sidebar__second2 {
     font-size: 2.5vw;
     font-weight: bold;
     color: #707070;
@@ -1407,7 +1447,7 @@ text-box-1.2
 }
 
 @media only screen and (min-width: 1025px) {
-  .l-sidebar__second2 {
+  .p-sidebar__second2 {
     font-size: 1.3vw;
     font-weight: bold;
     color: #707070;
@@ -1416,33 +1456,33 @@ text-box-1.2
   }
 }
 
-.l-sidebar__menu {
+.p-sidebar__menu {
   font-size: 1.2vw;
   color: #707070;
 }
 
 @media only screen and (min-width: 600px) {
-  .l-sidebar__menu {
+  .p-sidebar__menu {
     font-size: 1.2vw;
     color: #707070;
   }
 }
 
 @media only screen and (min-width: 1025px) {
-  .l-sidebar__menu {
+  .p-sidebar__menu {
     font-size: 1.2vw;
     color: #707070;
   }
 }
 
-.l-sidebar__list {
+.p-sidebar__list {
   font-size: 5vw;
   line-height: 2.5;
   padding-left: 40px;
 }
 
 @media only screen and (min-width: 600px) {
-  .l-sidebar__list {
+  .p-sidebar__list {
     font-size: 2vw;
     line-height: 2.5;
     padding-left: 40px;
@@ -1450,7 +1490,7 @@ text-box-1.2
 }
 
 @media only screen and (min-width: 1025px) {
-  .l-sidebar__list {
+  .p-sidebar__list {
     font-size: 1.2vw;
     line-height: 2.5;
     padding-left: 40px;
@@ -1484,5 +1524,5 @@ text-box-1.2
   margin-top: -20px;
 }
 
-/*Layoutフォルダの中にあるsidebar.scssのimport*/
+/*Objectフォルダの中のProjectフォルダの中にあるsidebar.scssのimport*/
 /*# sourceMappingURL=style.css.map */

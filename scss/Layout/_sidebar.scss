@@ -20,7 +20,7 @@
     right: 0vw;
     display: block;
     right: -100%;
-    transition: right .5s;
+    transition: right 0.5s;
   }
   @media only screen and (min-width: 1025px) {
     background-color: #f2ede9;
@@ -29,24 +29,108 @@
     z-index: 1000;
     display: block;
   }
-}
 
-/*.l-sidebar::before{
-
-  @media only screen and (min-width: 600px) {
-  width: 127.27%;
-    height: 1825px;
-    z-index: 2000;
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: -55vw;
-    background-color: rgba(0, 0, 0, 0.445);
+  &__top {
+    font-weight: bold;
+    font-size: 1.5vw;
+    color: #707070;
+    margin: 70px 0px 10px 30px;
+    display: none;
+    @media only screen and (min-width: 600px) {
+      //（ここにタブレット用スタイルを記述）
+      font-weight: bold;
+      font-size: 1.5vw;
+      color: #707070;
+      margin: 70px 0px 10px 30px;
+      display: none;
+    }
+    @media only screen and (min-width: 1025px) {
+      font-weight: bold;
+      font-size: 1.5vw;
+      color: #707070;
+      margin: 7vw 0vw 1vw 2vw;
+      display: block;
+    }
   }
-}*/
 
-.menu-trigger{
+    &__second {
+      font-size: 6vw;
+      font-weight: bold;
+      color: #707070;
+      margin: 37vw 0vw 2vw 3vw;
+      list-style: none;
+      @media only screen and (min-width: 600px) {
+        //（ここにタブレット用スタイルを記述）
+        font-size: 2.5vw;
+        font-weight: bold;
+        color: #707070;
+        margin: 22vw 0vw 2vw 3vw;
+        list-style: none;
+      }
+      @media only screen and (min-width: 1025px) {
+        font-size: 1.3vw;
+        font-weight: bold;
+        color: #707070;
+        margin: 80px 0px 20px 30px;
+        list-style: none;
+      }
+    }
+
+      &__second2 {
+        font-size: 6vw;
+        font-weight: bold;
+        color: #707070;
+        margin: 37vw 0vw 2vw 3vw;
+        list-style: none;
+        @media only screen and (min-width: 600px) {
+          //（ここにタブレット用スタイルを記述）
+          font-size: 2.5vw;
+          font-weight: bold;
+          color: #707070;
+          margin: 50px 0px 20px 30px;
+          list-style: none;
+        }
+        @media only screen and (min-width: 1025px) {
+          font-size: 1.3vw;
+          font-weight: bold;
+          color: #707070;
+          margin: 50px 0px 20px 30px;
+          list-style: none;
+        }
+      }
+
+        &__menu {
+          font-size: 1.2vw;
+          color: #707070;
+          @media only screen and (min-width: 600px) {
+            //（ここにタブレット用スタイルを記述）
+            font-size: 1.2vw;
+            color: #707070;
+          }
+          @media only screen and (min-width: 1025px) {
+            font-size: 1.2vw;
+            color: #707070;
+          }
+        }
+          &__list {
+            font-size: 5vw;
+            line-height: 2.5;
+            padding-left: 40px;
+            @media only screen and (min-width: 600px) {
+              //（ここにタブレット用スタイルを記述）
+              font-size: 2vw;
+              line-height: 2.5;
+              padding-left: 40px;
+            }
+            @media only screen and (min-width: 1025px) {
+              font-size: 1.2vw;
+              line-height: 2.5;
+              padding-left: 40px;
+            }
+          }
+            
+}
+.menu-trigger {
   color: #707070;
   cursor: pointer;
   display: inline-block;
@@ -60,116 +144,13 @@
   transition: transform 0.5s;
   vertical-align: middle;
   @media only screen and (min-width: 600px) {
-  }  
+  }
   @media only screen and (min-width: 1025px) {
     display: none;
   }
-  &::after{
+  &::after {
     content: "×";
     font-size: 3rem;
     margin-top: -20px;
-  }
-}
-
-
-
-
-.sidebar-top {
-  font-weight: bold;
-  font-size: 1.5vw;
-  color: #707070;
-  margin: 70px 0px 10px 30px;
-  display: none;
-  @media only screen and (min-width: 600px) {
-    //（ここにタブレット用スタイルを記述）
-    font-weight: bold;
-    font-size: 1.5vw;
-    color: #707070;
-    margin: 70px 0px 10px 30px;
-    display: none;
-  }
-  @media only screen and (min-width: 1025px) {
-    font-weight: bold;
-    font-size: 1.5vw;
-    color: #707070;
-    margin: 7vw 0vw 1vw 2vw;
-    display: block;
-  }
-}
-
-.sidebar-second {
-  font-size: 6vw;
-  font-weight: bold;
-  color: #707070;
-  margin: 37vw 0vw 2vw 3vw;
-  list-style: none;
-  @media only screen and (min-width: 600px) {
-    //（ここにタブレット用スタイルを記述）
-    font-size: 2.5vw;
-    font-weight: bold;
-    color: #707070;
-    margin: 22vw 0vw 2vw 3vw;
-    list-style: none;
-  }
-  @media only screen and (min-width: 1025px) {
-    font-size: 1.3vw;
-    font-weight: bold;
-    color: #707070;
-    margin: 80px 0px 20px 30px;
-    list-style: none;
-  }
-}
-
-.sidebar-second2 {
-  font-size: 6vw;
-  font-weight: bold;
-  color: #707070;
-  margin: 37vw 0vw 2vw 3vw;
-  list-style: none;
-  @media only screen and (min-width: 600px) {
-    //（ここにタブレット用スタイルを記述）
-    font-size: 2.5vw;
-    font-weight: bold;
-    color: #707070;
-    margin: 50px 0px 20px 30px;
-    list-style: none;
-  }
-  @media only screen and (min-width: 1025px) {
-    font-size: 1.3vw;
-    font-weight: bold;
-    color: #707070;
-    margin: 50px 0px 20px 30px;
-    list-style: none;
-  }
-}
-
-.sidebar-menu {
-  font-size: 1.2vw;
-  color: #707070;
-  @media only screen and (min-width: 600px) {
-    //（ここにタブレット用スタイルを記述）
-    font-size: 1.2vw;
-    color: #707070;
-  }
-  @media only screen and (min-width: 1025px) {
-    font-size: 1.2vw;
-    color: #707070;
-  }
-}
-
-.sidebar-list {
-  font-size: 5vw;
-  line-height: 2.5;
-  padding-left: 40px;
-  @media only screen and (min-width: 600px) {
-    //（ここにタブレット用スタイルを記述）
-    font-size: 2vw;
-    line-height: 2.5;
-    padding-left: 40px;
-  }
-  @media only screen and (min-width: 1025px) {
-    font-size: 1.2vw;
-    line-height: 2.5;
-    padding-left: 40px;
   }
 }

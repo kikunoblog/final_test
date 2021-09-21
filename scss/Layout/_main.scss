@@ -33,7 +33,7 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
   }
 }
 
-.l-container::before{
+.l-container::before {
   width: 12.5%;
   height: 2843px;
   z-index: 2000;
@@ -44,7 +44,7 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
   left: 0;
   background-color: rgba(0, 0, 0, 0.445);
   @media only screen and (min-width: 600px) {
-  width: 56%;
+    width: 56%;
     height: 1825px;
     z-index: 2000;
     content: "";
@@ -53,15 +53,12 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.445);
-  
   }
   @media only screen and (min-width: 1025px) {
     //（ここにパソコン用スタイルを記述）
     display: none;
-
   }
 }
-
 
 /* 
 l-wrapper
@@ -184,7 +181,6 @@ left-wrapper
   @media only screen and (min-width: 1025px) {
     height: 1196px;
     max-width: auto;
-    
   }
 }
 /* 
@@ -203,7 +199,6 @@ right-wrapper
     max-width: 1024px;
     margin: 0px 0px 0px 40px;
     background-image: url(../images/main3.png);
-  
   }
   @media only screen and (min-width: 1025px) {
     height: 1196px;
@@ -229,7 +224,6 @@ right-wrapper
     padding: 1vw 0.5vw 0vw 1.5vw;
   }
   @media only screen and (min-width: 1025px) {
-   
   }
 }
 /* 
@@ -364,7 +358,6 @@ text-box-1.2
     //（ここにタブレット用スタイルを記述）
     max-width: 1024px;
     height: 415px;
- 
   }
   @media only screen and (min-width: 1025px) {
     height: 649px;

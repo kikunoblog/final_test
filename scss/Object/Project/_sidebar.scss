@@ -10,6 +10,10 @@
   overflow-y: scroll;
   //overflow: hidden;
   //position: sticky;
+ 
+  right: -100%;
+  transition: right 0.5s;
+
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
    
@@ -30,7 +34,7 @@
     z-index: 100000;
     display: block;
   }
-
+  
 
   &__top {
     font-weight: bold;
@@ -131,6 +135,9 @@
   }
 }
 
+.p-responsive-menu.sp_open{
+right:0;
+}
 
 .js-menu-trigger {
   color: #707070;

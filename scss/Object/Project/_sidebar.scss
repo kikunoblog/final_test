@@ -7,7 +7,8 @@
   position: absolute;
   top: 0vw;
   right: 0vw;
-
+  overflow-y: scroll;
+  //overflow: hidden;
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
    

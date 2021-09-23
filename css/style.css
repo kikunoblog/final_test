@@ -504,6 +504,8 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
   width: 100%;
   overflow: hidden;
   position: relative;
+  position: fixed;
+  display: flex;
 }
 
 @media only screen and (min-width: 600px) {
@@ -572,9 +574,6 @@ l-main
   height: 2843px;
   z-index: 1000;
   display: block;
-  position: absolute;
-  top: 0vw;
-  right: 0vw;
 }
 
 @media only screen and (min-width: 600px) {
@@ -596,7 +595,7 @@ l-main
 @media only screen and (min-width: 1025px) {
   .l-sidebar {
     background-color: #f2ede9;
-    position: initial;
+    position: static;
     width: 20%;
     height: 2843px;
     z-index: 100000;
@@ -742,7 +741,7 @@ l-main
   }
 }
 
-.p-footer-image__texttitle {
+.p-footer-image__title1 {
   font-size: 4.3vw;
   color: #fff;
   display: inline-block;
@@ -751,14 +750,14 @@ l-main
 }
 
 @media only screen and (min-width: 600px) {
-  .p-footer-image__texttitle {
+  .p-footer-image__title1 {
     font-size: 2.2vw;
     padding: 0vw;
   }
 }
 
 @media only screen and (min-width: 1025px) {
-  .p-footer-image__texttitle {
+  .p-footer-image__title1 {
     font-size: 1.6vw;
   }
 }
@@ -804,27 +803,27 @@ l-main
   }
 }
 
-.p-footer-image__title3 {
+.p-footer-image__title2 {
   color: #fff;
   font-size: 4.3vw;
   padding: 0.8vw 2vw 0vw 2vw;
 }
 
 @media only screen and (min-width: 600px) {
-  .p-footer-image__title3 {
+  .p-footer-image__title2 {
     font-size: 2.2vw;
     padding: 0.1vw 0vw 0vw 0vw;
   }
 }
 
 @media only screen and (min-width: 1025px) {
-  .p-footer-image__title3 {
+  .p-footer-image__title2 {
     font-size: 1.6vw;
     padding: 0.1vw 0vw 0vw 0vw;
   }
 }
 
-.p-footer-image__title4 {
+.p-footer-image__title3 {
   color: #fff;
   font-size: 2.8vw;
   padding-bottom: 5vw;
@@ -832,7 +831,7 @@ l-main
 }
 
 @media only screen and (min-width: 600px) {
-  .p-footer-image__title4 {
+  .p-footer-image__title3 {
     color: #fff;
     font-size: 1.8vw;
     padding-bottom: 4vw;
@@ -841,7 +840,7 @@ l-main
 }
 
 @media only screen and (min-width: 1025px) {
-  .p-footer-image__title4 {
+  .p-footer-image__title3 {
     padding-bottom: 2vw;
     color: #fff;
     font-size: 0.8vw;
@@ -1326,6 +1325,7 @@ p-text-box-1.2
   position: absolute;
   top: 0vw;
   right: 0vw;
+  overflow-y: scroll;
 }
 
 @media only screen and (min-width: 600px) {

@@ -4,10 +4,10 @@
   height: 2843px;
   z-index: 1000;
   display: block;
-  position: absolute;
-  top: 0vw;
-  right: 0vw;
-
+  //position: absolute;
+  //top: 0vw;
+  //right: 0vw;
+  //overflow: auto;
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
     background-color: #f2ede9;
@@ -25,8 +25,7 @@
   @media only screen and (min-width: 1025px) {
     background-color: #f2ede9;
     //background-color: red;
-    position: initial;
-
+    position: static;
     width: 20%;
     height: 2843px;                   
     z-index: 100000;

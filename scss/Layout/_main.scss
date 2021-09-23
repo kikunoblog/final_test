@@ -25,8 +25,7 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
   //position: fixed;
   display: flex;
   //background-attachment:fixed;
-  overflow-y: auto;
-  position: fixed;
+ 
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
     display: block;

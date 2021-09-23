@@ -505,8 +505,6 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
   width: 100%;
   position: relative;
   display: flex;
-  overflow-y: auto;
-  position: fixed;
 }
 
 @media only screen and (min-width: 600px) {

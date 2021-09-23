@@ -7,9 +7,8 @@
   position: absolute;
   top: 0vw;
   right: 0vw;
-  //overflow-y: scroll;
-  overflow: hidden;
-  //position: sticky;
+  overflow-y: auto;
+  position: fixed;
  
   //right: -100%;
   //transition: right 0.5s;

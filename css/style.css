@@ -488,6 +488,7 @@ body
 */
 body {
   min-width: 320px;
+  overflow-x: hidden;
 }
 
 /* 
@@ -575,6 +576,8 @@ l-main
   position: absolute;
   top: 0vw;
   right: 0vw;
+  overflow-y: auto;
+  position: fixed;
 }
 
 @media only screen and (min-width: 600px) {
@@ -1326,7 +1329,8 @@ p-text-box-1.2
   position: absolute;
   top: 0vw;
   right: 0vw;
-  overflow: hidden;
+  overflow-y: auto;
+  position: fixed;
 }
 
 @media only screen and (min-width: 600px) {

@@ -502,9 +502,7 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
   display: block;
   flex-wrap: nowrap;
   width: 100%;
-  overflow: hidden;
   position: relative;
-  position: fixed;
   display: flex;
 }
 
@@ -574,6 +572,9 @@ l-main
   height: 2843px;
   z-index: 1000;
   display: block;
+  position: absolute;
+  top: 0vw;
+  right: 0vw;
 }
 
 @media only screen and (min-width: 600px) {
@@ -1325,9 +1326,7 @@ p-text-box-1.2
   position: absolute;
   top: 0vw;
   right: 0vw;
-  overflow-y: scroll;
-  right: -100%;
-  transition: right 0.5s;
+  overflow: hidden;
 }
 
 @media only screen and (min-width: 600px) {
@@ -1339,8 +1338,6 @@ p-text-box-1.2
     top: 0vw;
     right: 0vw;
     display: block;
-    right: -100%;
-    transition: right 0.5s;
   }
 }
 
@@ -1479,15 +1476,11 @@ p-text-box-1.2
   }
 }
 
-.p-responsive-menu {
-  cursor: pointer;
-}
-
 .sp_open {
   right: 0;
 }
 
-.js-menu-trigger {
+.p-menu-trigger {
   color: #707070;
   cursor: pointer;
   display: inline-block;
@@ -1503,12 +1496,12 @@ p-text-box-1.2
 }
 
 @media only screen and (min-width: 1025px) {
-  .js-menu-trigger {
+  .p-menu-trigger {
     display: none;
   }
 }
 
-.js-menu-trigger::after {
+.p-menu-trigger::after {
   content: "×";
   font-size: 3rem;
   margin-top: -20px;

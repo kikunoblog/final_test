@@ -10,11 +10,10 @@
 
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
-    background-color: #f2ede9;
+   
     width: 44%;
     height: 1825px;
     z-index: 1000;
-    display: block;
     position: absolute;
     top: 0vw;
     right: 0vw;
@@ -23,10 +22,10 @@
     transition: right 0.5s;
   }
   @media only screen and (min-width: 1025px) {
-    background-color: #f2ede9;
+    position:initial;
     width: 20%;
     height: 2843px;
-    z-index: 2000;
+    z-index: 100000;
     display: block;
   }
 
@@ -131,7 +130,7 @@
 }
 
 
-.menu-trigger {
+.js-menu-trigger {
   color: #707070;
   cursor: pointer;
   display: inline-block;

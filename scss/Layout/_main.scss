@@ -20,6 +20,7 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
   width: 100%;
   overflow: hidden;
   position: relative;
+  //position: fixed;
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
     display: block;
@@ -60,5 +61,20 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
   @media only screen and (min-width: 1025px) {
     //（ここにパソコン用スタイルを記述）
     display: none;
+  }
+}
+/* 
+l-main
+「ダミーサイト」の画像・その下２つの並ぶ画像をまとめた部分
+*/
+.l-main {
+  background-color: #fff;
+  height: auto;
+  width: auto;
+
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+  }
+  @media only screen and (min-width: 1025px) {
   }
 }

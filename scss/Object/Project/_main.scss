@@ -1,23 +1,8 @@
 /* 
-l-main
-「ダミーサイト」の画像・その下２つの並ぶ画像をまとめた部分
-*/
-.l-main {
-  background-color: #fff;
-  height: auto;
-  width: auto;
-
-  @media only screen and (min-width: 600px) {
-    //（ここにタブレット用スタイルを記述）
-  }
-  @media only screen and (min-width: 1025px) {
-  }
-}
-/* 
-.main-image
+.p-main__image
 「ダミーサイト」の画像
 */
-.main-image {
+.p-main__image {
   background-image: url("../images/iphone2.png");
   background-size: cover;
   width: 100%;
@@ -36,10 +21,10 @@ l-main
   }
 }
 /* 
-main-image__title
+p-main__image__title
 「ダミーサイト」の画像に記載の文字「ダミーサイト」の装飾
 */
-.main-image__title {
+.p-main__image__title {
   font-size: 35px;
   margin-left: 20px;
   font-weight: bold;
@@ -56,10 +41,10 @@ main-image__title
   }
 }
 /* 
-two-image-wrapper
+p-two-image-wrapper
 「ダミーサイト」の画像の下２つの並ぶ画像をまとめた部分
 */
-.two-image-wrapper {
+.p-two-image-wrapper {
   display: block;
   width: 100%;
   height: 1373px;
@@ -78,10 +63,10 @@ two-image-wrapper
   }
 }
 /* 
-left-wrapper
+p-left-wrapper
 「ダミーサイト」の画像の下２つの並ぶ画像の左の画像
 */
-.left-wrapper {
+.p-left-wrapper {
   height: 643px;
   max-width: 599px;
   background-image: url(../images/i-sub1.png);
@@ -101,10 +86,10 @@ left-wrapper
   }
 }
 /* 
-right-wrapper 
+p-right-wrapper 
 「ダミーサイト」の画像の下２つの並ぶ画像の右の画像
 */
-.right-wrapper {
+.p-right-wrapper {
   height: 643px;
   max-width: 599px;
   background-image: url(../images/i-sub2.png);
@@ -123,13 +108,13 @@ right-wrapper
   }
 }
 /* 
-.left-wrapper__link,
-.right-wrapper__link
+.p-left-wrapper__link,
+.p-right-wrapper__link
 「ダミーサイト」の画像の下２つの並ぶ画像の左と右の画像
 その全体にリンクを設定するための装飾
 */
-.left-wrapper__link,
-.right-wrapper__link {
+.p-left-wrapper__link,
+.p-right-wrapper__link {
   padding: 0vw;
   //display: block;
   height: 100%;
@@ -144,11 +129,11 @@ right-wrapper
   }
 }
 /* 
-wrapper-text 
+p-wrapper-text 
 「ダミーサイト」の画像の下２つの並ぶ画像の左と右の画像に
 書いてあるTake out Eat INの文字の装飾
 */
-.wrapper-text {
+.p-wrapper-text {
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 2.5rem;
@@ -164,7 +149,7 @@ wrapper-text
     font-size: 4vw;
   }
   /* 
-wrapper-text ::before
+p-wrapper-text ::before
 「ダミーサイト」の画像の下２つの並ぶ画像の左と右の画像に
 書いてあるTake out Eat INの文字の下に記載されている横棒の作成・装飾
 */
@@ -187,11 +172,11 @@ wrapper-text ::before
 }
 
 /* 
-text-box-a
+p-text-box-a
 「ダミーサイト」の画像の下２つの並ぶ画像の左と右の画像の下部に
 書いてあるテキストボックス２つをまとめた
 */
-.text-box-a {
+.p-text-box-a {
   width: 100%;
   margin-bottom: 15px;
   padding: 0px 5px;
@@ -204,12 +189,12 @@ text-box-a
   }
 }
 /* 
-text-box-1.2
+p-text-box-1.2
 「ダミーサイト」の画像の下２つの並ぶ画像の左と右の画像の下部に
 書いてあるテキストボックス
 */
-.text-box1,
-.text-box2 {
+.p-text-box1,
+.p-text-box2 {
   margin-bottom: 1vw;
   padding: 10px 15px 20px;
   color: #2c2c2f;
@@ -224,11 +209,11 @@ text-box-1.2
   }
 }
 /* 
-.text-title1
+.texttitle
 「ダミーサイト」の画像の下２つの並ぶ画像の左と右の画像の下部に
 書いてあるテキストボックスに記載の文字の装飾
 */
-.text-title1 {
+.texttitle {
   font-weight: bold;
   padding-top: 0.5vw;
   font-size: 24px;
@@ -243,11 +228,11 @@ text-box-1.2
   }
 }
 /* 
-.text-title2
+.p-text-title2
 「ダミーサイト」の画像の下２つの並ぶ画像の左と右の画像の下部に
 書いてあるテキストボックスに記載の文字の装飾
 */
-.text-title2 {
+.p-text-title2 {
   font-size: small;
   padding-top: 1vw;
   font-size: 16px;
@@ -265,7 +250,7 @@ text-box-1.2
 .map
 地図部分の装飾
 */
-.map {
+.p-map {
   //width:100%;
   max-width: 599px;
   height: 691px;

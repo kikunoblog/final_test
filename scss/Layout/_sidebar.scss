@@ -24,9 +24,12 @@
   }
   @media only screen and (min-width: 1025px) {
     background-color: #f2ede9;
+    //background-color: red;
+    position: initial;
+
     width: 20%;
-    height: 2843px;
-    z-index: 1000;
+    height: 2843px;                   
+    z-index: 100000;
     display: block;
   }
 

@@ -135,7 +135,10 @@
   }
 }
 
-.p-responsive-menu.sp_open{
+.p-responsive-menu{
+  cursor: pointer;
+}
+.sp_open{
 right:0;
 }
 

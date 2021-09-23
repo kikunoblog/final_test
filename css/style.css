@@ -628,8 +628,7 @@ l-main
   margin: 0px;
   font-size: 35px;
   color: #707070;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
- Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
 }
 
@@ -645,8 +644,7 @@ l-main
   display: block;
   font-size: 22px;
   color: #707070;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
- Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
   position: absolute;
   top: 5px;
@@ -742,25 +740,25 @@ l-main
   .p-footer-image {
     padding: 2vw 0vw 0vw 0vw;
   }
-}texttitle
+}
 
-.p-footer-image__p-text-title1 {
+.p-footer-image__texttitle {
   font-size: 4.3vw;
   color: #fff;
   display: inline-block;
   position: relative;
   padding: 0.8vw 2vw 0vw 2vw;
 }
-texttitle
+
 @media only screen and (min-width: 600px) {
-  .p-footer-image__p-text-title1 {
+  .p-footer-image__texttitle {
     font-size: 2.2vw;
     padding: 0vw;
   }
 }
-texttitle
+
 @media only screen and (min-width: 1025px) {
-  .p-footer-image__p-text-title1 {
+  .p-footer-image__texttitle {
     font-size: 1.6vw;
   }
 }
@@ -806,27 +804,27 @@ texttitle
   }
 }
 
-.p-footer-image__title2 {
+.p-footer-image__title3 {
   color: #fff;
   font-size: 4.3vw;
   padding: 0.8vw 2vw 0vw 2vw;
 }
 
 @media only screen and (min-width: 600px) {
-  .p-footer-image__title2 {
+  .p-footer-image__title3 {
     font-size: 2.2vw;
     padding: 0.1vw 0vw 0vw 0vw;
   }
 }
 
 @media only screen and (min-width: 1025px) {
-  .p-footer-image__title2 {
+  .p-footer-image__title3 {
     font-size: 1.6vw;
     padding: 0.1vw 0vw 0vw 0vw;
   }
 }
 
-.p-footer-image__title3 {
+.p-footer-image__title4 {
   color: #fff;
   font-size: 2.8vw;
   padding-bottom: 5vw;
@@ -834,7 +832,7 @@ texttitle
 }
 
 @media only screen and (min-width: 600px) {
-  .p-footer-image__title3 {
+  .p-footer-image__title4 {
     color: #fff;
     font-size: 1.8vw;
     padding-bottom: 4vw;
@@ -843,7 +841,7 @@ texttitle
 }
 
 @media only screen and (min-width: 1025px) {
-  .p-footer-image__title3 {
+  .p-footer-image__title4 {
     padding-bottom: 2vw;
     color: #fff;
     font-size: 0.8vw;
@@ -1093,20 +1091,20 @@ p-text-box-1.2
   word-wrap: break-word;
   flex-wrap: wrap;
 }
-texttitle
+
 /* 
-.p-text-title1
+.texttitle
 「ダミーサイト」の画像の下２つの並ぶ画像の左と右の画像の下部に
-書texttitle記載の文字の装飾
+書いてあるテキストボックスに記載の文字の装飾
 */
-.p-text-title1 {
+.texttitle {
   font-weight: bold;
   padding-top: 0.5vw;
   font-size: 24px;
 }
-texttitle
+
 @media only screen and (min-width: 600px) {
-  .p-text-title1 {
+  .texttitle {
     font-weight: bold;
     padding-top: 0.5vw;
     font-size: 24px;
@@ -1536,43 +1534,6 @@ PC：サイドバーを入れるので幅を80％に。高さは2843px
 }
 
 /*Objectフォルダの中のComponentフォルダの中にあるmain.scssのimpoer*/
-.l-sidebar {
-  background-color: #f2ede9;
-  width: 87.5%;
-  height: 2843px;
-  z-index: 1000;
-  display: block;
-  position: absolute;
-  top: 0vw;
-  right: 0vw;
-}
-
-@media only screen and (min-width: 600px) {
-  .l-sidebar {
-    background-color: #f2ede9;
-    width: 44%;
-    height: 1825px;
-    z-index: 1000;
-    display: block;
-    position: absolute;
-    top: 0vw;
-    right: 0vw;
-    display: block;
-    right: -100%;
-    transition: right 0.5s;
-  }
-}
-
-@media only screen and (min-width: 1025px) {
-  .l-sidebar {
-    background-color: #f2ede9;
-    width: 20%;
-    height: 2843px;
-    z-index: 10000;
-    display: block;
-  }
-}
-
 /*Objectフォルダの中のComponentフォルダの中にあるsidebar.scssのimport*/
 #c-header-button {
   font-weight: bold;

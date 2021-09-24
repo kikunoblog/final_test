@@ -7,6 +7,7 @@
   position: absolute;
   top: 0vw;
   right: 0vw;
+  //スクロールさせるための設定
   overflow-y: auto;
   position: fixed;
  
@@ -160,5 +161,18 @@ right:0;
     content: "×";
     font-size: 3rem;
     margin-top: -20px;
+  }
+}
+
+//高さの設定は、l-sidebarの高さよりも高くすることで、スクロールを効くようにするため
+#p-responsive-menu{
+  height: 4543px;
+
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+    height: 2543px;
+  }
+  @media only screen and (min-width: 1025px) {
+     //（ここにPC用スタイルを記述）
   }
 }

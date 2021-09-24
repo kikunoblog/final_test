@@ -504,6 +504,7 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
   flex-wrap: nowrap;
   width: 100%;
   position: relative;
+  position: fixed;
   display: flex;
 }
 
@@ -1507,6 +1508,16 @@ p-text-box-1.2
   content: "×";
   font-size: 3rem;
   margin-top: -20px;
+}
+
+#p-responsive-menu {
+  height: 4543px;
+}
+
+@media only screen and (min-width: 600px) {
+  #p-responsive-menu {
+    height: 2543px;
+  }
 }
 
 /*Objectフォルダの中のProjectフォルダの中にあるsidebar.scssのimport*/

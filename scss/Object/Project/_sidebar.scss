@@ -132,12 +132,18 @@
       line-height: 2.5;
       padding-left: 40px;
     }
+    &.sp_open{
+      right:0;
+      @media only screen and (min-width: 600px) {
+        //（ここにタブレット用スタイルを記述）
+      }
+      @media only screen and (min-width: 1025px) {
+      }
+      }
   }
 }
 
-.sp_open{
-right:0;
-}
+
 
 .p-menu-trigger {
   color: #707070;
@@ -146,7 +152,7 @@ right:0;
   font-size: 1.3rem;
   font-weight: bold;
   padding: 0;
-  position: fixed;
+  position: absolute;
   right: 16px;
   top: 14px;
   transform: translateX(0);
@@ -186,6 +192,7 @@ right:0;
     @media only screen and (min-width: 600px) {
       //（ここにタブレット用スタイルを記述）
       height: 2543px;
+
     }
     @media only screen and (min-width: 1025px) {
        //（ここにPC用スタイルを記述）

@@ -203,7 +203,7 @@ p-responsive-menuがスライドして表示される */ -->
 		/* ウィンドウサイズ320以上、以下の処理を記述 */
     $("#p-header__menu").click(function(){
       $(this).toggleClass("open");
-      $("#p-responsive-menu").toggleClass("sp_open");
+      $("p-sidebar").toggleClass("sp_open");
     });
   }});
 </script>

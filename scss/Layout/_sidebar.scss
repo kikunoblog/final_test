@@ -10,6 +10,9 @@
   //overflow: auto;
   //overflow-y: auto;
   //position: fixed;
+  display: block;
+  right: -100%;
+  transition: right 0.5s;
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
     background-color: #f2ede9;

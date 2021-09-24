@@ -505,7 +505,6 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
   width: 100%;
   position: relative;
   position: fixed;
-  display: flex;
 }
 
 @media only screen and (min-width: 600px) {
@@ -577,6 +576,9 @@ l-main
   position: absolute;
   top: 0vw;
   right: 0vw;
+  display: block;
+  right: -100%;
+  transition: right 0.5s;
 }
 
 @media only screen and (min-width: 600px) {
@@ -642,7 +644,7 @@ l-main
   }
 }
 
-.p-header__menu {
+#p-header__menu {
   display: block;
   font-size: 22px;
   color: #707070;
@@ -654,7 +656,7 @@ l-main
 }
 
 @media only screen and (min-width: 600px) {
-  .p-header__menu {
+  #p-header__menu {
     font-size: 25px;
     top: 10px;
     right: 30px;
@@ -662,7 +664,7 @@ l-main
 }
 
 @media only screen and (min-width: 1025px) {
-  .p-header__menu {
+  #p-header__menu {
     display: none;
   }
 }
@@ -1330,6 +1332,8 @@ p-text-box-1.2
   right: 0vw;
   overflow-y: auto;
   position: fixed;
+  right: -100%;
+  transition: right 0.5s;
 }
 
 @media only screen and (min-width: 600px) {
@@ -1341,6 +1345,8 @@ p-text-box-1.2
     top: 0vw;
     right: 0vw;
     display: block;
+    right: -100%;
+    transition: right 0.5s;
   }
 }
 
@@ -1510,12 +1516,28 @@ p-text-box-1.2
   margin-top: -20px;
 }
 
+@media only screen and (min-width: 1025px) {
+  .p-menu-trigger::after {
+    display: none;
+  }
+}
+
 #p-responsive-menu {
   height: 4543px;
 }
 
 @media only screen and (min-width: 600px) {
   #p-responsive-menu {
+    height: 2543px;
+  }
+}
+
+#p-responsive-menu.sp_open {
+  right: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  #p-responsive-menu.sp_open {
     height: 2543px;
   }
 }

@@ -23,7 +23,7 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
   //overflow: hidden;
   position: relative;
   position: fixed;
-  display: flex;
+  //display: flex;
   //background-attachment:fixed;
  
   @media only screen and (min-width: 600px) {

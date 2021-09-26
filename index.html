@@ -42,7 +42,7 @@
             <input id="c-header-button" type="submit" value="検索" />
           </form>
           
-            <div id="p-header__menu" class="">Menu</div>
+            <div id="p-header__menu">Menu</div>
         
         </header>
 
@@ -110,7 +110,7 @@
       <aside class="l-sidebar p-sidebar">
         <div class="p-menu-trigger"></div>
         <div class="p-sidebar__top">Menu</div>
-        <ul id="p-responsive-menu" class="">
+        <ul id="p-responsive-menu">
           <li class="p-sidebar__second">バーガー</li>
           <li class="p-sidebar__menu">
             <li class="p-sidebar__list">
@@ -203,7 +203,7 @@ p-responsive-menuがスライドして表示される */ -->
 		/* ウィンドウサイズ320以上、以下の処理を記述 */
     $("#p-header__menu").click(function(){
       $(this).toggleClass("open");
-      $("p-sidebar").toggleClass("sp_open");
+      $(".p-sidebar").toggleClass("sp_open");
     });
   }});
 </script>

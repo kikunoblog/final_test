@@ -22,10 +22,10 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
   width: 100%;
   //overflow: hidden;
   position: relative;
-  position: fixed;
+  //position: fixed;
   //display: flex;
   //background-attachment:fixed;
- 
+
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
     display: block;
@@ -51,7 +51,8 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.445);
-  
+  opacity: 0.5;
+
   @media only screen and (min-width: 600px) {
     width: 56%;
     height: 1825px;

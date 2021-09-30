@@ -504,7 +504,6 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
   flex-wrap: nowrap;
   width: 100%;
   position: relative;
-  position: fixed;
 }
 
 @media only screen and (min-width: 600px) {
@@ -534,6 +533,7 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.445);
+  opacity: 0.5;
 }
 
 @media only screen and (min-width: 600px) {
@@ -653,6 +653,7 @@ l-main
   position: absolute;
   top: 5px;
   right: 5px;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 600px) {
@@ -1485,17 +1486,17 @@ p-text-box-1.2
   }
 }
 
-.sp_open {
+.open {
   right: 0%;
 }
 
 @media only screen and (min-width: 600px) {
-  .sp_open {
+  .open {
     right: 0%;
   }
 }
 
-.p-menu-trigger {
+#p-menu-trigger {
   color: #707070;
   cursor: pointer;
   display: inline-block;
@@ -1511,19 +1512,19 @@ p-text-box-1.2
 }
 
 @media only screen and (min-width: 1025px) {
-  .p-menu-trigger {
+  #p-menu-trigger {
     display: none;
   }
 }
 
-.p-menu-trigger::after {
+#p-menu-trigger::after {
   content: "×";
   font-size: 3rem;
   margin-top: -20px;
 }
 
 @media only screen and (min-width: 1025px) {
-  .p-menu-trigger::after {
+  #p-menu-trigger::after {
     display: none;
   }
 }
@@ -1546,6 +1547,10 @@ p-text-box-1.2
   #p-responsive-menu.sp_open {
     height: 2543px;
   }
+}
+
+#p-menu-trigger.sp_open {
+  right: -100%;
 }
 
 /*Objectフォルダの中のProjectフォルダの中にあるsidebar.scssのimport*/

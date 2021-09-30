@@ -10,13 +10,13 @@
   //スクロールさせるための設定
   overflow-y: auto;
   position: fixed;
- //サイドバーのメニューが右からスライドしてくるような設定
+  //サイドバーのメニューが右からスライドしてくるような設定
   right: -100%;
   transition: right 0.5s;
 
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
-   
+
     width: 44%;
     height: 1825px;
     z-index: 1000;
@@ -28,13 +28,12 @@
     transition: right 0.5s;
   }
   @media only screen and (min-width: 1025px) {
-    position:initial;
+    position: initial;
     width: 20%;
     height: 2843px;
     z-index: 100000;
     display: block;
   }
-  
 
   &__top {
     font-weight: bold;
@@ -135,19 +134,17 @@
   }
 }
 
-    .sp_open{
-      right:0%;
-      @media only screen and (min-width: 600px) {
-        //（ここにタブレット用スタイルを記述）
-        right:0%;
-      }
-      @media only screen and (min-width: 1025px) {
-      }
-      }
+.open {
+  right: 0%;
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+    right: 0%;
+  }
+  @media only screen and (min-width: 1025px) {
+  }
+}
 
-
-
-.p-menu-trigger {
+#p-menu-trigger {
   color: #707070;
   cursor: pointer;
   display: inline-block;
@@ -178,26 +175,33 @@
 }
 
 //高さの設定は、l-sidebarの高さよりも高くすることで、スクロールを効くようにするため
-#p-responsive-menu{
+#p-responsive-menu {
   height: 4543px;
-
 
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
     height: 2543px;
   }
   @media only screen and (min-width: 1025px) {
-     //（ここにPC用スタイルを記述）
+    //（ここにPC用スタイルを記述）
   }
-  &.sp_open{
+  &.sp_open {
     right: 0;
     @media only screen and (min-width: 600px) {
       //（ここにタブレット用スタイルを記述）
       height: 2543px;
-
     }
     @media only screen and (min-width: 1025px) {
-       //（ここにPC用スタイルを記述）
+      //（ここにPC用スタイルを記述）
     }
+  }
+}
+#p-menu-trigger.sp_open {
+  right: -100%;
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+  }
+  @media only screen and (min-width: 1025px) {
+    //（ここにPC用スタイルを記述）
   }
 }

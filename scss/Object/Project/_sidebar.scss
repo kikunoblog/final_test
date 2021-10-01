@@ -9,7 +9,7 @@
   right: 0vw;
   //スクロールさせるための設定
   overflow-y: auto;
-  position: fixed;
+  //position: fixed;
   //サイドバーのメニューが右からスライドしてくるような設定
   right: -100%;
   transition: right 0.5s;

@@ -569,7 +569,6 @@ l-main
 .l-sidebar {
   background-color: #f2ede9;
   width: 87.5%;
-  height: 2843px;
   z-index: 1000;
   display: block;
   position: absolute;
@@ -1324,7 +1323,6 @@ p-text-box-1.2
 .p-sidebar {
   background-color: #f2ede9;
   width: 87.5%;
-  height: 2843px;
   z-index: 1000;
   display: block;
   position: absolute;
@@ -1525,10 +1523,6 @@ p-text-box-1.2
   #p-menu-trigger::after {
     display: none;
   }
-}
-
-#p-responsive-menu {
-  height: 4543px;
 }
 
 @media only screen and (min-width: 600px) {

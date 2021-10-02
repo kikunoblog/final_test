@@ -1,7 +1,7 @@
 .p-sidebar {
   background-color: #f2ede9;
   width: 87.5%;
-  height: 2843px;
+  //height: 2843px;
   z-index: 1000;
   display: block;
   position: absolute;
@@ -176,7 +176,7 @@
 
 //高さの設定は、l-sidebarの高さよりも高くすることで、スクロールを効くようにするため
 #p-responsive-menu {
-  height: 4543px;
+  //height: 4543px;
 
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）

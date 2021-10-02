@@ -195,8 +195,7 @@
 <!-- .p-header__menuをクリックしたらボタン自体にopenというクラスが付いて、
 p-responsive-menuがスライドして表示される */ -->
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script>
+<!--<script>
   $(function(){
     // 横からスライド
     if (window.matchMedia('(max-width: 1024px) and (min-width:320px)').matches) {
@@ -212,27 +211,9 @@ p-responsive-menuがスライドして表示される */ -->
   
     });
   }});
-  jQuery(function($){
-   $('.menu-trigger').on('click',function(){
-    if($(this).hasClass('active')){
-      $(this).removeClass('active');
-      $('nav').removeClass('open');
-      $('.overlay').removeClass('open');
-    } else {
-      $(this).addClass('active');
-      $('nav').addClass('open');
-      $('.overlay').addClass('open');
-    }
-  });
-  $('.overlay').on('click',function(){
-    if($(this).hasClass('open')){
-      $(this).removeClass('open');
-      $('.menu-trigger').removeClass('active');
-      $('nav').removeClass('open');      
-    }
-  });
-});
 
-</script>
+
+</script>-->
+<script src="/js/script.js"></script>
   </body>
 </html> 

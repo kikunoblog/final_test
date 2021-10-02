@@ -13,10 +13,11 @@ l-container
 スマホ：高さ2716px
 タブレット：hegiht1825pxにする。折り返しはしないようにする。
 PC：幅と高さを設定。flexとwrapで横並びになるようにする。
+レイアウトなどの高さは設定しないとのことで講師からアドバイスがあったため、autoにした
 */
 
 .l-container {
-  height: 2716px;
+  //height: auto;
   display: block;
   flex-wrap: nowrap;
   width: 100%;
@@ -43,7 +44,7 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
 
 .l-container::before {
   width: 100%;
-  height: 2716px;
+  //height: 2716px;
   z-index: 1000;
   content: "";
   display: block;

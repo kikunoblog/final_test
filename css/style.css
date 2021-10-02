@@ -525,7 +525,6 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
 
 .l-container::before {
   width: 100%;
-  height: 2716px;
   z-index: 1000;
   content: "";
   display: block;

@@ -29,10 +29,11 @@
   }
   @media only screen and (min-width: 1025px) {
     position: initial;
-    width: 20%;
-    height: 2843px;
-    z-index: 100000;
-    display: block;
+    //width: 120%;
+    //height: 2843px;
+    //z-index: 100000;
+    //display: block;
+   
   }
 
   &__top {
@@ -134,7 +135,7 @@
   }
 }
 
-.open {
+.is-open {
   right: 0%;
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
@@ -144,7 +145,7 @@
   }
 }
 
-#p-menu-trigger {
+.p-menu-trigger {
   color: #707070;
   cursor: pointer;
   display: inline-block;
@@ -175,12 +176,12 @@
 }
 
 //高さの設定は、l-sidebarの高さよりも高くすることで、スクロールを効くようにするため
-#p-responsive-menu {
+.p-responsive-menu {
   //height: 4543px;
 
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
-    height: 2543px;
+    //height: 2543px;
   }
   @media only screen and (min-width: 1025px) {
     //（ここにPC用スタイルを記述）
@@ -189,14 +190,14 @@
     right: 0;
     @media only screen and (min-width: 600px) {
       //（ここにタブレット用スタイルを記述）
-      height: 2543px;
+     // height: 2543px;
     }
     @media only screen and (min-width: 1025px) {
       //（ここにPC用スタイルを記述）
     }
   }
 }
-#p-menu-trigger.sp_open {
+.p-menu-trigger.sp_open {
   right: -100%;
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）

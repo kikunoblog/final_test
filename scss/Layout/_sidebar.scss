@@ -7,10 +7,10 @@
   position: absolute;
   top: 0vw;
   right: 0vw;
-  //overflow: auto;
-  //overflow-y: auto;
+  //スクロールさせるための設定
+  overflow-y: auto;
   //position: fixed;
-  display: block;
+  //サイドバーのメニューが右からスライドしてくるような設定
   right: -100%;
   transition: right 0.5s;
   @media only screen and (min-width: 600px) {
@@ -28,12 +28,13 @@
     transition: right 0.5s;
   }
   @media only screen and (min-width: 1025px) {
-    background-color: #f2ede9;
-    //background-color: red;
+    //background-color: #f2ede9;
+
+    background-color: red!important;
     position: static;
     width: 20%;
     //height: 2843px;
-    z-index: 100000;
+    //z-index: 100000;
     display: block;
   }
 }

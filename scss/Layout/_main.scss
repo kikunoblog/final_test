@@ -5,7 +5,8 @@ body
 body {
   min-width: 320px;
   overflow-x: hidden;
-  //position: fixed;
+  position: fixed;
+  width: 100%;
 }
 /* 
 l-container
@@ -14,35 +15,39 @@ l-container
 タブレット：hegiht1825pxにする。折り返しはしないようにする。
 PC：幅と高さを設定。flexとwrapで横並びになるようにする。
 レイアウトなどの高さは設定しないとのことで講師からアドバイスがあったため、autoにした
+が、そもそもデフォルトがautoなので設定不要
 */
 
 .l-container {
-  //height: auto;
-  display: block;
-  flex-wrap: nowrap;
+  height: 100%;
+  //display: block;
+  //flex-wrap: nowrap;
   width: 100%;
   //overflow: hidden;
-  position: relative;
+  //position: relative;
   //position: fixed;
   //display: flex;
   //background-attachment:fixed;
 
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
-    display: block;
-    flex-wrap: nowrap;
-    height: 1825px;
+  
   }
   @media only screen and (min-width: 1025px) {
     //（ここにパソコン用スタイルを記述）
-    width: 100%;
-    height: 2993px;
-    display: flex;
-    flex-wrap: wrap;
+    //width: 100%;
+    //height: 2993px;
+    //display: flex;
+    //flex-wrap: wrap;
   }
 }
+.is-open2{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
 
-.l-container::before {
+.is-open2::before {
   width: 100%;
   //height: 2716px;
   z-index: 1000;
@@ -55,8 +60,8 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
   opacity: 0.5;
 
   @media only screen and (min-width: 600px) {
-    width: 56%;
-    height: 1825px;
+    //width: 56%;
+    //height: 1825px;
     z-index: 2000;
     content: "";
     display: block;

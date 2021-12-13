@@ -1,4 +1,4 @@
-.p-sidebar {
+ .p-sidebar {
   background-color: #f2ede9;
   width: 87.5%;
   //height: 2843px;
@@ -6,9 +6,10 @@
   display: block;
   position: absolute;
   top: 0vw;
-  right: 0vw;
+  //right: 0vw;
   //スクロールさせるための設定
-  overflow-y: auto;
+  overflow-y: scroll;
+  height: 100%;
   //position: fixed;
   //サイドバーのメニューが右からスライドしてくるような設定
   right: -100%;
@@ -18,18 +19,20 @@
     //（ここにタブレット用スタイルを記述）
 
     width: 44%;
-    height: 1825px;
-    z-index: 1000;
+    //height: 1825px;
+    //z-index: 1000;
     position: absolute;
     top: 0vw;
-    right: 0vw;
+    //right: 0vw;
     display: block;
     right: -100%;
     transition: right 0.5s;
   }
   @media only screen and (min-width: 1025px) {
+    //他のサイズ時にサイドメニューを隠しておく設定をしているがそれを無しにするためにinitial
     position: initial;
-    //width: 120%;
+    //PCサイズ画面の場合はサイドメニューは常に出ているので、このwidthで位置もこのままで設定
+    width: 20%;
     //height: 2843px;
     //z-index: 100000;
     //display: block;

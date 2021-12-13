@@ -489,6 +489,8 @@ body
 body {
   min-width: 320px;
   overflow-x: hidden;
+  position: fixed;
+  width: 100%;
 }
 
 /* 
@@ -498,59 +500,41 @@ l-container
 タブレット：hegiht1825pxにする。折り返しはしないようにする。
 PC：幅と高さを設定。flexとwrapで横並びになるようにする。
 レイアウトなどの高さは設定しないとのことで講師からアドバイスがあったため、autoにした
+が、そもそもデフォルトがautoなので設定不要
 */
 .l-container {
-  display: block;
-  flex-wrap: nowrap;
+  height: 100%;
   width: 100%;
-  position: relative;
-}
-
-@media only screen and (min-width: 600px) {
-  .l-container {
-    display: block;
-    flex-wrap: nowrap;
-    height: 1825px;
-  }
 }
 
 @media only screen and (min-width: 1025px) {
   .l-container {
     width: 100%;
-    height: 2993px;
     display: flex;
     flex-wrap: wrap;
   }
 }
 
-.l-container::before {
+.is-open2 {
+  height: 100%;
   width: 100%;
-  z-index: 1000;
+  position: relative;
+}
+
+.is-open2::before {
+  width: 100%;
+  height: 100%;
   content: "";
   display: block;
   position: absolute;
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.445);
-  opacity: 0.5;
-}
-
-@media only screen and (min-width: 600px) {
-  .l-container::before {
-    width: 56%;
-    height: 1825px;
-    z-index: 2000;
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.445);
-  }
+  opacity: 0.7;
 }
 
 @media only screen and (min-width: 1025px) {
-  .l-container::before {
+  .is-open2::before {
     display: none;
   }
 }
@@ -558,54 +542,21 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
 /* 
 l-main
 「ダミーサイト」の画像・その下２つの並ぶ画像をまとめた部分
-*/
+
 .l-main {
   background-color: #fff;
   height: auto;
   width: auto;
+
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+  }
+  @media only screen and (min-width: 1025px) {
+  }
 }
 
+*/
 /*Layoutフォルダの中にあるmain.scssのimport*/
-.l-sidebar {
-  background-color: #f2ede9;
-  width: 87.5%;
-  z-index: 1000;
-  display: block;
-  position: absolute;
-  top: 0vw;
-  right: 0vw;
-  display: block;
-  right: -100%;
-  transition: right 0.5s;
-}
-
-@media only screen and (min-width: 600px) {
-  .l-sidebar {
-    background-color: #f2ede9;
-    width: 44%;
-    height: 1825px;
-    z-index: 1000;
-    display: block;
-    position: absolute;
-    top: 0vw;
-    right: 0vw;
-    display: block;
-    right: -100%;
-    transition: right 0.5s;
-  }
-}
-
-@media only screen and (min-width: 1025px) {
-  .l-sidebar {
-    background-color: #f2ede9;
-    position: static;
-    width: 20%;
-    height: 2843px;
-    z-index: 100000;
-    display: block;
-  }
-}
-
 /*Layoutフォルダの中にあるsidebar.scssのimport*/
 .p-header {
   height: 217px;
@@ -642,7 +593,7 @@ l-main
   }
 }
 
-#p-header__menu {
+.p-header__menu {
   display: block;
   font-size: 22px;
   color: #707070;
@@ -655,7 +606,7 @@ l-main
 }
 
 @media only screen and (min-width: 600px) {
-  #p-header__menu {
+  .p-header__menu {
     font-size: 25px;
     top: 10px;
     right: 30px;
@@ -663,7 +614,7 @@ l-main
 }
 
 @media only screen and (min-width: 1025px) {
-  #p-header__menu {
+  .p-header__menu {
     display: none;
   }
 }
@@ -1327,8 +1278,8 @@ p-text-box-1.2
   display: block;
   position: absolute;
   top: 0vw;
-  right: 0vw;
-  overflow-y: auto;
+  overflow-y: scroll;
+  height: 100%;
   right: -100%;
   transition: right 0.5s;
 }
@@ -1336,11 +1287,8 @@ p-text-box-1.2
 @media only screen and (min-width: 600px) {
   .p-sidebar {
     width: 44%;
-    height: 1825px;
-    z-index: 1000;
     position: absolute;
     top: 0vw;
-    right: 0vw;
     display: block;
     right: -100%;
     transition: right 0.5s;
@@ -1351,9 +1299,6 @@ p-text-box-1.2
   .p-sidebar {
     position: initial;
     width: 20%;
-    height: 2843px;
-    z-index: 100000;
-    display: block;
   }
 }
 
@@ -1482,17 +1427,17 @@ p-text-box-1.2
   }
 }
 
-.open {
+.is-open {
   right: 0%;
 }
 
 @media only screen and (min-width: 600px) {
-  .open {
+  .is-open {
     right: 0%;
   }
 }
 
-#p-menu-trigger {
+.p-menu-trigger {
   color: #707070;
   cursor: pointer;
   display: inline-block;
@@ -1508,40 +1453,28 @@ p-text-box-1.2
 }
 
 @media only screen and (min-width: 1025px) {
-  #p-menu-trigger {
+  .p-menu-trigger {
     display: none;
   }
 }
 
-#p-menu-trigger::after {
+.p-menu-trigger::after {
   content: "×";
   font-size: 3rem;
   margin-top: -20px;
 }
 
 @media only screen and (min-width: 1025px) {
-  #p-menu-trigger::after {
+  .p-menu-trigger::after {
     display: none;
   }
 }
 
-@media only screen and (min-width: 600px) {
-  #p-responsive-menu {
-    height: 2543px;
-  }
-}
-
-#p-responsive-menu.sp_open {
+.p-responsive-menu.sp_open {
   right: 0;
 }
 
-@media only screen and (min-width: 600px) {
-  #p-responsive-menu.sp_open {
-    height: 2543px;
-  }
-}
-
-#p-menu-trigger.sp_open {
+.p-menu-trigger.sp_open {
   right: -100%;
 }
 

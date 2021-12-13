@@ -35,10 +35,10 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
   }
   @media only screen and (min-width: 1025px) {
     //（ここにパソコン用スタイルを記述）
-    //width: 100%;
+    width: 100%;
     //height: 2993px;
-    //display: flex;
-    //flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 .is-open2{
@@ -49,26 +49,18 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
 
 .is-open2::before {
   width: 100%;
-  //height: 2716px;
-  z-index: 1000;
+  height: 100%;
+  //z-index: 1000;
   content: "";
   display: block;
   position: absolute;
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.445);
-  opacity: 0.5;
+  opacity: 0.7;
 
   @media only screen and (min-width: 600px) {
-    //width: 56%;
-    //height: 1825px;
-    z-index: 2000;
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.445);
+   
   }
   @media only screen and (min-width: 1025px) {
     //（ここにパソコン用スタイルを記述）
@@ -78,7 +70,7 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
 /* 
 l-main
 「ダミーサイト」の画像・その下２つの並ぶ画像をまとめた部分
-*/
+
 .l-main {
   background-color: #fff;
   height: auto;
@@ -90,3 +82,5 @@ l-main
   @media only screen and (min-width: 1025px) {
   }
 }
+
+*/

@@ -1,4 +1,4 @@
- .p-sidebar {
+.p-sidebar {
   background-color: #f2ede9;
   width: 87.5%;
   //height: 2843px;
@@ -6,14 +6,13 @@
   display: block;
   position: absolute;
   top: 0vw;
-  //right: 0vw;
-  //スクロールさせるための設定
-  overflow-y: scroll;
   height: 100%;
   //position: fixed;
   //サイドバーのメニューが右からスライドしてくるような設定
   right: -100%;
   transition: right 0.5s;
+  //スクロールさせるための設定
+  overflow-y: scroll;
 
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
@@ -36,7 +35,6 @@
     //height: 2843px;
     //z-index: 100000;
     //display: block;
-   
   }
 
   &__top {
@@ -193,7 +191,7 @@
     right: 0;
     @media only screen and (min-width: 600px) {
       //（ここにタブレット用スタイルを記述）
-     // height: 2543px;
+      // height: 2543px;
     }
     @media only screen and (min-width: 1025px) {
       //（ここにPC用スタイルを記述）

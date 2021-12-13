@@ -4,9 +4,10 @@ body
 */
 body {
   min-width: 320px;
-  overflow-x: hidden;
+  //overflow-x: hidden;
   position: fixed;
-  width: 100%;
+  //width: 100%;
+  height: 100%;
 }
 /* 
 l-container
@@ -31,7 +32,6 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
 
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
-  
   }
   @media only screen and (min-width: 1025px) {
     //（ここにパソコン用スタイルを記述）
@@ -41,7 +41,7 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
     flex-wrap: wrap;
   }
 }
-.is-open2{
+.is-open2 {
   height: 100%;
   width: 100%;
   position: relative;
@@ -60,7 +60,6 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
   opacity: 0.7;
 
   @media only screen and (min-width: 600px) {
-   
   }
   @media only screen and (min-width: 1025px) {
     //（ここにパソコン用スタイルを記述）

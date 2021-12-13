@@ -7,9 +7,9 @@ $(function () {
     $(".l-container").toggleClass("is-open2");
   });
 
-  $(".p-menu-trigger").on("click", (function () {
+  $(".p-menu-trigger").on("click", function () {
     //openクラスの要素を削除
     $(".p-sidebar").removeClass("is-open");
     $(".l-container").removeClass("is-open2");
-  }));
+  });
 });

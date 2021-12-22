@@ -1,24 +1,4 @@
 /* 
-body
-スマホサイズを320を最小値にするため設定
-*/
-body {
-  min-width: 320px;
-  //overflow-x: hidden;
-  position: fixed;
-  //width: 100%;
-  height: 100%;
-
-  @media only screen and (min-width: 600px) {
-    //（ここにタブレット用スタイルを記述）
-  }
-  @media only screen and (min-width: 1025px) {
-    //（ここにパソコン用スタイルを記述）
-    position: initial;
-  }
-}
-
-/* 
 l-container
 全体をレイアウトしているクラス。
 スマホ：高さ2716px
@@ -29,6 +9,15 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
 */
 
 .l-container {
+  display: grid;
+  grid-template:
+  "l-header        " 217px
+  "l-main          " 1fr
+  "p-left-wrapper  " 1fr
+  "p-right-wrapper " 1fr
+  "p-map-wrapper   " 1fr
+  "l-footer        " 150px;
+
   height: 100%;
   //display: block;
   //flex-wrap: nowrap;
@@ -50,6 +39,27 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
     flex-wrap: wrap;
   }
 }
+/* 
+body
+スマホサイズを320を最小値にするため設定
+*/
+body {
+  min-width: 320px;
+  //overflow-x: hidden;
+  //position: fixed;
+  //width: 100%;
+  height: 100%;
+
+  @media only screen and (min-width: 600px) {
+    //（ここにタブレット用スタイルを記述）
+  }
+  @media only screen and (min-width: 1025px) {
+    //（ここにパソコン用スタイルを記述）
+    position: initial;
+  }
+}
+
+
 .is-open2 {
   height: 100%;
   width: 100%;

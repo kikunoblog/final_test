@@ -500,6 +500,7 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
 
 @media only screen and (min-width: 1025px) {
   .l-container {
+    width: 80%;
     display: grid;
     grid-template: "l-header l-sidebar                        " 217px "l-main l-sidebar                          " 1fr "p-left-wrapper p-right-wrapper l-sidebar  " 1fr "p-map-wrapper l-sidebar                   " 1fr "l-footer                                  " 150px;
   }
@@ -1302,8 +1303,6 @@ p-text-box-1.2
 
 @media only screen and (min-width: 1025px) {
   .p-sidebar {
-    position: absolute;
-    top: 0vw;
     right: 0%;
     width: 20%;
     height: 100%;

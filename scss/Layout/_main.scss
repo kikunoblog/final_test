@@ -11,12 +11,11 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
 .l-container {
   display: grid;
   grid-template:
-  "l-header        " 217px
-  "l-main          " 1fr
-  "p-left-wrapper  " 1fr
-  "p-right-wrapper " 1fr
-  "p-map-wrapper   " 1fr
-  "l-footer        " 150px;
+"l-header l-sidebar             " 217px
+"l-main l-sidebar               " 1fr
+"p-two-image-wrapper l-sidebar  " 1fr
+"p-map-wrapper l-sidebar        " 1fr
+"l-footer                       " 150px;
 
   height: 100%;
   //display: block;
@@ -33,10 +32,17 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
   }
   @media only screen and (min-width: 1025px) {
     //（ここにパソコン用スタイルを記述）
-    width: 100%;
+    //width: 100%;
     //height: 2993px;
-    display: flex;
-    flex-wrap: wrap;
+    //display: flex;
+    //flex-wrap: wrap;
+    display: grid;
+    grid-template:
+  "l-header l-sidebar                        " 217px
+  "l-main l-sidebar                          " 1fr
+  "p-left-wrapper p-right-wrapper l-sidebar  " 1fr
+  "p-map-wrapper l-sidebar                   " 1fr
+  "l-footer                                  " 150px;
   }
 }
 /* 

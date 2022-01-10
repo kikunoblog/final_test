@@ -11,12 +11,31 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
 .l-container {
   display: grid;
   grid-template:
-"l-header l-sidebar             " 217px
-"l-main l-sidebar               " 1fr
-"p-two-image-wrapper l-sidebar  " 1fr
-"p-map-wrapper l-sidebar        " 1fr
-"l-footer                       " 150px;
+  "l-header l-sidebar             " 217px
+  "l-main l-sidebar               " 1fr
+  "p-two-image-wrapper l-sidebar  " 1fr
+  "p-map-wrapper l-sidebar        " 1fr
+  "l-footer                       " 150px;
 
+  .l-header {
+    grid-area: l-header;
+  }
+  
+
+  .p-two-image-wrapper {
+    grid-area: p-two-image-wrapper;
+  }
+  .p-map-wrapper {
+    grid-area: p-map-wrapper;
+  }
+  
+  .l-main {
+    grid-area: l-main;
+  }
+  
+  .l-footer {
+    grid-area: l-footer;
+  }
   height: 100%;
   //display: block;
   //flex-wrap: nowrap;
@@ -33,18 +52,14 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
   @media only screen and (min-width: 1025px) {
     //（ここにパソコン用スタイルを記述）
     width: 80%;
+    height: 100%;
     //height: 2993px;
     //display: flex;
     //flex-wrap: wrap;
-    display: grid;
-    grid-template:
-  "l-header l-sidebar                        " 217px
-  "l-main l-sidebar                          " 1fr
-  "p-left-wrapper p-right-wrapper l-sidebar  " 1fr
-  "p-map-wrapper l-sidebar                   " 1fr
-  "l-footer                                  " 150px;
+ 
   }
 }
+
 /* 
 body
 スマホサイズを320を最小値にするため設定
@@ -62,6 +77,7 @@ body {
   @media only screen and (min-width: 1025px) {
     //（ここにパソコン用スタイルを記述）
     position: initial;
+
   }
 }
 

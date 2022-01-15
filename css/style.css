@@ -524,7 +524,7 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
 
 @media only screen and (min-width: 1025px) {
   .l-container {
-    width: 80%;
+    width: 100%;
     height: 100%;
   }
 }

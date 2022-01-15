@@ -15,25 +15,30 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
   "l-main l-sidebar               " 1fr
   "p-two-image-wrapper l-sidebar  " 1fr
   "p-map-wrapper l-sidebar        " 1fr
-  "l-footer                       " 150px;
+  "l-footer l-footer              " 150px
+/ 1fr 367px;
 
-  .l-header {
+  header {
     grid-area: l-header;
   }
   
+  aside{
+    grid-area: l-sidebar;
+  }
 
-  .p-two-image-wrapper {
+  section1 {
     grid-area: p-two-image-wrapper;
   }
-  .p-map-wrapper {
+
+  section2 {
     grid-area: p-map-wrapper;
   }
   
-  .l-main {
+  main1 {
     grid-area: l-main;
   }
   
-  .l-footer {
+  footer {
     grid-area: l-footer;
   }
   height: 100%;

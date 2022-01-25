@@ -1,7 +1,7 @@
-/
-.p-main__image
-「ダミーサイト」の画像
 
+/*.p-main__image
+「ダミーサイト」の画像
+*/
 .p-main__image {
   background-image: url("../images/iphone2.png");
   background-size: cover;
@@ -20,10 +20,10 @@
     background-image: url("../images/mainvisual-pc.jpg");
   }
 }
- 
+/* 
 p-main__image__title
 「ダミーサイト」の画像に記載の文字「ダミーサイト」の装飾
-
+*/
 .p-main__image__title {
   font-size: 35px;
   margin-left: 20px;
@@ -40,7 +40,7 @@ p-main__image__title
   @media only screen and (min-width: 1025px) {
   }
 }
- 
+/* 
 p-two-image-wrapper
 「ダミーサイト」の画像の下２つの並ぶ画像をまとめた部分
 */
@@ -63,9 +63,9 @@ p-two-image-wrapper
   }
 }
 
-p-left-wrapper
+/*p-left-wrapper
 「ダミーサイト」の画像の下２つの並ぶ画像の左の画像
-
+*/
 .p-left-wrapper {
   height: 643px;
   max-width: 599px;
@@ -85,9 +85,11 @@ p-left-wrapper
     max-width: auto;
   }
 }
- 
+
+/*
 p-right-wrapper 
 「ダミーサイト」の画像の下２つの並ぶ画像の右の画像
+*/
 
 .p-right-wrapper {
   height: 643px;
@@ -107,16 +109,17 @@ p-right-wrapper
     max-width: auto;
   }
 }
- 
+
+/*
 .p-left-wrapper__link,
 .p-right-wrapper__link
 「ダミーサイト」の画像の下２つの並ぶ画像の左と右の画像
 その全体にリンクを設定するための装飾
+*/
 
 .p-left-wrapper__link,
 .p-right-wrapper__link {
   padding: 0vw;
-  //display: block;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -128,10 +131,12 @@ p-right-wrapper
   @media only screen and (min-width: 1025px) {
   }
 }
- 
+
+/*
 p-wrapper-text 
 「ダミーサイト」の画像の下２つの並ぶ画像の左と右の画像に
 書いてあるTake out Eat INの文字の装飾
+*/
 
 .p-wrapper-text {
   color: #fff;
@@ -148,10 +153,12 @@ p-wrapper-text
   @media only screen and (min-width: 1025px) {
     font-size: 4vw;
   }
-  
+
+/*  
 p-wrapper-text ::before
 「ダミーサイト」の画像の下２つの並ぶ画像の左と右の画像に
 書いてあるTake out Eat INの文字の下に記載されている横棒の作成・装飾
+*/
 
   &::before {
     position: absolute;
@@ -171,10 +178,11 @@ p-wrapper-text ::before
   }
 }
 
- 
+/* 
 p-text-box-a
 「ダミーサイト」の画像の下２つの並ぶ画像の左と右の画像の下部に
 書いてあるテキストボックス２つをまとめた
+*/
 
 .p-text-box-a {
   width: 100%;
@@ -188,10 +196,12 @@ p-text-box-a
   @media only screen and (min-width: 1025px) {
   }
 }
- 
-p-text-box-1.2
+
+
+/*p-text-box-1.2
 「ダミーサイト」の画像の下２つの並ぶ画像の左と右の画像の下部に
 書いてあるテキストボックス
+*/
 
 .p-text-box1,
 .p-text-box2 {
@@ -208,10 +218,13 @@ p-text-box-1.2
   @media only screen and (min-width: 1025px) {
   }
 }
-/ 
+
+/* 
 .texttitle
 「ダミーサイト」の画像の下２つの並ぶ画像の左と右の画像の下部に
 書いてあるテキストボックスに記載の文字の装飾
+*/
+
 
 .texttitle {
   font-weight: bold;
@@ -227,10 +240,12 @@ p-text-box-1.2
   @media only screen and (min-width: 1025px) {
   }
 }
- 
+
+/*
 .p-text-title2
 「ダミーサイト」の画像の下２つの並ぶ画像の左と右の画像の下部に
 書いてあるテキストボックスに記載の文字の装飾
+*/
 
 .p-text-title2 {
   font-size: small;
@@ -246,9 +261,11 @@ p-text-box-1.2
   @media only screen and (min-width: 1025px) {
   }
 }
- 
+
+/*
 .map
 地図部分の装飾
+*/
 
 .p-map {
   //width:100%;
@@ -268,8 +285,9 @@ p-text-box-1.2
     background-size: cover;
     max-width: 100%;
   }
-   
-地図部分にかぶせているレイヤーの作成と装飾
+
+  
+//地図部分にかぶせているレイヤーの作成と装飾
 
   &::before {
     width: 100%;
@@ -294,7 +312,7 @@ p-text-box-1.2
     }
   }
    
-地図部分記載の文字の装飾
+//地図部分記載の文字の装飾
 
   &__text {
     width: 100%;
@@ -317,8 +335,8 @@ p-text-box-1.2
     }
   }
    
-.map
-地図部分記載のもう一つのレイヤーの装飾
+
+//地図部分記載のもう一つのレイヤーの装飾
 
   &__text::before {
     width: 100%;
@@ -340,8 +358,8 @@ p-text-box-1.2
     }
   }
    
-.map
-地図部分記載の文字の装飾
+
+//地図部分記載の文字の装飾
 
   &__title {
     font-size: 7vw;
@@ -361,8 +379,8 @@ p-text-box-1.2
       font-size: 2.5vw;
     }
   }  
-.map
-地図部分記載の文字の下部の横棒の装飾
+
+//地図部分記載の文字の下部の横棒の装飾
 
   &__title::before {
     background-color: #fff;
@@ -379,8 +397,8 @@ p-text-box-1.2
     }
   }
   
-.map
-地図部分記載の文字の装飾
+
+//地図部分記載の文字の装飾
 
   &__subtext {
     width: 100%;

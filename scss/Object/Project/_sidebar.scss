@@ -30,13 +30,15 @@
   @media only screen and (min-width: 1025px) {
     //他のサイズ時にサイドメニューを隠しておく設定をしているがそれを無しにするためにinitial
    position: initial;
-right: 0%;
+
+   right: 0%;
     //PCサイズ画面の場合はサイドメニューは常に出ているので、このwidthで位置もこのままで設定
     width: 20%;
     //height: 100%;
     //z-index: 100000;
   background-repeat: repeat-y;
   overflow-y: hidden;
+  background-color:yellow;
   
   
     

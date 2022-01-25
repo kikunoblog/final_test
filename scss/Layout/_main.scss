@@ -11,34 +11,34 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
 .l-container {
   display: grid;
   grid-template:
-  "l-header l-sidebar             " 217px
-  "l-main l-sidebar               " 1fr
-  "p-two-image-wrapper l-sidebar  " 1fr
-  "p-map-wrapper l-sidebar        " 1fr
-  "l-footer l-footer              " 150px
-/ 1fr 367px;
+  "l-header l-header p-sidebar             " 217px
+  "l-main l-main p-sidebar               " 1fr
+  "p-two-image-wrapper p-two-image-wrapper  p-sidebar  " 1fr
+  "p-map-wrapper p-map-wrapper p-sidebar        " 1fr
+  "l-footer l-footer l-footer             " 150px
+/ 1fr 1fr 367px;
 
-  header {
+  .l-header {
     grid-area: l-header;
   }
   
-  aside{
-    grid-area: l-sidebar;
+  .p-sidebar{
+    grid-area: p-sidebar;
   }
 
-  section1 {
+  .p-two-image-wrapper {
     grid-area: p-two-image-wrapper;
   }
 
-  section2 {
+  .p-map-wrapper {
     grid-area: p-map-wrapper;
   }
   
-  main1 {
+  .l-main {
     grid-area: l-main;
   }
   
-  footer {
+  .l-footer {
     grid-area: l-footer;
   }
   height: 100%;
@@ -68,7 +68,7 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
 /* 
 body
 スマホサイズを320を最小値にするため設定
-*/
+
 body {
   min-width: 320px;
   //overflow-x: hidden;
@@ -112,20 +112,4 @@ body {
     display: none;
   }
 }
-/* 
-l-main
-「ダミーサイト」の画像・その下２つの並ぶ画像をまとめた部分
-
-.l-main {
-  background-color: #fff;
-  height: auto;
-  width: auto;
-
-  @media only screen and (min-width: 600px) {
-    //（ここにタブレット用スタイルを記述）
-  }
-  @media only screen and (min-width: 1025px) {
-  }
-}
-
 */

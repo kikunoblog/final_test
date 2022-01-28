@@ -493,7 +493,7 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
 */
 .l-container {
   display: grid;
-  grid-template: "l-header l-header p-sidebar             " 217px "l-main l-main p-sidebar               " 1fr "p-two-image-wrapper p-two-image-wrapper  p-sidebar  " 1fr "p-map-wrapper p-map-wrapper p-sidebar        " 1fr "l-footer l-footer l-footer             " 150px / 1fr 1fr 367px;
+  grid-template: "l-main l-main p-sidebar            " 1fr "l-footer l-footer l-footer             " 150px / 1fr 1fr 367px;
   height: 100%;
   width: 100%;
 }
@@ -504,14 +504,6 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
 
 .l-container .p-sidebar {
   grid-area: p-sidebar;
-}
-
-.l-container .p-two-image-wrapper {
-  grid-area: p-two-image-wrapper;
-}
-
-.l-container .p-map-wrapper {
-  grid-area: p-map-wrapper;
 }
 
 .l-container .l-main {
@@ -1286,7 +1278,7 @@ p-text-box-a
   .p-sidebar {
     position: initial;
     right: 0%;
-    width: 20%;
+    width: 100%;
     background-repeat: repeat-y;
     overflow-y: hidden;
     background-color: yellow;

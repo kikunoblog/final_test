@@ -11,10 +11,7 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
 .l-container {
   display: grid;
   grid-template:
-  "l-header l-header p-sidebar             " 217px
-  "l-main l-main p-sidebar               " 1fr
-  "p-two-image-wrapper p-two-image-wrapper  p-sidebar  " 1fr
-  "p-map-wrapper p-map-wrapper p-sidebar        " 1fr
+  "l-main l-main p-sidebar            " 1fr
   "l-footer l-footer l-footer             " 150px
 / 1fr 1fr 367px;
 
@@ -26,13 +23,6 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
     grid-area: p-sidebar;
   }
 
-  .p-two-image-wrapper {
-    grid-area: p-two-image-wrapper;
-  }
-
-  .p-map-wrapper {
-    grid-area: p-map-wrapper;
-  }
   
   .l-main {
     grid-area: l-main;

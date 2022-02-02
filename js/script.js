@@ -12,5 +12,6 @@ $(function () {
     //openクラスの要素を削除
     $(".p-sidebar").removeClass("is-open");
     $(".l-container").removeClass("is-open2");
+    $("body").toggleClass("fixed");
   });
 });

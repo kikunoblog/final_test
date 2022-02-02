@@ -12,7 +12,7 @@
   right: -100%;
   transition: right 0.5s;
   //スクロールさせるための設定
-  overflow-y: scroll;
+  overflow-y: auto;
 
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
@@ -38,7 +38,7 @@
     //z-index: 100000;
   background-repeat: repeat-y;
   overflow-y: hidden;
-  background-color:yellow;
+  
   
   
     
@@ -153,7 +153,6 @@
   right: 0%;
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
-    right: 0%;
   }
   @media only screen and (min-width: 1025px) {
   }

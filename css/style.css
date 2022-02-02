@@ -478,7 +478,7 @@ template {
 /*Layoutフォルダの中にあるheader.scssのimport*/
 .l-footer {
   width: 100%;
-  background-color: lightblue;
+  background-image: url("../images/footer.png");
 }
 
 /*Layoutフォルダの中にあるfooter.scssのimport*/
@@ -514,34 +514,37 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
   grid-area: l-footer;
 }
 
+@media only screen and (min-width: 600px) {
+  .l-container {
+    display: grid;
+    grid-template: "l-main l-main l-main           " 1fr "l-footer l-footer l-footer             " 150px / 1fr 1fr 367px;
+  }
+}
+
 @media only screen and (min-width: 1025px) {
   .l-container {
     width: 100%;
     height: 100%;
+    display: grid;
+    grid-template: "l-main l-main p-sidebar            " 1fr "l-footer l-footer l-footer             " 150px / 1fr 1fr 367px;
   }
 }
 
 /* 
 body
 スマホサイズを320を最小値にするため設定
-
+*/
 body {
   min-width: 320px;
-  //overflow-x: hidden;
-  //position: fixed;
-  //width: 100%;
+  overflow-x: hidden;
   height: 100%;
-
-  @media only screen and (min-width: 600px) {
-    //（ここにタブレット用スタイルを記述）
-  }
-  @media only screen and (min-width: 1025px) {
-    //（ここにパソコン用スタイルを記述）
-    position: initial;
-
-  }
 }
 
+@media only screen and (min-width: 1025px) {
+  body {
+    position: initial;
+  }
+}
 
 .is-open2 {
   height: 100%;
@@ -552,7 +555,7 @@ body {
 .is-open2::before {
   width: 100%;
   height: 100%;
-  //z-index: 1000;
+  z-index: 1000;
   content: "";
   display: block;
   position: absolute;
@@ -560,15 +563,18 @@ body {
   left: 0;
   background-color: rgba(0, 0, 0, 0.445);
   opacity: 0.7;
+}
 
-  @media only screen and (min-width: 600px) {
-  }
-  @media only screen and (min-width: 1025px) {
-    //（ここにパソコン用スタイルを記述）
+@media only screen and (min-width: 1025px) {
+  .is-open2::before {
     display: none;
   }
 }
-*/
+
+body.fixed {
+  position: fixed;
+}
+
 /*Layoutフォルダの中にあるmain.scssのimport*/
 /*Layoutフォルダの中にあるsidebar.scssのimport*/
 .p-header {
@@ -587,7 +593,6 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    background-color: green;
   }
 }
 
@@ -830,6 +835,7 @@ body {
 「ダミーサイト」の画像
 */
 .p-main__image {
+  background-image: url("../images/iphone2.png");
   background-size: cover;
   width: 100%;
   height: 285px;
@@ -838,10 +844,16 @@ body {
   background-position: center;
 }
 
+@media only screen and (min-width: 600px) {
+  .p-main__image {
+    background-image: url("../images/ipad.png");
+  }
+}
+
 @media only screen and (min-width: 1025px) {
   .p-main__image {
     height: 530px;
-    background-color: orange;
+    background-image: url("../images/mainvisual-pc.jpg");
   }
 }
 
@@ -899,6 +911,7 @@ p-two-image-wrapper
 .p-left-wrapper {
   height: 643px;
   max-width: 599px;
+  background-image: url(../images/i-sub1.png);
   background-size: cover;
   margin-bottom: 10px;
 }
@@ -909,6 +922,7 @@ p-two-image-wrapper
     max-width: 1024px;
     margin-right: 40px;
     margin-bottom: 0px;
+    background-image: url(../images/main2.png);
   }
 }
 
@@ -916,7 +930,6 @@ p-two-image-wrapper
   .p-left-wrapper {
     height: 1196px;
     max-width: auto;
-    background-color: red;
   }
 }
 
@@ -927,6 +940,7 @@ p-right-wrapper
 .p-right-wrapper {
   height: 643px;
   max-width: 599px;
+  background-image: url(../images/i-sub2.png);
   background-size: cover;
   margin: 20px 0px;
 }
@@ -936,6 +950,7 @@ p-right-wrapper
     height: 681px;
     max-width: 1024px;
     margin: 0px 0px 0px 40px;
+    background-image: url(../images/main3.png);
   }
 }
 
@@ -943,7 +958,6 @@ p-right-wrapper
   .p-right-wrapper {
     height: 1196px;
     max-width: auto;
-    background-color: blue;
   }
 }
 
@@ -1093,53 +1107,9 @@ p-text-box-a
 .p-map {
   max-width: 599px;
   height: 691px;
+  background-image: url(../images/i-map.png);
   background-size: cover;
   position: relative;
-  /*
-  &::before {
-    width: 100%;
-    height: 691px;
-    z-index: 0;
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.29);
-
-    @media only screen and (min-width: 600px) {
-      //（ここにタブレット用スタイルを記述）
-      width: 100%;
-      height: 415px;
-    }
-
-    @media only screen and (min-width: 1025px) {
-      width: 100%;
-      height: 649px;
-    }
-  }
-  */
-  /*
-  &__text::before {
-    width: 100%;
-    height: 415px;
-    z-index: 0;
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.445);
-
-    @media only screen and (min-width: 600px) {
-      //（ここにタブレット用スタイルを記述）
-    }
-    @media only screen and (min-width: 1025px) {
-      width: 60%;
-      height: 649px;
-    }
-  }
-  */
 }
 
 @media only screen and (min-width: 600px) {
@@ -1152,9 +1122,35 @@ p-text-box-a
 @media only screen and (min-width: 1025px) {
   .p-map {
     height: 649px;
+    background-image: url(../images/map.png);
     background-size: cover;
     max-width: 100%;
-    background-color: pink;
+  }
+}
+
+.p-map::before {
+  width: 100%;
+  height: 691px;
+  z-index: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.29);
+}
+
+@media only screen and (min-width: 600px) {
+  .p-map::before {
+    width: 100%;
+    height: 415px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .p-map::before {
+    width: 100%;
+    height: 649px;
   }
 }
 
@@ -1178,6 +1174,25 @@ p-text-box-a
 
 @media only screen and (min-width: 1025px) {
   .p-map__text {
+    height: 649px;
+  }
+}
+
+.p-map__text::before {
+  width: 100%;
+  height: 415px;
+  z-index: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.445);
+}
+
+@media only screen and (min-width: 1025px) {
+  .p-map__text::before {
+    width: 60%;
     height: 649px;
   }
 }
@@ -1260,7 +1275,7 @@ p-text-box-a
   height: 100%;
   right: -100%;
   transition: right 0.5s;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 @media only screen and (min-width: 600px) {
@@ -1281,7 +1296,6 @@ p-text-box-a
     width: 100%;
     background-repeat: repeat-y;
     overflow-y: hidden;
-    background-color: yellow;
   }
 }
 
@@ -1414,12 +1428,6 @@ p-text-box-a
 
 .is-open {
   right: 0%;
-}
-
-@media only screen and (min-width: 600px) {
-  .is-open {
-    right: 0%;
-  }
 }
 
 .p-menu-trigger {

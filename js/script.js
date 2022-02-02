@@ -5,6 +5,7 @@ $(function () {
   $(".p-header__menu").on("click", function () {
     $(".p-sidebar ").toggleClass("is-open");
     $(".l-container").toggleClass("is-open2");
+    $("body").toggleClass("fixed");
   });
 
   $(".p-menu-trigger").on("click", function () {

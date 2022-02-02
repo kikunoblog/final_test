@@ -115,5 +115,14 @@ body {
 }
 
 body.fixed{
-position: fixed;
+  position: fixed;
+
+@media only screen and (min-width: 600px) {
+  //（ここにタブレット用スタイルを記述）
+}
+@media only screen and (min-width: 1025px) {
+  //（ここにパソコン用スタイルを記述）
+  position: initial;
+
+}
 }

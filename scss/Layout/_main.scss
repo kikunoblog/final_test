@@ -11,9 +11,9 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
 .l-container {
   display: grid;
   grid-template:
-  "l-main l-main p-sidebar            " 1fr
-  "l-footer l-footer l-footer             " 150px
-/ 1fr 1fr 367px;
+  "l-main            " 1fr
+  "l-footer             " 150px
+/ 1fr ;
 
   .l-header {
     grid-area: l-header;

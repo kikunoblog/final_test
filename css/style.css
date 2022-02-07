@@ -546,13 +546,13 @@ body {
   }
 }
 
-.is-open2 {
+.cover {
   height: 100%;
   width: 100%;
   position: relative;
 }
 
-.is-open2::before {
+.cover::before {
   width: 100%;
   height: 100%;
   z-index: 1000;
@@ -566,7 +566,7 @@ body {
 }
 
 @media only screen and (min-width: 1025px) {
-  .is-open2::before {
+  .cover::before {
     display: none;
   }
 }
@@ -1432,7 +1432,7 @@ p-text-box-a
   }
 }
 
-.is-open {
+.p-sidebar_move {
   right: 0%;
 }
 

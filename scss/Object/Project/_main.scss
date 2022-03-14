@@ -33,12 +33,8 @@ p-main__image__title
 「ダミーサイト」の画像に記載の文字「ダミーサイト」の装飾
 */
 .p-main__image__title, .p-main__image__subtitle {
-  font-size: 35px;
-  margin-left: 20px;
-  font-weight: bold;
-  align-self: center;
-  color: #fff;
-  font-family: "M+ 1m";
+
+  
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
 

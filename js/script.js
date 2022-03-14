@@ -9,6 +9,7 @@ $(function () {
     $(".p-sidebar ").toggleClass("is-open");
     $(".l-container").toggleClass("is-open");
     $("body").toggleClass("fixed");
+    
   });
 
     /*js-menu-close-buttonをクリックしたらis-openクラスを削除 bodyに付与されていたfixedを削除*/

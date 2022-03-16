@@ -1,30 +1,30 @@
 @charset "UTF-8";
 @use "Foundation/reset";
 /*Foundationフォルダの中にあるreset.scssのimport*/
-@use "Layout/_header";
+@use "Layout/_header" as lh;
 /*Layoutフォルダの中にあるheader.scssのimport*/
-@use "Layout/_footer";
+@use "Layout/_footer" as lf;
 /*Layoutフォルダの中にあるfooter.scssのimport*/
-@use "Layout/_main";
+@use "Layout/_main" as lm;
 /*Layoutフォルダの中にあるmain.scssのimport*/
-@use "Layout/_sidebar";
+@use "Layout/_sidebar" as ls;
 /*Layoutフォルダの中にあるsidebar.scssのimport*/
-@use "Object/Project/_header";
+@use "Object/Project/_header" as ph;
 /*Objectフォルダの中のProjectフォルダの中にあるheader.scssのimport*/
-@use "Object/Project/_footer";
+@use "Object/Project/_footer" as pf;
 /*Objectフォルダの中のProjectフォルダの中にあるfooter.scssのimport*/
-@use "Object/Project/_main";
+@use "Object/Project/_main" as pm;
 /*Objectフォルダの中のProjectフォルダの中にあるmain.scssのimport*/
-@use "Object/Project/_sidebar";
+@use "Object/Project/_sidebar" as ps;
 /*Objectフォルダの中のProjectフォルダの中にあるsidebar.scssのimport*/
-@use "Object/Component/_header";
+@use "Object/Component/_header" as ch;
 /*Objectフォルダの中のComponentフォルダの中にあるheader.scssのimport*/
-@use "Object/Component/_footer";
+@use "Object/Component/_footer" as cf;
 /*Objectフォルダの中のComponentフォルダの中にあるfooter.scssのimport*/
-@use "Object/Component/_main";
+@use "Object/Component/_main" as cm;
 /*Objectフォルダの中のComponentフォルダの中にあるmain.scssのimpoer*/
-@use "Object/Component/_sidebar";
+@use "Object/Component/_sidebar" as cs;
 /*Objectフォルダの中のComponentフォルダの中にあるsidebar.scssのimport*/
-@use "Object/Component/_button";
+@use "Object/Component/_button" as cb;
 /*Objectフォルダの中のComponentフォルダの中にあるbutton.scssのimport*/
 /*# sourceMappingURL=style.css.map */

@@ -1,20 +1,17 @@
-// @use "Foundation" ; /*Foundationフォルダの中にあるreset.scssのimport*/
+
 @use "Foundation/reset";
 @use "Foundation/mixin";
-// @use  "Layout" ; /*Layoutフォルダの中にあるheader.scssのimport*/
 
-@use "Layout/_footer" as lf;
+@use  "Layout/_header" as lh; 
 @use  "Layout/_main" as lm;
 @use  "Layout/_sidebar" as ls;
 
-// @use  "Project"; /*Objectフォルダの中のProjectフォルダの中にあるheader.scssのimport*/
 
-@use  "Object/Project/_footer" as pf;
+@use  "Object/Project/_header" as ph; 
 @use  "Object/Project/_main" as pm;
 @use  "Object/Project/_sidebar" as ps;
 
-// @use  "Component" ; 
-// /*Objectフォルダの中のComponentフォルダの中にあるheader.scssのimport
+@use  "Object/Component/_header" as ch;
 @use  "Object/Component/_footer" as cf;
 @use "Object/Component/_main" as cm;
 @use  "Object/Component/_sidebar" as cs;

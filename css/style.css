@@ -1,9 +1,9 @@
 /* Error: Can't find stylesheet to import.
- *   ,
- * 5 | @use  "Layout/_header" as lh; 
- *   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\style.scss 5:1  root stylesheet */
+ *    ,
+ * 14 | @use  "Object/Component/_c-header" as ch;
+ *    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   scss\style.scss 14:1  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 5 \2502  @use  \"Layout/_header\" as lh; \d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\style.scss 5:1  root stylesheet";
+  content: "Error: Can't find stylesheet to import.\a    \2577 \a 14 \2502  @use  \"Object/Component/_c-header\" as ch;\d\a    \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\style.scss 14:1  root stylesheet";
 }

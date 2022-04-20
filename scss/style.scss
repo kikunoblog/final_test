@@ -2,17 +2,17 @@
 @use "Foundation/reset";
 @use "Foundation/mixin";
 
-@use  "Layout/_header" as lh; 
-@use  "Layout/_main" as lm;
-@use  "Layout/_sidebar" as ls;
+@use  "Layout/_l-header" as lh; 
+@use  "Layout/_l-main" as lm;
+@use  "Layout/_l-sidebar" as ls;
 
 
-@use  "Object/Project/_header" as ph; 
-@use  "Object/Project/_main" as pm;
-@use  "Object/Project/_sidebar" as ps;
+@use  "Object/Project/_p-header" as ph; 
+@use  "Object/Project/_p-main" as pm;
+@use  "Object/Project/_p-sidebar" as ps;
 
-@use  "Object/Component/_header" as ch;
-@use  "Object/Component/_footer" as cf;
-@use "Object/Component/_main" as cm;
-@use  "Object/Component/_sidebar" as cs;
-@use  "Object/Component/_button" as cb;
+@use  "Object/Component/_c-header" as ch;
+@use  "Object/Component/_c-footer" as cf;
+@use "Object/Component/_c-main" as cm;
+@use  "Object/Component/_c-sidebar" as cs;
+@use  "Object/Component/_c-button" as cb;

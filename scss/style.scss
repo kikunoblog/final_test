@@ -1,16 +1,38 @@
+//Foundation
+@use "Foundation/reset" as fr;
+@use "Foundation/mixin" as fm;
 
-@use "Foundation/reset";
-@use "Foundation/mixin";
+//Layout
+@use "Layout/_l-container" as lc;
+@use "Layout/_l-footer" as lf;
+@use "Layout/_l-header" as lh; 
+@use "Layout/_l-main" as lm;
+@use "Layout/_l-sidebar" as ls;
 
-@use  "Layout/_l-header" as lh; 
-@use  "Layout/_l-main" as lm;
-@use  "Layout/_l-sidebar" as ls;
-
-
+//Project
 @use  "Object/Project/_p-header" as ph; 
 @use  "Object/Project/_p-main" as pm;
 @use  "Object/Project/_p-sidebar" as ps;
+@use "Object/Project/_p-access";
+@use "Object/Project/_p-contents";
+@use "Object/Project/_p-footer";
+@use "Object/Project/_p-page-btn";
+@use "Object/Project/_p-top-img";
 
-
+//Component
 @use  "Object/Component/_c-sidebar" as cs;
 @use  "Object/Component/_c-button" as cb;
+@use "Object/Component/_c-brunch-menu" as cm;
+@use "Object/Component/_c-card" as cc;
+
+//Foundation
+@use "Foundation/_f-base" as ff;
+
+
+
+
+
+
+
+
+

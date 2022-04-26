@@ -1,6 +1,7 @@
 //Foundation
 @use "Foundation/reset" as fr;
 @use "Foundation/mixin" as fm;
+@use "Foundation/_f-base" as ff;
 
 //Layout
 @use "Layout/_l-container" as lc;
@@ -25,8 +26,7 @@
 @use "Object/Component/_c-brunch-menu" as cm;
 @use "Object/Component/_c-card" as cc;
 
-//Foundation
-@use "Foundation/_f-base" as ff;
+
 
 
 

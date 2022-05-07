@@ -1,7 +1,6 @@
 //Foundation
-@use "Foundation/reset" as fr;
-@use "Foundation/mixin" as fm;
-@use "Foundation/_f-base" as ff;
+@use "Foundation/_mixin" as fm;
+@use "Foundation/_reset" as fr;
 
 //Layout
 @use "Layout/_l-container" as lc;
@@ -11,21 +10,19 @@
 @use "Layout/_l-sidebar" as ls;
 
 //Project
-@use  "Object/Project/_p-header" as ph; 
-@use  "Object/Project/_p-main" as pm;
-@use  "Object/Project/_p-sidebar" as ps;
-@use "Object/Project/_p-access";
-@use "Object/Project/_p-contents";
-@use "Object/Project/_p-footer";
-@use "Object/Project/_p-page-btn";
-@use "Object/Project/_p-top-img";
+@use "Object/Project/_p-contents" as pc;
+@use "Object/Project/_p-footer" as pf;
+@use "Object/Project/_p-header" as ph; 
+@use "Object/Project/_p-main" as pm;
+@use "Object/Project/_p-sidebar" as ps;
+
 
 //Component
-@use  "Object/Component/_c-sidebar" as cs;
-@use  "Object/Component/_c-button" as cb;
-@use "Object/Component/_c-brunch-menu" as cm;
+@use "Object/Component/_c-button" as cb;
 @use "Object/Component/_c-card" as cc;
-
+@use "Object/Component/_c-grid" as cg;
+@use "Object/Component/_c-sidebar" as cs;
+@use "Object/Component/_c-title" as ct;
 
 
 

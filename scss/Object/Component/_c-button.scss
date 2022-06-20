@@ -19,3 +19,25 @@
     }
   }
   
+  .c-button--archive{
+
+    display: block;
+    margin: 0 auto;
+    width: 163px;
+    height: 42px;
+    background-color: #FFFFFF;
+    color: #707070;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50px;
+    margin-top: 40px;
+
+
+    @media only screen and (min-width: 600px) {
+      //（ここにタブレット用スタイルを記述）
+    }
+    @media only screen and (min-width: 1025px) {
+    }
+  
+  }

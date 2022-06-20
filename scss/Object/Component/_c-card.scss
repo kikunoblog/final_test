@@ -1,18 +1,54 @@
-.c-card--pic{
-  background-image: url("../images/e-16.png");
-  background-size: cover;
-  width: 100%;
-  height: 283px;
-  object-fit: cover;
-  display: flex;
-  //background-position: center;
-
-  @media only screen and (min-width: 600px) {
-    //（ここにタブレット用スタイルを記述）
-    background-image: url("../images/e-8.png");
+.c-card{
+  margin-bottom:20px;
+  &--pic{
+    background-image: url("../images/e-16.png");
+    background-size: cover;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: flex;
+    //background-position: center;
+  
+    @media only screen and (min-width: 600px) {
+      //（ここにタブレット用スタイルを記述）
+      background-image: url("../images/e-8.png");
+    }
+    @media only screen and (min-width: 1025px) {
+      height: 530px;
+      background-image: url("../images/e-1.png");
+    }
   }
-  @media only screen and (min-width: 1025px) {
-    height: 530px;
-    background-image: url("../images/e-1.png");
+
+  &--intro{
+    position: relative;
+    padding: 23px 17px 45px;
+    background-color: #3C2B1C;
+    color: #FFFFFF;
+    height: auto;
+    h3{
+        font-size: 18px;
+        font-weight: bold;
+        text-align: left;
+        margin: 23px 0 23px;
+        }
+
+    
+    h4{
+        font-size: 18px;
+        font-weight: bold;
+        text-align: left;
+        margin-bottom: 10px;
+        
+        }
+    
+    p{
+        font-size: 16px;
+        text-align: left;
+        margin-right: 44px;
+        line-height: 1.3;
+    }
+  
   }
 }
+
+

@@ -770,7 +770,7 @@ body.fixed {
   justify-content: center;
   align-items: flex-start;
   position: relative;
-  padding-top: 8vw;
+  padding-top: 12vw;
   padding-right: 2vw;
 }
 @media only screen and (min-width: 600px) {
@@ -784,7 +784,7 @@ body.fixed {
   }
 }
 .p-footer-image__title1 {
-  font-size: 4.3vw;
+  font-size: 5.3vw;
   color: #fff;
   display: inline-block;
   position: relative;
@@ -838,7 +838,7 @@ body.fixed {
 }
 .p-footer-image__title2 {
   color: #fff;
-  font-size: 4.3vw;
+  font-size: 5.3vw;
   padding: 0.8vw 2vw 0vw 2vw;
 }
 @media only screen and (min-width: 600px) {
@@ -855,7 +855,7 @@ body.fixed {
 }
 .p-footer-image__title3 {
   color: #fff;
-  font-size: 2.8vw;
+  font-size: 3.8vw;
   padding-bottom: 5vw;
   padding-left: 2vw;
 }
@@ -1432,7 +1432,7 @@ p-text-box-a
 }
 
 .p-main__archive {
-  padding: 10px 20px 0;
+  padding: 10px 20px 80px;
 }
 .p-main__archive h2 {
   color: #3C2A10;

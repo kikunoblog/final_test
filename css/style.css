@@ -1667,22 +1667,15 @@ p-text-box-a
   margin-bottom: 20px;
 }
 .c-card--pic {
-  background-image: url("../images/e-16.png");
   background-size: cover;
   width: 100%;
   height: 230px;
   object-fit: cover;
   display: flex;
 }
-@media only screen and (min-width: 600px) {
-  .c-card--pic {
-    background-image: url("../images/e-8.png");
-  }
-}
 @media only screen and (min-width: 1025px) {
   .c-card--pic {
     height: 530px;
-    background-image: url("../images/e-1.png");
   }
 }
 .c-card--intro {

@@ -10,6 +10,12 @@
   border-width: 0;
 }
 
+
+@font-face {
+  font-family: archivefont;
+  src: url('mplus-1m-regular.ttf') format("woff");
+  }
+  
 /* Document */
 /* ============================================ */
 /**

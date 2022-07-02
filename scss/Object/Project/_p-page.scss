@@ -1,5 +1,17 @@
+.p-page-btn{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
 
-.p-page-btn-link {
-display: flex;
-justify-content: space-between;
+&--prev{
+    position: absolute;
+    top:0%;
+    left: 60px;
+}
+
+&--next{
+    position: absolute;
+    top: 0%;
+    right: 60px;
 }

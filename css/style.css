@@ -1636,6 +1636,24 @@ p-text-box-a
 .p-menu-trigger.sp_open {
   right: -100%;
 }
+.p-page-btn {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.p-page-btn--prev {
+  position: absolute;
+  top: -6vh;
+  left: 3vh;
+}
+
+.p-page-btn--next {
+  position: absolute;
+  top: -6vh;
+  right: 4vh;
+}
+
 #c-header-button {
   font-weight: bold;
   width: 90px;

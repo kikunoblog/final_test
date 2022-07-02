@@ -1,17 +1,19 @@
 .p-page-btn{
-    position: relative;
     display: flex;
+    position: relative;
     justify-content: space-between;
 }
 
-&--prev{
+
+.p-page-btn--prev{
     position: absolute;
-    top:0%;
-    left: 60px;
+    top:-6vh;
+    left: 3vh;
+    
 }
 
-&--next{
+.p-page-btn--next{
     position: absolute;
-    top: 0%;
-    right: 60px;
+    top: -6vh;
+    right: 4vh;
 }

@@ -16,7 +16,6 @@
        url('http://mplus-webfonts.sourceforge.jp/mplus-1m-regular.woff') format('woff'),
        url('http://mplus-webfonts.sourceforge.jp/mplus-1m-regular.ttf') format('truetype');
 }
-
 /* Document */
 /* ============================================ */
 /**
@@ -539,7 +538,6 @@ body {
   min-width: 320px;
   overflow-x: hidden;
   height: 100%;
-  font-family: "M PLUS 1p";
 }
 @media only screen and (min-width: 1025px) {
   body {

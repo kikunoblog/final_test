@@ -64,8 +64,9 @@ p-main__image__title
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
 
-    font-size: 40px;
-    margin-left: 46px;
+    font-size: 60px;
+    font-family: Roboto;
+    margin-left: 90px;
   }
   @media only screen and (min-width: 1025px) {
   }
@@ -85,9 +86,10 @@ p-main__image__subtitle
   z-index: 10;
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
-    margin-top: 120px;
-    font-size: 40px;
-    margin-left: 46px;
+    margin-top: 139px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 24px;
   }
   @media only screen and (min-width: 1025px) {
     margin-top: 240px;
@@ -490,7 +492,7 @@ p-text-box-a
 
 //アーカイブページのヘッダー下の画像の下のテキスト部分の装飾
 .p-main__archive{
-  padding: 10px 20px 80px;
+  padding: 3vh 0vw 1vh 3vw;
 
   h2{
       color: #3C2A10;
@@ -498,14 +500,31 @@ p-text-box-a
       font-weight: bold;
       margin: 25px 0;
       text-align: left;
+      @media only screen and (min-width: 600px) {
+        font-size: 4.3vw;
+        margin: 4vh 4vw;
+      }
+      @media only screen and (min-width: 1025px) {
 
+      }
 
+    }
   }
-  >p{
+  p{
       color: #3C2A10;
       font-size: 16px;
       margin-bottom: 22px;
       line-height: 1.5;
-      
+
+      @media only screen and (min-width: 600px) {
+        color: #3C2A10;
+        font-size: 2vw;
+        margin: 0vh 3vw 5vh 3vw;
+        line-height: 1.4;
+        font-family: "M+ 1m";
   }
+  @media only screen and (min-width: 1025px) {
+
+  }
+
 }

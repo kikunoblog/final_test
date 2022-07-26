@@ -1,5 +1,6 @@
 
-#c-header-button {
+#c-button--header {
+  font-size: 16px;
     font-weight: bold;
     width: 90px;
     height: 40px;
@@ -10,10 +11,15 @@
     background: linear-gradient(#f2ede9, #ded8d3);
     border: 1px solid #999;
     color: #707070;
-    padding: 10px 32px;
-    font-size: 0.8rem;
+    padding: 0px 26px;
+    font-size: 1rem;
     @media only screen and (min-width: 600px) {
       //（ここにタブレット用スタイルを記述）
+      width: 136px;
+      height: 46px;
+      right: -150px;
+      padding: 0px 50px;
+      border-radius: 10px;
     }
     @media only screen and (min-width: 1025px) {
     }

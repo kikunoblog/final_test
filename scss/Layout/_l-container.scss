@@ -10,11 +10,7 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
 
 .l-container {
   
-    font-family: 'mplus-1m-regular';
-    src: url('http://mplus-webfonts.sourceforge.jp/mplus-1m-regular.eot');
-    src: url('http://mplus-webfonts.sourceforge.jp/mplus-1m-regular.eot?#iefix') format('embedded-opentype'),
-         url('http://mplus-webfonts.sourceforge.jp/mplus-1m-regular.woff') format('woff'),
-         url('http://mplus-webfonts.sourceforge.jp/mplus-1m-regular.ttf') format('truetype');
+
   
     display: grid;
     grid-template:

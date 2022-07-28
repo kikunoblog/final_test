@@ -1725,22 +1725,16 @@ p {
 }
 .c-card--pic {
   background-size: cover;
-  height: 230px;
+  width: 50vw;
   object-fit: cover;
   display: flex;
 }
 @media only screen and (min-width: 600px) {
   .c-card--pic {
     background-size: cover;
-    width: 50vw;
     height: 100%;
     object-fit: cover;
     display: flex;
-  }
-}
-@media only screen and (min-width: 1025px) {
-  .c-card--pic {
-    height: 530px;
   }
 }
 .c-card--intro {

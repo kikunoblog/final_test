@@ -1,23 +1,26 @@
 .c-card{
   margin-bottom:20px;
+  display: flex;
+  justify-content: center;
   &--pic{
     
-    background-size: cover;
+    //background-size: cover;
     width: 50vw;
-    //height: 230px;
-    object-fit: cover;
-    display: flex;
+    //height: 355px;
+    //object-fit: cover;
+    //display: flex;
     //background-position: center;
   
     @media only screen and (min-width: 600px) {
       //（ここにタブレット用スタイルを記述）
       background-size: cover;
       //width: 50vw;
-      height: 100%;
+      height: 354.5px;
       //max-width: 478.28px;
     //height: 350px;
       object-fit: cover;
-      display: flex;
+      //display: flex;
+      //justify-content: center;
       //background-position: center;
       
     }

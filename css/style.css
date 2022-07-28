@@ -1722,19 +1722,17 @@ p {
 }
 .c-card {
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
 .c-card--pic {
-  background-size: cover;
   width: 50vw;
-  object-fit: cover;
-  display: flex;
 }
 @media only screen and (min-width: 600px) {
   .c-card--pic {
     background-size: cover;
-    height: 100%;
+    height: 354.5px;
     object-fit: cover;
-    display: flex;
   }
 }
 .c-card--intro {

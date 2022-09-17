@@ -494,7 +494,7 @@ p-text-box-a
 .p-main__archive{
   padding: 3vh 0vw 1vh 3vw;
 
-  h2{
+  >h2{
       color: #3C2A10;
       font-size: 28px;
       font-weight: bold;
@@ -510,7 +510,7 @@ p-text-box-a
 
     }
   }
-  p{
+  >p{
       color: #3C2A10;
       font-size: 16px;
       margin-bottom: 22px;

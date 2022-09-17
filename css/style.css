@@ -463,7 +463,7 @@ template {
 l-container
 全体をレイアウトしているクラス。
 スマホ：高さ2716px
-タブレット：hegiht1825pxにする。折り返しはしないようにする。
+タブレット：height1825pxにする。折り返しはしないようにする。
 PC：幅と高さを設定。flexとwrapで横並びになるようにする。
 レイアウトなどの高さは設定しないとのことで講師からアドバイスがあったため、autoにした
 が、そもそもデフォルトがautoなので設定不要
@@ -860,8 +860,7 @@ body.fixed {
 .p-footer-image__title3 {
   color: #fff;
   font-size: 3.8vw;
-  padding-bottom: 5vw;
-  padding-left: 2vw;
+  padding: 3vh 0vw -5vw 2vw;
 }
 @media only screen and (min-width: 600px) {
   .p-footer-image__title3 {
@@ -1449,7 +1448,7 @@ p-text-box-a
 .p-main__archive {
   padding: 3vh 0vw 1vh 3vw;
 }
-.p-main__archive h2 {
+.p-main__archive > h2 {
   color: #3C2A10;
   font-size: 28px;
   font-weight: bold;
@@ -1457,19 +1456,19 @@ p-text-box-a
   text-align: left;
 }
 @media only screen and (min-width: 600px) {
-  .p-main__archive h2 {
+  .p-main__archive > h2 {
     font-size: 4.3vw;
     margin: 4vh 4vw;
   }
 }
-p {
+> p {
   color: #3C2A10;
   font-size: 16px;
   margin-bottom: 22px;
   line-height: 1.5;
 }
 @media only screen and (min-width: 600px) {
-  p {
+  > p {
     color: #3C2A10;
     font-size: 2vw;
     margin: 0vh 3vw 5vh 3vw;
@@ -1669,8 +1668,14 @@ p {
   display: flex;
   position: relative;
   justify-content: space-between;
+  top: 4vh;
+  margin: 5vh -3vw 5vh 0vw;
 }
-
+@media only screen and (min-width: 600px) {
+  .p-page-btn {
+    display: none;
+  }
+}
 .p-page-btn--prev {
   position: absolute;
   top: -6vh;
@@ -1718,15 +1723,34 @@ p {
   font-weight: bold;
   text-align: center;
   border-radius: 50px;
-  margin-top: 40px;
+  margin-top: 20px;
+  display: block;
+  margin: 0 auto;
+  width: 163px;
+  height: 42px;
+  background-color: #FFFFFF;
+  color: #707070;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50px;
+  margin-top: 1vh;
 }
 .c-card {
   margin-bottom: 20px;
-  display: flex;
   justify-content: center;
+}
+@media only screen and (min-width: 600px) {
+  .c-card {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
 }
 .c-card--pic {
   width: 50vw;
+  height: 231px;
+  object-fit: cover;
 }
 @media only screen and (min-width: 600px) {
   .c-card--pic {
@@ -1741,6 +1765,8 @@ p {
   background-color: #3C2B1C;
   color: #FFFFFF;
   height: auto;
+  object-fit: cover;
+  height: 354.5px;
 }
 .c-card--intro h3 {
   font-size: 20px;
@@ -1757,7 +1783,7 @@ p {
 .c-card--intro p {
   font-size: 16px;
   text-align: left;
-  margin: 0px 40px 0px 20px;
+  margin: 0vh 40px 0px 20px;
   line-height: 1.3;
   color: #FFFFFF;
 }

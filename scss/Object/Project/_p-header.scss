@@ -61,12 +61,12 @@
 .p-search-box {
   margin: 10px 115px 0px 0px;
   width: 190px;
+  height: 40px;
+  border-radius: 4px;
   display: inline-block; /* なくても大丈夫だけど、念の為 */
   position: relative; /* 基準値とする */
   border: solid 1px #999;
-  border-radius: 4px;
   background-color: #fff;
-  height: 40px;
   padding-left: 10px;
 
   @media only screen and (min-width: 600px) {
@@ -78,7 +78,7 @@
     border-radius: 10px;
   }
   @media only screen and (min-width: 1025px) {
-    margin: 10px 115px 0px 0px;
+    margin: 10px 210px 0px 0px;
   }
   &::before {
     content: ""; /* 疑似要素に必須 */

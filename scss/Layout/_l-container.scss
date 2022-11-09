@@ -61,7 +61,7 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
       //height: 2993px;
       //display: flex;
       //flex-wrap: wrap;
-      display: grid;
+      //display: grid;
       grid-template:
       "l-main l-main p-sidebar            " 1fr
       "l-footer l-footer l-footer             " 150px

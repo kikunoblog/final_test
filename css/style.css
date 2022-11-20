@@ -1101,7 +1101,7 @@ p-two-image-wrapper
   .p-left-wrapper {
     height: 681px;
     max-width: 1024px;
-    margin-right: 0px;
+    margin-right: 5vw;
     margin-bottom: 0px;
     background-image: url(../images/main2.png);
   }

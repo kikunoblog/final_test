@@ -18,12 +18,9 @@
  * 3. Remove gray overlay on links for iOS.
  */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-  -webkit-tap-highlight-color: transparent;
-  /* 3*/
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -webkit-tap-highlight-color: transparent; /* 3*/
 }
 
 /* Sections */
@@ -96,12 +93,9 @@ dd {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
   border-top-width: 1px;
   margin: 0;
   clear: both;
@@ -113,10 +107,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: inherit;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
 }
 
 address {
@@ -139,10 +131,8 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -160,10 +150,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: inherit;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
 }
 
 /**
@@ -331,16 +319,11 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -369,8 +352,7 @@ textarea {
  * 1. Correct the outline style in Safari.
  */
 [type=search] {
-  outline-offset: -2px;
-  /* 1 */
+  outline-offset: -2px; /* 1 */
 }
 
 /**
@@ -385,10 +367,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /**
@@ -496,7 +476,6 @@ PC：幅と高さを設定。flexとwrapで横並びになるようにする。
   .l-container {
     width: 100%;
     height: 100%;
-    display: grid;
     grid-template: "l-main l-main p-sidebar            " 1fr "l-footer l-footer l-footer             " 150px/1fr 1fr 367px;
   }
 }
@@ -779,7 +758,7 @@ body.fixed {
 }
 @media only screen and (min-width: 600px) {
   .p-footer-image {
-    padding: 5vw 0vw 0vw 0vw;
+    padding: 40px 0px 0px 0px;
   }
 }
 @media only screen and (min-width: 1025px) {
@@ -866,8 +845,7 @@ body.fixed {
   .p-footer-image__title3 {
     color: #fff;
     font-size: 1.8vw;
-    padding-bottom: 4vw;
-    padding-left: 0vw;
+    padding: 40px 0px 40px 0px;
   }
 }
 @media only screen and (min-width: 1025px) {
@@ -904,7 +882,7 @@ body.fixed {
   }
 }
 .p-header__title {
-  margin: 0px;
+  margin: 10px;
   font-size: 35px;
   color: #707070;
   font-family: Roboto;
@@ -944,14 +922,12 @@ body.fixed {
 .p-search-box {
   margin: 10px 115px 0px 0px;
   width: 190px;
-  display: inline-block;
-  /* なくても大丈夫だけど、念の為 */
-  position: relative;
-  /* 基準値とする */
-  border: solid 1px #999;
-  border-radius: 4px;
-  background-color: #fff;
   height: 40px;
+  border-radius: 4px;
+  display: inline-block; /* なくても大丈夫だけど、念の為 */
+  position: relative; /* 基準値とする */
+  border: solid 1px #999;
+  background-color: #fff;
   padding-left: 10px;
 }
 @media only screen and (min-width: 600px) {
@@ -964,38 +940,27 @@ body.fixed {
 }
 @media only screen and (min-width: 1025px) {
   .p-search-box {
-    margin: 10px 115px 0px 0px;
+    margin: 10px 210px 0px 0px;
   }
 }
 .p-search-box::before {
-  content: "";
-  /* 疑似要素に必須 */
-  width: 16px;
-  /* アイコンの横幅 */
-  height: 16px;
-  /* アイコンの高さ */
-  background: url(../images/glass.png) no-repeat center center/auto 100%;
-  /* 背景にアイコン画像を配置 */
-  display: inline-block;
-  /* 高さを持たせるためにインラインブロック要素にする */
-  position: absolute;
-  /* 相対位置に指定 */
-  top: 12px;
-  /* アイコンの位置 */
-  left: 9px;
-  /* アイコンの位置*/
+  content: ""; /* 疑似要素に必須 */
+  width: 16px; /* アイコンの横幅 */
+  height: 16px; /* アイコンの高さ */
+  background: url(../images/glass.png) no-repeat center center/auto 100%; /* 背景にアイコン画像を配置 */
+  display: inline-block; /* 高さを持たせるためにインラインブロック要素にする */
+  position: absolute; /* 相対位置に指定 */
+  top: 12px; /* アイコンの位置 */
+  left: 9px; /* アイコンの位置*/
 }
 @media only screen and (min-width: 600px) {
   .p-search-box::before {
-    width: 24px;
-    /* アイコンの横幅 */
-    height: 24px;
-    /* アイコンの高さ */
+    width: 24px; /* アイコンの横幅 */
+    height: 24px; /* アイコンの高さ */
   }
 }
 .p-search-box input {
-  padding: 10px 15px 0px;
-  /* アイコンを設置するため左の余白を多めに指定*/
+  padding: 10px 15px 0px; /* アイコンを設置するため左の余白を多めに指定*/
   width: 100%;
 }
 /*.p-main__image
@@ -1029,6 +994,7 @@ body.fixed {
   height: 283px;
   object-fit: cover;
   display: flex;
+  background-position: center;
 }
 @media only screen and (min-width: 600px) {
   .p-archive__image {
@@ -1078,6 +1044,8 @@ p-main__image__subtitle
   font-size: 17px;
   margin-top: 180px;
   margin-left: -100px;
+  font-weight: bold;
+  align-self: center;
   color: #fff;
   font-family: "M+ 1m";
   z-index: 10;
@@ -1103,22 +1071,19 @@ p-two-image-wrapper
 .p-two-image-wrapper {
   display: block;
   width: 100%;
-  height: 1373px;
-  padding: 7vw 4vw;
+  height: auto;
+  padding: 4vw;
   justify-content: center;
 }
 @media only screen and (min-width: 600px) {
   .p-two-image-wrapper {
     display: flex;
-    height: 758px;
-    padding: 38.5px 60px;
+    justify-content: start;
   }
 }
 @media only screen and (min-width: 1025px) {
   .p-two-image-wrapper {
     width: 100%;
-    height: 1446px;
-    padding: 120px 4vw 134px 4vw;
   }
 }
 
@@ -1136,7 +1101,7 @@ p-two-image-wrapper
   .p-left-wrapper {
     height: 681px;
     max-width: 1024px;
-    margin-right: 40px;
+    margin-right: 0px;
     margin-bottom: 0px;
     background-image: url(../images/main2.png);
   }
@@ -1163,7 +1128,7 @@ p-right-wrapper
   .p-right-wrapper {
     height: 681px;
     max-width: 1024px;
-    margin: 0px 0px 0px 40px;
+    margin: 0px 0px 0px 0px;
     background-image: url(../images/main3.png);
   }
 }
@@ -1786,6 +1751,4 @@ p-text-box-a
   margin: 0vh 40px 0px 20px;
   line-height: 1.3;
   color: #FFFFFF;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

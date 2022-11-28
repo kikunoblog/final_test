@@ -1270,23 +1270,25 @@ p-text-box-a
 */
 .p-map {
   max-width: 599px;
-  height: 691px;
+  height: 100%;
   background-image: url(../images/i-map.png);
   background-size: cover;
+  display: flex;
   position: relative;
+  min-height: 691px;
 }
 @media only screen and (min-width: 600px) {
   .p-map {
     max-width: 1024px;
-    height: 415px;
+    min-height: 415px;
   }
 }
 @media only screen and (min-width: 1025px) {
   .p-map {
-    height: 649px;
     background-image: url(../images/map.png);
     background-size: cover;
     max-width: 100%;
+    min-height: 649px;
   }
 }
 .p-map::before {
@@ -1314,23 +1316,21 @@ p-text-box-a
 }
 .p-map__text {
   width: 100%;
-  height: 691px;
   padding: 10vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  position: absolute;
+  top: 0;
+  bottom: 0;
 }
 @media only screen and (min-width: 600px) {
   .p-map__text {
     align-content: center;
-    height: 415px;
     padding-left: 50px;
     padding-right: 50px;
-  }
-}
-@media only screen and (min-width: 1025px) {
-  .p-map__text {
-    height: 649px;
+    padding-top: 7vh;
+    padding-bottom: 7vh;
   }
 }
 .p-map__text::before {

@@ -1091,7 +1091,7 @@ p-two-image-wrapper
 「ダミーサイト」の画像の下２つの並ぶ画像の左の画像
 */
 .p-left-wrapper {
-  height: 643px;
+  min-height: 643px;
   max-width: 599px;
   background-image: url(../images/i-sub1.png);
   background-size: cover;
@@ -1099,8 +1099,8 @@ p-two-image-wrapper
 }
 @media only screen and (min-width: 600px) {
   .p-left-wrapper {
-    height: 681px;
-    max-width: 1024px;
+    min-height: 681px;
+    width: 50%;
     margin-right: 5vw;
     margin-bottom: 0px;
     background-image: url(../images/main2.png);
@@ -1108,7 +1108,7 @@ p-two-image-wrapper
 }
 @media only screen and (min-width: 1025px) {
   .p-left-wrapper {
-    height: 1196px;
+    min-height: 1196px;
     max-width: auto;
   }
 }
@@ -1118,7 +1118,7 @@ p-right-wrapper
 「ダミーサイト」の画像の下２つの並ぶ画像の右の画像
 */
 .p-right-wrapper {
-  height: 643px;
+  min-height: 643px;
   max-width: 599px;
   background-image: url(../images/i-sub2.png);
   background-size: cover;
@@ -1126,15 +1126,15 @@ p-right-wrapper
 }
 @media only screen and (min-width: 600px) {
   .p-right-wrapper {
-    height: 681px;
-    max-width: 1024px;
+    min-height: 681px;
+    width: 50%;
     margin: 0px 0px 0px 0px;
     background-image: url(../images/main3.png);
   }
 }
 @media only screen and (min-width: 1025px) {
   .p-right-wrapper {
-    height: 1196px;
+    min-height: 1196px;
     max-width: auto;
   }
 }

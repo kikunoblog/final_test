@@ -1091,6 +1091,7 @@ p-two-image-wrapper
 「ダミーサイト」の画像の下２つの並ぶ画像の左の画像
 */
 .p-left-wrapper {
+  display: flex;
   min-height: 643px;
   max-width: 599px;
   background-image: url(../images/i-sub1.png);
@@ -1171,6 +1172,7 @@ p-wrapper-text
   padding: 5vw 0vw 0vw 5vw;
   position: relative;
   font-weight: bold;
+  align-content: space-between;
   /*  
   p-wrapper-text ::before
   「ダミーサイト」の画像の下２つの並ぶ画像の左と右の画像に
@@ -1211,6 +1213,7 @@ p-text-box-a
   width: 100%;
   margin-bottom: 15px;
   padding: 0px 5px;
+  align-content: space-between;
 }
 @media only screen and (min-width: 600px) {
   .p-text-box-a {

@@ -182,7 +182,8 @@ p-right-wrapper
 */
 
 .p-left-wrapper__link,
-.p-right-wrapper__link {
+.p-right-wrapper__link 
+{
   display: flex;
   flex-flow:column;
   justify-content:space-between;

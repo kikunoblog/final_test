@@ -1152,7 +1152,6 @@ p-right-wrapper
   justify-content: space-between;
   padding: 0vw;
   height: 100%;
-  display: block;
 }
 @media only screen and (min-width: 600px) {
   .p-left-wrapper__link,

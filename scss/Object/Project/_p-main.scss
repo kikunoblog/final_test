@@ -126,9 +126,9 @@ p-two-image-wrapper
 「ダミーサイト」の画像の下２つの並ぶ画像の左の画像
 */
 .p-left-wrapper {
-  display: flex;
-  flex-flow:column;
-  justify-content:space-between;
+  //display: flex;
+  //flex-flow:column;
+  //justify-content:space-between;
   min-height: 643px;
   max-width: 599px;
   background-image: url(../images/i-sub1.png);
@@ -183,6 +183,9 @@ p-right-wrapper
 
 .p-left-wrapper__link,
 .p-right-wrapper__link {
+  display: flex;
+  flex-flow:column;
+  justify-content:space-between;
   padding: 0vw;
   height: 100%;
   display: block;

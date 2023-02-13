@@ -185,10 +185,11 @@ p-right-wrapper
 .p-right-wrapper__link 
 {
   display: flex;
-  flex-flow:column;
+  flex-direction:column;
   justify-content:space-between;
   padding: 0vw;
-  height: 100%;
+  //height: 100%;
+  min-height: 643px;//なぜかスマホ画面だけflexがきかず、高さ100％でなくこの指定に落ち着く
   //display: block;
   //display: flex;
   //justify-content: space-between;

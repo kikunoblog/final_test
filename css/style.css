@@ -1212,11 +1212,12 @@ p-text-box-a
   width: 100%;
   margin-bottom: 15px;
   padding: 0px 5px;
-  align-content: space-between;
 }
 @media only screen and (min-width: 600px) {
   .p-text-box-a {
     width: 97%;
+    margin-bottom: 0px;
+    padding: 0px;
   }
 }
 /*p-text-box-1.2
@@ -1272,7 +1273,6 @@ p-text-box-a
 */
 .p-map {
   max-width: 599px;
-  height: 100%;
   background-image: url(../images/i-map.png);
   background-size: cover;
   display: flex;
@@ -1322,9 +1322,6 @@ p-text-box-a
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  position: absolute;
-  top: 0;
-  bottom: 0;
 }
 @media only screen and (min-width: 600px) {
   .p-map__text {

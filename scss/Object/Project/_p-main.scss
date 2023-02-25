@@ -259,10 +259,12 @@ p-text-box-a
   width: 100%;
   margin-bottom: 15px;
   padding: 0px 5px;
-  align-content:space-between;
+  //align-content:space-between;
   @media only screen and (min-width: 600px) {
     //（ここにタブレット用スタイルを記述）
     width: 97%;
+    margin-bottom: 0px;
+    padding: 0px;
   }
 
   @media only screen and (min-width: 1025px) {
@@ -343,7 +345,7 @@ p-text-box-a
 .p-map {
   //width:100%;
   max-width: 599px;
-  height: 100%; //691px;
+  //height: 100%; //691px;
   background-image: url(../images/i-map.png);
   background-size: cover;
   display: flex;
@@ -398,9 +400,9 @@ p-text-box-a
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    position: absolute ;
-    top:0;
-    bottom:0;
+    //position: absolute ;
+    //top:0;
+    //bottom:0;
 
     @media only screen and (min-width: 600px) {
       //（ここにタブレット用スタイルを記述）
